@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ partial "bookshop_bindings" `.Params.content_blocks` }}
+{{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+<section class="content-full block bg-black flow" aria-labelledby="cities-served-list">
+  <h2 class="text-align-center max-width-none" id="cities-served-list">Delivering Homes to These Midwest Markets and
+    More!</h2>
+  <ul class="grid-columns-3 max-width-none gap-sm no-margin no-padding">
+    {{ range where site.RegularPages "Section" "service-area" }}
+    <li class="city-card flex flex-justify-center flex-align-center gap-sm font-color-white">
+      <div class="icon-sm icon-fill-white">{{ partial "svg-icons/location.svg" . }}</div>
+      <a class="city-card__link" href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

@@ -1,0 +1,20 @@
+.divider {
+    // Box model
+    width: 300px;
+    height: 2px;
+    margin-block-start: $ic--200;
+    margin-block-end: $ic-300;
+    // Visual
+    background-color: $primary-color;
+}
+
+.divider--centered {
+    // Box model
+    width: 150px;
+    height: 1px;
+    margin-block-start: $ic--200;
+    margin-block-end: $ic-300;
+    margin-inline: auto;
+    // Visual
+    background-color: $primary-color;
+}

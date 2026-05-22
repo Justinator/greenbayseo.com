@@ -1,0 +1,10 @@
+.icon-cards {
+  gap: $ic-200;
+  column-gap: clamp($ic--200, 5vw, $ic-200);
+  row-gap: clamp($ic-400, 5vw, $ic-600);
+}
+
+.icon-card__icon {
+  block-size: 100%;
+  inline-size: 150px;
+}

@@ -1,0 +1,84 @@
+.staff-card {
+  // Positioning
+  position: relative;
+  // Box model
+  max-inline-size: none;
+  margin-block-start: 0;
+  // Visual
+  border-radius: $radius;
+  // Misc
+  list-style-type: none;
+  transition: $transition;
+}
+
+.staff-card:hover,
+.staff-card:focus {
+  transform: translateY(-5px);
+
+  .staff-card__image::after {
+    opacity: 1;
+  }
+}
+
+.staff-card picture {
+  height: 100%;
+}
+
+.staff-card__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.staff-card__image::after {
+  // Positioning
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  z-index: 3;
+  // Box model
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  // Visual
+  background: radial-gradient(circle,$black,$dark-black);
+  mix-blend-mode: screen;
+  // Misc
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $transition;
+}
+
+.staff-card__image img {
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.staff-card__content {
+  padding-block: $ic-400;
+}
+
+.staff-card__link {
+  position: inherit;
+}
+
+.staff-card__link::after {
+  // Positioning
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  z-index: 1;
+  // Box model
+  inline-size: 100%;
+  block-size: 100%;
+  // Misc
+  content: "";
+}
+
+.parent-page-services .staff-card__image {
+  block-size: 250px;
+}
+
+.staff-card__job-title {
+  font-size: clamp($ic--200, 3vw, $ic--100);
+}

@@ -1,0 +1,10 @@
+{{ $imageURL := .Get "image_url" }}
+{{ $imageAlt := .Get "image_alt" }}
+
+<img sizes="100vw" src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1000-auto{{ $imageURL }}" srcset="
+  https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ $imageURL }} 400w, 
+  https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-600-auto{{ $imageURL }} 600w, 
+  https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ $imageURL }} 800w, 
+  https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1000-auto{{ $imageURL }} 1000w, 
+  https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ $imageURL }} 1200w
+  " alt="{{ $imageAlt }}" width="600" height="450" loading="lazy" decoding="async">

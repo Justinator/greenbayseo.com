@@ -1,0 +1,77 @@
+<section class="cta-block | content-full block-lg p-relative{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}" {{ if
+    .heading }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+    {{ if .background_image.image_url }}
+    <picture class="background-image content-full">
+        <!-- AVIF -->
+        <source 
+            sizes="100vw"
+            srcset="
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_600,c_fill{{ .background_image.image_url }} 600w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1000,c_fill{{ .background_image.image_url }} 1000w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1400,c_fill{{ .background_image.image_url }} 1400w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1800,c_fill{{ .background_image.image_url }} 1800w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_2200,c_fill{{ .background_image.image_url }} 2200w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_2600,c_fill{{ .background_image.image_url }} 2600w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_3200,c_fill{{ .background_image.image_url }} 3200w
+            "
+            type="image/avif">
+        <!-- WebP -->
+        <source 
+            sizes="100vw"
+            srcset="
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_600,c_fill{{ .background_image.image_url }} 600w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1000,c_fill{{ .background_image.image_url }} 1000w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1400,c_fill{{ .background_image.image_url }} 1400w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1800,c_fill{{ .background_image.image_url }} 1800w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_2200,c_fill{{ .background_image.image_url }} 2200w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_2600,c_fill{{ .background_image.image_url }} 2600w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_3200,c_fill{{ .background_image.image_url }} 3200w
+            "
+            type="image/webp">
+        <!-- JPG Fallback -->
+        <img class="content-full"
+            sizes="100vw"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload{{ .background_image.image_url }}"
+            srcset="
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_600,c_fill{{ .background_image.image_url }} 600w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1000,c_fill{{ .background_image.image_url }} 1000w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1400,c_fill{{ .background_image.image_url }} 1400w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1800,c_fill{{ .background_image.image_url }} 1800w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_2200,c_fill{{ .background_image.image_url }} 2200w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_2600,c_fill{{ .background_image.image_url }} 2600w,
+            https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_3200,c_fill{{ .background_image.image_url }} 3200w
+            "
+            alt="{{ .image.image_alt }}"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async">
+    </picture>
+    <div class="overlay overlay--dark-black-gradient content-full"></div>
+    {{ end }}
+    <div class="flow font-color-white p-relative">
+        <header class="flow">
+            {{ if .preheading }}
+            <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+            <h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+            {{ else }}
+            <h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+            {{ end }}
+        </header>
+        {{ if .body }}
+        {{ if in .body "\n" }}
+        {{ .body | markdownify }}
+        {{ else }}
+        <p>{{ .body | markdownify }}</p>
+        {{ end }}
+        {{ end }}
+        {{ if .button.enabled }}
+        {{ with .button }}
+        <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{ end
+            }}>
+            {{ .button_text }}
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>

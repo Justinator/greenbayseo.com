@@ -1,0 +1,43 @@
+<script src="/plugins/nouislider/nouislider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+{{ $opts := (dict "minify" true "target" "es2017" "format" "cjs") }}
+
+{{ if .Site.Params.MinifyBundles }}
+{{ $main := resources.Get "js/main.js" | js.Build $opts }}
+{{ $libs := resources.Get "js/libs.js" | js.Build $opts }}
+{{ $bundle := slice $libs $main | resources.Concat "bundle.js" | resources.Fingerprint "sha512" }}
+<script src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}"></script>
+{{ else }}
+{{ $libs := resources.Get "js/libs.js" | js.Build $opts | resources.Fingerprint "sha512" }}
+<script src="{{ $libs.RelPermalink }}" integrity="{{ $libs.Data.Integrity }}"></script>
+
+{{ $mainDev := resources.Get "js/main.js" | resources.Fingerprint "sha512" }}
+<script src="{{ $mainDev.RelPermalink }}" integrity="{{ $mainDev.Data.Integrity }}"></script>
+{{ end }}
+
+{{ if hugo.IsProduction }}
+<!-- Tracking tag. Place in the <body> section of webpage -->
+{{ end }}
+
+<script type="module">
+
+    import PhotoSwipeLightbox from '/plugins/photoswipe/photoswipe-lightbox.esm.js';
+    import PhotoSwipe from '/plugins/photoswipe/photoswipe.esm.js';
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#my-gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe
+    });
+
+    lightbox.init();
+
+    const swiperLightbox = new PhotoSwipeLightbox({
+        gallery: '.swiper-lightbox',
+        children: 'a',
+        pswpModule: PhotoSwipe
+    });
+
+    swiperLightbox.init();
+</script>

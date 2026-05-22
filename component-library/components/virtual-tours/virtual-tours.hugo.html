@@ -1,0 +1,11 @@
+<section class="virtual-tours-block | content-full block" aria-labelledby="Virtual Tours List">
+  <div class="grid-columns-2 gap-lg">
+    {{ range .tours }}
+      <div class="">        
+        <iframe src="{{ .virtual_tour }}" width="853" height="480" frameborder="0" allowfullscreen=""
+                allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" spellcheck="false"></iframe>
+        <p class="h5 fw-700 mt-1">{{ .heading }}</p>
+      </div>
+    {{ end }}
+  </div>
+</section>

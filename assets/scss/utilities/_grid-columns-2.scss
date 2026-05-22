@@ -1,0 +1,8 @@
+.grid-columns-2 {
+  display: grid;
+  
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  

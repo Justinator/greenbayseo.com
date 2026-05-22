@@ -1,0 +1,27 @@
+<section class="intro | content-full block bg-{{ .background_color }}" aria-labelledby="{{ .heading | urlize }}">
+    <div class="content-sm flow">
+        <img class="intro__logo" src="/uploads/wisconsin-homes-logomark-color.svg" width="164" height="141" alt="Wisconsin Homes logomark">
+        <header>
+            {{ if .preheading }}
+            <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+            <h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+            {{ else }}
+                <h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+            {{ end }}
+        </header>
+        {{ if .body }}
+            {{ if in .body "\n" }}
+                {{ .body | markdownify }}
+            {{ else }}
+                <p>{{ .body | markdownify }}</p>
+            {{ end }}
+        {{ end }}
+        {{ if .button.enabled }}
+            {{ with .button }}
+                <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+                    {{ .button_text }}
+                </a>
+            {{ end }}
+        {{ end }}
+    </div>
+</section>

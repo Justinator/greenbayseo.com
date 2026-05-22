@@ -1,0 +1,62 @@
+<section class="staff-feed-block | content-full block-sm bg-{{ .background_color }}"
+    aria-labelledby="{{ .heading | urlize }}">
+    <div class="flow">
+        <header>
+            {{ if .preheading }}
+            <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+            <h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+            {{ else }}
+            <h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+            {{ end }}
+        </header>
+        {{ if .body }}
+        {{ if in .body "\n" }}
+        {{ .body | markdownify }}
+        {{ else }}
+        <p>{{ .body | markdownify }}</p>
+        {{ end }}
+        {{ end }}
+        {{ if .button.enabled }}
+        {{ with .button }}
+        <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{ end
+            }}>
+            {{ .button_text }}
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+    <ul class="{{ if .columns }}grid-columns-{{ .columns }}{{ end }} gap-sm max-width-none no-padding mt-2">
+        {{ if .staff_category }}
+        {{ $category := .staff_category }}
+        {{ range sort (where (where site.RegularPages "Section" "our-team") ".Params.staff_category" $category) "Weight" }}
+        {{ $image_url := .Params.seo.featured_image.image_url }}
+        <li class="staff-card">
+            {{ if $image_url }}
+            <div class="staff-card__image">
+                <picture>
+                    <source sizes="50vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ $image_url }} 400w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-600-auto{{ $image_url }} 600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ $image_url }} 800w
+    ">
+                    <img class="staff-card__image" sizes="50vw"
+                        src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-600-auto{{ $image_url }}"
+                        srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ $image_url }} 400w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-600-auto{{ $image_url }} 600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ $image_url }} 800w
+    " alt="{{ .Title }}'s headshot" width="600" height="450" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            {{ end }}
+            <div class="staff-card__content">
+                <h3 class="no-margin h5"><a href="{{ .Permalink }}" class="staff-card__link">{{ .Title }}</a></h3>
+                {{ if .Params.job_title }}
+                <p class="staff-card__job-title text-style-slub">{{ .Params.job_title }}</p>
+                {{ end }}
+            </div>
+        </li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</section>

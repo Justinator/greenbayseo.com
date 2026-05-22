@@ -1,0 +1,19 @@
+<div class="flex flex-row flex-align-center gap-sm">
+  <span>Browse all projects by</span>
+  <div class="category-wrapper">
+    <label for="categoryFilter" class="visually-hidden">Filter by Industry</label>
+    {{- if isset .Site.Taxonomies "industries" -}}
+      {{- if not (eq (len .Site.Taxonomies.industries) 0) -}}
+        <select id="categoryFilter" class="category-select" onchange="location = this.value;">
+          <option value="">Industry</option>
+          {{- range .Site.Taxonomies.industries -}}
+          <option value="{{ .Page.Permalink }}">{{ .Page.Title }}</option>
+          {{- end -}}
+        </select>
+      {{- end -}}
+    {{- end -}}
+  </div>
+</div>
+
+
+

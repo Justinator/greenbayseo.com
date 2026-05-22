@@ -1,0 +1,103 @@
+<section class="split-hero-block | content-full grid p-relative bg-black{{ if .css_class }} {{ .css_class }}{{ end }}" {{ if .heading }}aria-labelledby="{{ .heading | urlize }}"{{ end }}>
+	   {{ if .background_image.image_url }}
+        <picture class="background-image content-full">
+            <!-- AVIF -->
+            <source 
+                sizes="100vw"
+                srcset="
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_600,c_fill{{ .background_image.image_url }} 600w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1000,c_fill{{ .background_image.image_url }} 1000w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1400,c_fill{{ .background_image.image_url }} 1400w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1800,c_fill{{ .background_image.image_url }} 1800w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_2200,c_fill{{ .background_image.image_url }} 2200w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_2600,c_fill{{ .background_image.image_url }} 2600w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_3200,c_fill{{ .background_image.image_url }} 3200w
+                "
+                type="image/avif">
+            <!-- WebP -->
+            <source 
+                sizes="100vw"
+                srcset="
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_600,c_fill{{ .background_image.image_url }} 600w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1000,c_fill{{ .background_image.image_url }} 1000w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1400,c_fill{{ .background_image.image_url }} 1400w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1800,c_fill{{ .background_image.image_url }} 1800w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_2200,c_fill{{ .background_image.image_url }} 2200w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_2600,c_fill{{ .background_image.image_url }} 2600w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_3200,c_fill{{ .background_image.image_url }} 3200w
+                "
+                type="image/webp">
+            <!-- JPG Fallback -->
+            <img class="content-full"
+                sizes="100vw"
+                src="https://res.cloudinary.com/dpsfyelwp/image/upload{{ .background_image.image_url }}"
+                srcset="
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_600,c_fill{{ .background_image.image_url }} 600w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1000,c_fill{{ .background_image.image_url }} 1000w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1400,c_fill{{ .background_image.image_url }} 1400w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1800,c_fill{{ .background_image.image_url }} 1800w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_2200,c_fill{{ .background_image.image_url }} 2200w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_2600,c_fill{{ .background_image.image_url }} 2600w,
+                https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_3200,c_fill{{ .background_image.image_url }} 3200w
+                "
+                alt="{{ .image.image_alt }}"
+                width="1920"
+                height="1080"
+                loading="eager"
+                decoding="async">
+        </picture>
+        <div class="split-hero-block__overlay | content-full"></div>
+    {{ end }}
+    <div class="split-hero-block__content | block flow">
+        <header>
+            {{ if .preheading }}
+                <h1 class="text-style-slub h2">{{ .preheading }}</h1>
+                <div class="divider"></div>
+                <h2 id="{{ .heading | urlize }}">{{ .heading }}</h2>
+            {{ else }}
+                <h1 class="h2" id="{{ .heading | urlize }}">{{ .heading }}</h1>
+                <div class="divider"></div>
+            {{ end }}
+            {{ if .subheading }}
+                <p class="split-hero-block__subheading">{{ .subheading | markdownify }}</p>
+            {{ end }}
+        </header>
+		{{ if .body }}
+			{{ if in .body "\n" }}
+				{{ .body | markdownify }}
+			{{ else }}
+				<p>{{ .body | markdownify }}</p>
+			{{ end }}
+		{{ end }}
+		{{ if .button.enabled }}
+			{{ with .button }}
+				<a class="btn btn--{{ .button_color }}" href="{{ .button_url | safeURL }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+					{{ .button_text }}
+				</a>
+			{{ end }}
+		{{ end }}
+    {{ if .trust_items }}
+    <ul class="split-hero-block__trust-list | flex flex-wrap gap-sm no-padding">
+      {{ range .trust_items }}
+      <li class="split-hero-block__trust-item | flex flex-align-center gap-xs">
+        <span class="split-hero-block__trust-icon | flex flex-align-center flex-justify-center" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+            <path d="M20.285 6.709l-11.025 11.025-5.545-5.545 1.414-1.414 4.131 4.131 9.611-9.611z"/>
+          </svg>
+        </span>
+        <span>{{ .text }}</span>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    </div>
+    <div class="split-hero-block__media">
+        <picture class="split-hero-block__image-wrapper">
+            <source sizes="(min-width: 993px) 50vw, 100vw" srcset="https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_350,h_300{{ .image.image_url }} 400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_550,h_300{{ .image.image_url }} 600w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1000{{ .image.image_url }} 800w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1200{{ .image.image_url }} 1000w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1400{{ .image.image_url }} 1200w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1600{{ .image.image_url }} 1400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1800{{ .image.image_url }} 1600w" type="image/avif">
+        
+            <source sizes="(min-width: 993px) 50vw, 100vw" srcset="https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_350,h_300{{ .image.image_url }} 400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_550,h_300{{ .image.image_url }} 600w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1000{{ .image.image_url }} 800w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1200{{ .image.image_url }} 1000w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1400{{ .image.image_url }} 1200w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1600{{ .image.image_url }} 1400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1800{{ .image.image_url }} 1600w" type="image/webp">
+        
+            <img class="split-hero-block__image" sizes="(min-width: 993px) 50vw, 100vw" src="https://res.cloudinary.com/dpsfyelwp/image/upload{{ .image.image_url }}" srcset="https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_350,h_300{{ .image.image_url }} 400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_550,h_300{{ .image.image_url }} 600w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1000{{ .image.image_url }} 800w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1200{{ .image.image_url }} 1000w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1400{{ .image.image_url }} 1200w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1600{{ .image.image_url }} 1400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1800{{ .image.image_url }} 1600w" alt="{{ .image.image_alt }}" width="600" height="450" loading="lazy" decoding="async">   
+        </picture>
+    </div>
+</section>

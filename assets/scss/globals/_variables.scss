@@ -1,0 +1,54 @@
+// Colors
+$primary-color: #003056;
+$secondary-color: #1A2733;
+$tertiary-color: #FF6B35;
+$light-gray: #E1E5EA;
+$gray: #6E6F72;
+$black: #040402;
+$dark-black: #040402;
+$white: #FAFBFC;
+
+// Fonts
+$primary-font: inter, sans-serif;
+$secondary-font: inter, sans-serif;
+// $primary-font: commuters-sans, sans-serif;
+// $secondary-font: ivypresto-display, serif;
+
+$mobile-header: 80px;
+$desktop-header: 95px;
+
+// Scale and rhythm based on a major third
+$scale: 1.2;
+
+$ic--200: 1rem / $scale / $scale;
+$ic--100: 1rem / $scale;
+$ic-100: 1rem;
+$ic-200: 1rem * $scale;
+$ic-300: 1rem * $scale * $scale;
+$ic-400: 1rem * $scale * $scale * $scale;
+$ic-500: 1rem * $scale * $scale * $scale * $scale;
+$ic-600: 1rem * $scale * $scale * $scale * $scale * $scale;
+$ic-700: 1rem * $scale * $scale * $scale * $scale * $scale * $scale;
+$ic-800: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale;
+$ic-900: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale *
+  $scale;
+$ic-1000: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale *
+  $scale * $scale;
+$ic-1100: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale *
+  $scale * $scale * $scale;
+$ic-1200: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale *
+  $scale * $scale * $scale * $scale;
+
+// Line lengths
+$measure-short: 60ch;
+$measure: 80ch;
+$measure-long: 90ch;
+
+$transition: .3s ease-in-out;
+
+$radius-sm: 10px;
+$radius: 50px;
+
+$scrollbar-width: 16px;
+
+$skew: skew(-15deg);

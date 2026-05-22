@@ -1,0 +1,14 @@
+.visualizer-tool { 
+    display: none; 
+
+    @include breakpoint(md) {
+        display: block;
+    }
+}
+
+.visualizer-mobile-fallback { 
+
+    @include breakpoint(md) {
+        display: none;
+    }
+}

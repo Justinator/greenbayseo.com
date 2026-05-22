@@ -1,0 +1,19 @@
+<div class="reviews | content-lg block grid-columns-3 gap-sm">
+  {{ range .reviews }}
+    <div class="review-card | flex flex-column flex-justify-between">
+      <div class="flow">
+        <h2 class="h6">{{ .heading }}</h2>
+        <p>{{ .body }}</p>
+        <p>- {{ .name }}</p>
+      </div>
+      <a class="review-card__source | flex flex-column flex-justify-end mt-4" href="{{ .url }}" target="_blank">
+        Read Review On
+        {{ if eq .source "google" }}
+          <img src="/uploads/google-logo.svg" alt="">
+        {{ else if eq .source "facebook" }}
+          <img src="/uploads/facebook-logo.svg" alt="">
+        {{ end }}
+      </a>
+    </div>
+  {{ end }}
+</div>

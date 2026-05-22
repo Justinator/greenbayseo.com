@@ -1,0 +1,9 @@
+.video {
+    height: 350px;
+}
+
+.video .video-play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

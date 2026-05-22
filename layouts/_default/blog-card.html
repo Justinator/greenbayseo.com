@@ -1,0 +1,14 @@
+<li class="blog-card card | bg-white flex flex-column p-relative col">
+    <div class="blog-card__image-wrap | p-relative cover-image">
+        {{ if .Params.seo.featured_image }}
+        <img class="blog-card__img | dim"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-500-auto{{ .Params.seo.featured_image.image_url }}"
+            alt="{{ .Params.seo.featured_image.image_alt }}" width="500" height="300" loading="lazy">
+        {{ end }}
+    </div>
+    <div class="blog-card__content | bg-white flow">
+        <h2 class="h5"><a class="blog-card__link | no-decoration" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <div class="blog-card__summary | font-size-xs">{{ if .Params.seo.meta_description }}{{
+            .Params.seo.meta_description | safeHTML | truncate 125 }}{{ end }}</div>
+    </div>
+</li>

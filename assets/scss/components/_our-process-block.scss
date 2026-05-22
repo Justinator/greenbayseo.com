@@ -1,0 +1,25 @@
+.our-process-block__content {
+    position: relative;
+    z-index: 2;
+}
+
+.our-process-block:has(.overlay--dark-black) {
+    color: $white;
+}
+
+.process-cards {
+    gap: $ic-800;
+
+    @include breakpoint(md) {
+        gap: $ic-200;
+    }
+}
+
+.process-card__image {
+    max-width: 180px;
+    margin-bottom: $ic-100;
+}
+
+.process-card__heading {
+    font-size: clamp($ic-200, 4vw, $ic-400);
+}

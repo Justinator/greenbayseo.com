@@ -1,0 +1,17 @@
+.social {
+  padding: 0;
+}
+
+.social__list-item {
+  list-style-type: none;
+  margin: 0;
+}
+
+.social__icon {
+  position: relative;
+}
+
+.social__icon svg {
+  position: relative;
+  z-index: 2;
+}

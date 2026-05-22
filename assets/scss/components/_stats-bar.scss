@@ -1,0 +1,35 @@
+.stats-bar__stats {
+  position: relative;
+  z-index: 3;
+  padding-block: $ic-300;
+}
+
+.stats-bar__stats-inner {
+  align-items: center;
+}
+
+.stats-bar__stat {
+  grid-column: span 12;
+  position: relative;
+
+  @include breakpoint(md) {
+    grid-column: span 4;
+  }
+
+  &:not(:last-child)::after {
+    @include breakpoint(md) {
+        content: "";
+        position: absolute;
+        inset-block: 50%;
+        inset-inline-end: 0;
+        inline-size: 1px;
+        block-size: 70%;
+        transform: translateY(-50%);
+        background-color: rgba($white, .5);
+    }
+  }
+}
+
+.stats-bar__stat-label {
+  color: rgba($white, .75);
+}

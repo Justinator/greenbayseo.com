@@ -1,0 +1,120 @@
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  height: auto;
+  align-content: end;
+
+  @include breakpoint(md) {
+    display: inherit;
+    height: 85vh;
+    background-color: $black;
+  }
+}
+
+.hero .overlay--black {
+  background-color: rgba(0, 0, 0, .0);
+
+  @include breakpoint(md) {
+    background-color: rgba(0, 0, 0, .7);
+  }
+}
+
+.hero__content {
+  // Positioning
+  z-index: 1;
+  // Box model
+  padding: $ic-600 $ic-200;
+  // Visual
+  background-color: $dark-black;
+
+  @include breakpoint(md) {
+    background-color: initial;
+    padding: 0;
+    padding-block-end: 5%;
+  }
+}
+
+.hero__preheading {
+  position: relative;
+  padding-block-end: $ic-300;
+
+  @include breakpoint(md) {
+    width: max-content;
+  }
+}
+
+.hero__preheading::after {
+  // Positioning
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // Box model
+  width: 100%;
+  height: 4px;
+  // Visual
+  background-color: $primary-color;
+  // Misc
+  content: "";
+}
+
+.hero__heading {
+  // Positioning
+  position: relative;
+  // Box model
+  max-width: fit-content;
+  margin-block-start: $ic-200;
+  // Typography
+  font-size: clamp($ic-400, 6vw, $ic-900);
+}
+
+.hero__subheading {
+  font-size: clamp($ic-300, 4vw, $ic-500);
+  font-weight: 500;
+}
+
+.hero__background {
+  position: relative;
+  height: 400px;
+
+  @include breakpoint(md) {
+    // Positioning
+    position: initial;
+    z-index: 1;
+    // Box model
+    height: auto;
+  }
+}
+
+.hero .video-play-button {
+  // Positioning
+  bottom: 15%;
+  left: 50%;
+  // Box model
+  width: 150px;
+  height: 150px;
+  // Misc
+  transform: translateX(-50%);
+
+  @include breakpoint(md) {
+    bottom: 0;
+    left: initial;
+    right: 0;
+    transform: none;
+  }
+}
+
+.hero .video-play-button__link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-w-form a {
+  color: $white;
+  transition: $transition;
+}
+
+.hero-w-form a:hover,
+.hero-w-form a:focus {
+  color: $primary-color;
+}

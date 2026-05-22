@@ -1,0 +1,43 @@
+.btn {
+  // Box model
+  display: flex;
+  inline-size: max-content;
+  padding: $ic--100 $ic-500;
+  // Typography
+  font-size: $ic-100;
+  text-decoration: none;
+  // Visual
+  border: none;
+  // border-radius: $radius;
+  // Misc
+  transition: $transition;
+
+  @include breakpoint(md) {
+    font-size: 1.2rem;
+  }
+}
+
+.btn--primary {
+  // Typography
+  color: $white;
+  // Visual
+  background-color: $tertiary-color;
+
+  &:hover,
+  &:focus {
+    opacity: .9;
+  }
+}
+
+.btn--secondary {
+  // Typography
+  color: $black;
+  // Visual
+  background-color: $white;
+  border: 1px solid $primary-color;
+
+  &:hover,
+  &:focus {
+    opacity: .9;
+  }
+}

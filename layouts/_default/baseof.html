@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ block "head" . }}{{ partial "head" . }}{{ end }}
+{{ $namespace := lower .Page.Title }}
+{{ $mainClass := lower .Page.Title }}
+{{ $pageParent := .Section }}
+
+<body
+  class="page-{{ anchorize $mainClass }}{{ if .Params.page_class }} {{ .Params.page_class }}{{ end }}{{ if $pageParent }} parent-page-{{ $pageParent | urlize }}{{ end }} page-id-{{ with .File }}{{ .UniqueID }}{{ end }}"
+  data-instant-intensity="viewport">
+  <div class="site-wrap">
+    {{ block "header" . }}{{ partialCached "header" . }}{{end}}
+    <main id="main-content" class="site-main content-grid">
+      {{ block "main" . }}{{ end }}
+      <dialog class="popup popup--video">
+        <div class="popup__content">
+          <iframe class="popup__video" width="1290" height="726" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <button class="popup__close" title="Close (Esc)">
+            <div class="icon icon-md icon-fill-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" id="close"
+                class="icon-hidden">
+                <path
+                  d="M289.94,256l95-95A24,24,0,0,0,351,127l-95,95-95-95A24,24,0,0,0,127,161l95,95-95,95A24,24,0,1,0,161,385l95-95,95,95A24,24,0,0,0,385,351Z" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </dialog>
+    </main>
+    {{ if .Site.Data.site_settings.site_popup.enabled }}
+      {{ with .Site.Data.site_settings.site_popup }}
+        <dialog class="site-popup" role="dialog" aria-labelledby="site-popup__title">
+          {{ if .image.image_url }}
+          <div class="site-popup__image | cover-image">
+            <picture>
+              <source sizes="(min-width: 993px) 50vw, 100vw" srcset="
+          https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ .image.image_url }} 400w,
+          https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }} 800w,
+          https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }} 1200w,
+          https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .image.image_url }} 1600w
+        ">
+              <img class="media-text-block__image" sizes="(min-width: 993px) 50vw, 100vw"
+                src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }}" srcset="
+          https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ .image.image_url }} 400w,
+          https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }} 800w,
+          https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }} 1200w,
+          https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .image.image_url }} 1600w
+        " alt="{{ .image.image_alt }}" width="1200" height="800">
+            </picture>
+          </div>
+          {{ end }}
+          <div class="site-popup__content">
+            <button class="site-popup__close close-button" title="Close (Esc)" aria-label="Close Promotional Popup">
+              <div class="icon icon-md icon-fill-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" id="close"
+                  class="icon-hidden">
+                  <path
+                    d="M289.94,256l95-95A24,24,0,0,0,351,127l-95,95-95-95A24,24,0,0,0,127,161l95,95-95,95A24,24,0,1,0,161,385l95-95,95,95A24,24,0,0,0,385,351Z" />
+                </svg>
+              </div>
+            </button>
+            <div class="site-popup__body flow">
+              <h2 class="h3 text-primary" id="store-popup__title">{{ .heading }}</h2>
+              <div class="mt-promotion-bar__body max-width-none font-size-xs flow">
+                {{ if .body }}
+                  {{ if in .body "\n" }}
+                    {{ .body | markdownify }}
+                  {{ else }}
+                    <p>{{ .body | markdownify }}</p>
+                  {{ end }}
+                {{ end }}
+              </div>
+              {{ if .button.enabled }}
+                {{ with .button }}
+                  <a class="btn btn--primary" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{ end }}>{{
+                  .button_text }}</a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </dialog>
+      {{ end }}
+    {{ end }}
+    {{ block "footer" . }}{{ partialCached "footer" . }}{{end}}
+  </div>
+</body>
+
+</html>

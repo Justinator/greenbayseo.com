@@ -1,0 +1,9 @@
+<div class="content flow">
+    {{ if .body }}
+        {{ if in .body "\n" }}
+            {{ .body | markdownify }}
+        {{ else }}
+            <p>{{ .body | markdownify }}</p>
+        {{ end }}
+    {{ end }}
+</div>

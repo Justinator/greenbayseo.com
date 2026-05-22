@@ -1,0 +1,59 @@
+.floor-plan-swiper {
+    position: absolute !important;
+    height: 80% !important;
+}
+
+
+.floor-plan-swiper-thumbnails {
+    position: absolute !important;
+    bottom: 0;
+    height: 18% !important;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.floor-plan-swiper-thumbnails .swiper-slide {
+    width: 25% !important;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.floor-plan-swiper-thumbnails .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.split-hero-block__media:has(.floor-plan-swiper-thumbnails) {
+    display: flex;
+    place-items: initial;
+}
+
+.floor-plan-swiper-thumbnails .swiper-slide img {
+    border-radius: $radius-sm;
+}
+
+.floor-plan-swiper .swiper-button-prev,
+.floor-plan-swiper .swiper-button-next {
+    // Box model
+    width: $ic-600;
+    height: $ic-600;
+    // Visual
+    background-color: $dark-black;
+}
+
+.pswp img {
+    object-fit: cover; 
+}
+
+.floor-plan-swiper__caption {
+    // Positioning
+    position: absolute;
+    bottom: 0;
+    z-index: 8;
+    // Box model
+    width: 100%;
+    padding: .5rem;
+    // Typography
+    color: $white;
+    // Visual
+    background-color: rgba($black, .9);
+}

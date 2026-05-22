@@ -1,0 +1,11 @@
+<header class="blog-hero | content-full block bg-black flow">
+  <h1 class="h2 text-align-center max-width-none">{{ .Title }}</h1>
+  <div class="flex flex-wrap flex-justify-center gap-sm">
+    {{ if .Params.Categories }}
+    {{ range first 2 (.GetTerms "categories") }}
+    <a href="{{ .Permalink }}" class="btn btn--primary btn--category" aria-label="View all {{ .Page.Title }} posts">{{
+      .LinkTitle }}</a>
+    {{ end }}
+    {{ end }}
+  </div>
+</header>

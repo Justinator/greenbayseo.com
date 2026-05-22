@@ -1,0 +1,380 @@
+.header {
+  // Positioning
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  z-index: 9;
+  // Box model
+  inline-size: 100%;
+  // Visual
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+}
+
+// Start mobile menu styles
+
+.header__hamburger {
+  inline-size: $ic-700;
+  block-size: $ic-700;
+}
+
+.header__mobile-nav {
+  // Positioning
+  position: absolute;
+  inset-block-start: calc(100% - 1px);
+  inset-inline-start: 0;
+  // Box model
+  inline-size: 100%;
+  max-block-size: 0;
+  overflow: hidden;
+  // Misc
+  transition: $transition;
+  transition: max-block-size .5s ease-in-out;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header__mobile-nav.nav-open {
+  max-block-size: 1000px;
+}
+
+.header__mobile-nav-menu {
+  max-inline-size: 600px;
+  margin-inline: auto;
+  margin-block: 0;
+  padding: $ic-300;
+}
+
+.header__mobile-nav-item {
+  // Positioning
+  position: relative;
+  // Box model
+  margin-top: 0;
+  // Misc
+  list-style-type: none;
+}
+
+.header__mobile-cta {
+  max-inline-size: 600px;
+  padding-inline: 1.5625rem;
+  padding-block-end: $ic-300;
+}
+
+.header__mobile-nav-link,
+.header__mobile-dropdown-link {
+  // Box model
+  display: block;
+  inline-size: 100%;
+  padding: $ic--100 0;
+  // Misc
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+  }
+}
+
+.header__mobile-nav-item:nth-of-type(1) .header__mobile-nav-link {
+  border-top: 1px solid $light-gray;
+}
+
+.header__mobile-nav-link {
+  // Typography
+  font-size: 1.2rem;
+  color: $black;
+  // Visual
+  border-bottom: 1px solid $light-gray;
+}
+
+.toggle-mobile-dropdown {
+  // Positioning
+  position: absolute;
+  inset-block-start: 8px;
+  inset-inline-end: 0;
+  // Box model
+  inline-size: $ic-600;
+  block-size: $ic-600;
+  // Visual
+  background: none;
+  border: none;
+  border-left: 1px solid $light-gray;
+
+  &::before,
+  &::after {
+    // Positioning
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-end: 15%;
+    // Box model
+    inline-size: 1rem;
+    block-size: 2px;
+    // Visual
+    background-color: $primary-color;
+    // Misc
+    content: "";
+    transform: translate(-30%, -30%);
+    transition: 0.3s ease;
+  }
+
+  &::before {
+      transform: translate(-30%, -30%) rotate(90deg);
+  }
+}
+
+.mobile-dropdown-open .toggle-mobile-dropdown {
+  &::before {
+    transform: translate(-30%, -30%) rotate(0deg);
+  }
+}
+
+.header__mobile-dropdown {
+  display: none;
+  padding: 0 .25rem;
+}
+
+.header__mobile-dropdown-link {
+  // Box model
+  padding-block: 0.5rem;
+  // Typography
+  font-size: $ic-100;
+  color: rgba($black, .8);
+}
+
+.has-dropdown-open .header__mobile-nav-inner {
+  max-block-size: 650px;
+  overflow: auto;
+}
+
+.mobile-dropdown-open {
+  .parent {
+    border-bottom: none;
+  }
+
+  .header__mobile-dropdown {
+    display: block;
+  }
+}
+
+// End mobile menu styles
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $ic--200;
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
+
+  @include breakpoint(lg) {
+    overflow: visible;
+  }
+
+  @include breakpoint(xl) {
+    padding: $ic--200 0;
+  }
+}
+
+.header__logo {
+  width: 100%;
+  max-width: clamp(75px, 20vw, 100px);
+}
+
+.header__nav {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block; 
+  }
+}
+
+.header__nav-list {
+  display: none;
+
+  @include breakpoint(md) {
+    // Box model
+    display: flex;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    padding: 0;
+    margin: 0;
+    // Misc
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.header__nav-list-item {
+  // Positioning
+  position: relative;
+  // Box model
+  display: inline-block;
+  margin-top: 0;
+  padding: .25rem $ic-100;
+  // Misc
+  list-style-type: none;
+}
+
+.header__nav-list-item.has-sub-menu-open {
+  .header__sub-menu {
+    max-block-size: 100vh;
+  }
+}
+
+.header .has-sub-menu {
+  &:hover,
+  &:focus {
+    .header__sub-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+
+.header__nav-list-link {
+  // Positioning
+  position: relative;
+  // Box model
+  padding: $ic--200 0;
+  // Typography
+  font-size: 18px;
+  color: $black;
+  // Misc
+  transition: .3s ease-out;
+
+  &::after {
+    // Positioning
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    // Box model
+    inline-size: 100%;
+    block-size: 1px;
+    // Visual
+    background-color: $primary-color;
+    // Misc
+    content: "";
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.4s ease-out;
+  }
+
+  @include breakpoint(md) {
+    &:hover,
+    &:focus {
+      color: $primary-color;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.header__sub-menu {
+  /* Hidden by default until hovered */
+  // Positioning
+  position: absolute;
+  inset-block-start: 150%;
+  inset-inline-start: 0px;
+  // Box model
+  inline-size: 300px;
+  max-block-size: 0;
+  overflow: hidden;
+  // Visual
+  box-shadow: 0px 4px 12px rgba($black, 0.15);
+  border-radius: 20px;
+  // Misc
+  pointer-events: auto;
+  transition: max-block-size .5s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.header__sub-menu-inner {
+  inline-size: 100%;
+  padding: $ic-100 $ic-200;
+}
+
+.header__sub-menu-list {
+  padding: 0;
+  max-inline-size: 100%;
+}
+
+.header__sub-menu-item {
+  margin: 0;
+  padding: .25rem 0;
+  break-inside: avoid;
+}
+
+.header__sub-menu-link {
+  // Box model
+  padding: 0.3rem;
+  // Typography
+  font-size: $ic-100;
+  color: $black;
+}
+
+.header__cta {
+  display: none;
+
+  @include breakpoint(sm) {
+    display: flex;
+    margin-inline-start: auto;
+  }
+
+  @include breakpoint(lg) {
+    margin-inline-start: 0;
+  }
+}
+
+.header__cta-phone .icon {
+  margin-top: 4px;
+}
+
+.header__cta-phone-link {
+  color: $black;
+  transition: $transition;
+}
+
+.header__cta-phone-link:hover,
+.header__cta-phone-link:focus {
+  color: $primary-color;
+}
+
+.collapse {
+  @include breakpoint(md) {
+    animation: collapse 0.5s ease forwards;
+  }
+}
+
+// Open nav bar on scroll up
+.expand {
+  @include breakpoint(md) {
+    animation: expand 0.5s ease forwards;
+  }
+}
+
+@keyframes collapse {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

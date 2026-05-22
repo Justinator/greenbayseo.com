@@ -1,0 +1,22 @@
+.feature-strip__item {
+  position: relative;
+}
+
+.feature-strip__icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  inline-size: $ic-800;
+  block-size: $ic-800;
+//   color: $primary-color;
+  background-color: rgba($black, .04);
+  border-radius: 50%;
+}
+
+.feature-strip__heading {
+  color: $dark-black;
+}
+
+.feature-strip__body {
+  max-inline-size: 28ch;
+}

@@ -1,0 +1,20 @@
+.floor-plan-taskbar {
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+}
+
+.floor-plan-taskbar__link {
+    padding: $ic-200;
+}
+
+.floor-plan-taskbar__link,
+.floor-plan-taskbar__btn,
+.share-button__btn {
+    font-size: clamp($ic--100, 3vw, $ic-100);
+}
+
+.floor-plan-taskbar__btn,
+.share-button__btn {
+    padding: .5rem $ic-100;
+}

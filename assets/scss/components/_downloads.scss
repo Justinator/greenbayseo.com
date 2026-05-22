@@ -1,0 +1,9 @@
+.downloads__item {
+    border-bottom: 1px solid $light-gray;
+    padding-block: $ic-200;
+    margin-block-start: 0;
+}
+
+.downloads__item:first-of-type {
+    border-top: 1px solid $light-gray;
+}

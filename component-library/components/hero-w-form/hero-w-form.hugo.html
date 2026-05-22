@@ -1,0 +1,140 @@
+<section class="hero-w-form | content-full p-relative{{ if .css_class }} {{ .css_class }}{{ end }}{{ if .background_color }} bg-{{ .background_color }}{{ end }}">
+  {{ if .background_image.image_url }}
+  <picture class="background-image content-full">
+    <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+    <img class="content-full"
+      src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+      alt="{{ .image.image_alt }}" width="1920" height="1080" loading="lazy" decoding="async">
+  </picture>
+  <div class="overlay overlay--black content-full"></div>
+  {{ end }}
+  <div class="content-lg block grid gap-lg">
+    <div class="grid-12 grid-5-md flow p-relative font-color-white">
+      <header>
+        {{ if .preheading }}
+        <h1 class="text-style-slub h2">{{ .preheading }}</h1>
+        <h2 id="{{ .heading | urlize }}">{{ .heading }}</h2>
+        {{ else }}
+        <h1 class="h2" id="{{ .heading | urlize }}">{{ .heading }}</h1>
+        {{ end }}
+        {{ if .subheading }}
+        <p class="split-hero-block__subheading">{{ .subheading | markdownify }}</p>
+        {{ end }}
+      </header>
+      {{ if .body }}
+      {{ if in .body "\n" }}
+      {{ .body | markdownify }}
+      {{ else }}
+      <p>{{ .body | markdownify }}</p>
+      {{ end }}
+      {{ end }}
+      <address class="flex flex-column font-size-sm">
+        425 West McMillan<br> Marshfield, WI 54449
+      </address>
+      <div class="flex flex-align-center gap-xs">
+        <div class="icon icon-md icon-fill-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+            <path
+              d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" />
+          </svg>
+        </div>
+        <a class="margin-left-auto-md" href="https://www.google.com/maps/search/Wisconsin Homes Marshfield Wi"
+          rel="noopener noreferrer" target="_blank">View on Google Maps</a>
+      </div>
+      <div class="flex flex-align-center gap-xs">
+        <div class="icon icon-md icon-fill-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+          </svg>
+        </div>
+        <p>Monday - Friday 8 AM - 5 PM</p>
+      </div>
+      <div>
+        <div class="flex flex-align-center gap-xs">
+          <div class="icon icon-md icon-fill-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+              <path
+                d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49C35.1 30.6 37.51 31 40 31c1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2C21.22 42 6 26.78 6 8c0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z">
+              </path>
+            </svg>
+          </div>
+          <a class="margin-left-auto-md" href="tel:+17153842161" aria-label="Call Wisconsin Homes">715-384-2161</a>
+        </div>
+        <div class="flex flex-align-center gap-xs">
+          <div class="icon icon-md icon-fill-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+              <path
+                d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49C35.1 30.6 37.51 31 40 31c1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2C21.22 42 6 26.78 6 8c0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z">
+              </path>
+            </svg>
+          </div>
+          <a class="margin-left-auto-md" href="tel:+18009550987" aria-label="Call Wisconsin Homes">1-800-955-0987</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__form | grid-12 grid-2-md"></div>
+    <div class="hero__form | grid-12 grid-5-md p-relative">
+      <form name="Contact Wisconsin Homes" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="184d502a-d82a-4005-b276-66a7ff3c57a8">
+        <input type="hidden" name="redirect" value="https://www.wisconsinhomesinc.com/thank-you/">
+        <input type="hidden" name="from_name" value="Wisconsin Homes">
+        <div class="visually-hidden">
+          <label for="subject">New Form Submission From The Wisconsin Homes Contact Form</label>
+          <input aria-label="subject" id="subject" name="subject"
+            value="New Form Submission From The Wisconsin Homes Contact Form">
+        </div>
+        <div class="contact-form__form-group">
+          <label for="name">Name*</label>
+          <input class="contact-form__form-control" name="Name" id="name" type="text"
+            autocomplete="name" required>
+        </div>
+        <div class="contact-form__form-group">
+          <label for="email">Email*</label>
+          <input class="contact-form__form-control" name="email" id="email" type="email"
+            autocomplete="email" required>
+        </div>
+        <div class="contact-form__form-group">
+          <label for="phone">Phone*</label>
+          <input class="contact-form__form-control" name="Phone" id="phone" type="tel"
+            autocomplete="tel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+            title="Please enter a 10-digit phone number (e.g., 123-456-7890)" required>
+        </div>
+        <div class="contact-form__form-group">
+          <label for="contact_preference">How Would You Prefer To Be Contacted?*</label>
+          <select class="contact-form__form-control" name="Contact Preference" id="contact_preference" required>
+            <option value=""></option>
+            <option value="Phone">Phone</option>
+            <option value="Email">Email</option>
+          </select>
+        </div>
+        <div class="contact-form__form-group">
+            <label for="referral">Where Did You Hear About Us?*</label>
+            <select name="Where Did You Hear About Us?" id="referral" class="contact-form__form-control max-width-none"
+                required>
+                <option value=""></option>
+                <option value="Internet Search">Internet Search</option>
+                <option value="ChatGPT/AI">ChatGPT/AI</option>
+                <option value="Digital Ad">Digital Ad</option>
+                <option value="Wisconsin Homes Team Member">Wisconsin Homes Team Member</option>
+                <option value="Wisconsin Homes Email/Social">Wisconsin Homes Email/Social</option>
+                <option value="Wisconsin Homes Blog">Wisconsin Homes Blog</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="contact-form__form-group">
+          <label class="font-color-white" for="message">Message*</label>
+          <textarea class="contact-form__form-control" name="Message" id="message" rows="4"
+            required></textarea>
+        </div>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAACKkhLH5ESS4AezH" data-theme="light"></div>
+        <button type="submit" class="contact-form__btn btn btn--secondary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>

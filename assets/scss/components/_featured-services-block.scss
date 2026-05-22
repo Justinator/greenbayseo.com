@@ -1,0 +1,29 @@
+.featured-services__list {
+    padding-inline: 0;
+    margin-block: 0;
+    display: grid;
+  
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @include breakpoint(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    @media (min-width: 1110px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    @media (min-width: 1450px) {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 1110px) {
+    .featured-services__list > * {
+        flex: 1 1 20rem;
+    }
+}

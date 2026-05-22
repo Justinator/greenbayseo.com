@@ -1,0 +1,51 @@
+main_nav:
+  - text: Services
+    url: /services/
+    opens_in_new_tab: false
+    enable_dropdown: true
+    columns: one
+    dropdown:
+      - text: Service 1
+        url: /services/service-1/
+        opens_in_new_tab: false
+      - text: Service 2
+        url: /services/service-2/
+        opens_in_new_tab: false
+      - text: Service 3
+        url: /services/service-3/
+        opens_in_new_tab: false
+      - text: Service 4
+        url: /services/service-4/
+        opens_in_new_tab: false
+      - text: Service 5
+        url: /services/service-5/
+        opens_in_new_tab: false
+  - text: About
+    url: /about/
+    opens_in_new_tab: false
+    enable_dropdown: true
+    columns: one
+    dropdown:
+      - text: History
+        url: /about/history/
+        opens_in_new_tab: false
+      - text: Our Team
+        url: /our-team/
+        opens_in_new_tab: false
+      - text: FAQs
+        url: /about/faqs/
+        opens_in_new_tab: false
+      - text: Reviews
+        url: /about/reviews/
+        opens_in_new_tab: false
+      - text: Awards
+        url: /about/awards/
+        opens_in_new_tab: false
+  - text: Blog
+    url: /blog/
+    opens_in_new_tab: false
+    enable_dropdown: false
+  - text: Careers
+    url: /careers/
+    opens_in_new_tab: false
+    enable_dropdown: false

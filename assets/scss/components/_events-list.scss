@@ -1,0 +1,12 @@
+.event {
+    margin-block-start: 0;
+}
+
+.event,
+.event__date {
+    list-style-type: none;
+}
+
+.event__title {
+    color: $black;
+}

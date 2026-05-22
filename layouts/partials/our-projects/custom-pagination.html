@@ -1,0 +1,38 @@
+{{ if gt $.Paginator.TotalPages 1 }}
+{{ $minPages := sub .Paginator.PageNumber 1 }}
+{{ $maxPages := sub .Paginator.TotalPages .Paginator.PageNumber }}
+{{ $haspagination__dots := or (gt $minPages 2) (gt $maxPages 2) }}
+{{ $hasMaxPages := and (ge $minPages 2) (ge $maxPages 2) }}
+
+<div class="pagination">
+    {{ if .Paginator.HasPrev }}
+    <a class="pagination__previous btn btn--primary" href="{{ .Paginator.Prev.URL }}"
+        role="button"><div class="icon-md icon-stroke-white icon-fill-white">{{ partialCached "svg-icons/chevron-left.svg" . }}</div> Previous</a>
+    <a class="pagination__numbers btn btn--primary" href="{{ .Paginator.First.URL }}" role="button">1</a>
+    {{ end }}
+
+    {{ if eq $minPages 2 }}
+    <a class="pagination__numbers btn btn--primary" href="{{ .Paginator.Prev.URL }}" role="button">{{ sub .Paginator.PageNumber 1 }}</a>
+    {{ end }}
+
+    {{ if gt $minPages 2 }}
+    <span class="pagination__numbers pagination__dots btn btn--primary">...</span>
+    {{ end }}
+
+    <span class="pagination__numbers pagination__current btn btn--primary">{{.Paginator.PageNumber}}</span>
+
+    {{ if eq $maxPages 2 }}
+    <a class="pagination__numbers btn btn--primary" href="{{ .Paginator.Next.URL }}" role="button">{{ add .Paginator.PageNumber 1 }}</a>
+    {{ end }}
+
+    {{ if gt $maxPages 2 }}
+    <span class="pagination__numbers pagination__dots btn btn--primary">...</span>
+    {{ end -}}
+
+    {{ if .Paginator.HasNext -}}
+    <a class="pagination__numbers btn btn--primary" href="{{ .Paginator.Last.URL }}" role="button">{{ .Paginator.TotalPages }}</a>
+    <a class="pagination__next btn btn--primary" href="{{ .Paginator.Next.URL }}"
+        role="button">Next<div class="icon-md icon-stroke-white icon-fill-white">{{ partialCached "svg-icons/chevron-right.svg" . }}</div></a>
+    {{- end }}
+</div>
+{{ end -}}

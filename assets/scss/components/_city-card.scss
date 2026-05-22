@@ -1,0 +1,38 @@
+.city-card {
+    // Positioning
+    position: relative;
+    // Box model
+    margin-top: 0;
+    padding-block: $ic-300;
+    // Visual
+    background-color: $black;
+    border-radius: 20px;
+    // Misc
+    list-style-type: none;
+    transition: $transition;
+}
+
+.city-card__link {
+    color: $white;
+}
+
+.city-card__link::after {
+  // Positioning
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  z-index: 1;
+  // Box model
+  inline-size: 100%;
+  block-size: 100%;
+  // Misc
+  content: "";
+}
+
+.city-card:hover,
+.city-card:focus {
+  // Visual
+  background-color: $primary-color;
+  // Misc
+  transform: translateY(-8px);
+}

@@ -1,0 +1,33 @@
+@include breakpoint (md) {
+
+    .parent-page-floor-plans,
+    .parent-page-floor-plans .site-wrap {
+        overflow-x: initial;
+    }
+}
+
+.floor-plan-body {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 60%;
+}
+
+.floor-plan-sidebar {
+    flex-basis: 24rem;
+    flex-grow: 1;
+}
+
+.floor-plan-sidebar__inner {
+
+    @include breakpoint(md) {
+        position: sticky;
+        inset-block-start: 125px;
+        margin-top: 0;
+    }
+}
+
+.floor-plan-sidebar__cta {
+    box-shadow: 0 10px 16px rgba(25, 25, 25, .2);
+    border-radius: 16px;
+    padding: clamp($ic-400, 10%, $ic-700);
+}

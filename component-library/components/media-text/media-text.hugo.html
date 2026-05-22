@@ -1,0 +1,91 @@
+<section
+    class="media-text-block | content-full p-relative block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+    {{ if .heading }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+    {{ if .background_image.image_url }}
+    <picture class="background-image content-full">
+        <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+        <img class="content-full"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+            alt="{{ .image.image_alt }}" width="1920" height="1080" loading="lazy" decoding="async">
+    </picture>
+    <div class="overlay overlay--white content-full"></div>
+    {{ end }}
+    <div class="media-text-block__content-wrapper | content-full {{ if eq .text_column_position `left`
+        }}media-text-block--text-left{{ else }}media-text-block--text-right{{ end }}">
+        <div class="media-text-block__content | block margin-block-auto flow">
+            <header>
+                {{ if .preheading }}
+                <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+                <h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+                {{ else }}
+                <h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+                {{ end }}
+            </header>
+            {{ if .body }}
+            {{ if in .body "\n" }}
+            {{ .body | markdownify }}
+            {{ else }}
+            <p>{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ end }}
+            {{ if .button.enabled }}
+            {{ with .button }}
+            <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{
+                end }}>
+                {{ .button_text }}
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="media-text-block__media">
+            <div class="media-text-block__media-wrapper | flex flex-align-center">
+                {{ if .featured_video.enabled }}
+                <div class="video-play-button">
+                    <a class="video-play-button__link | border-radius-sm"
+                        href="{{ if .featured_video.vimeo_id }}https://vimeo.com/{{ .featured_video.vimeo_id }}{{ else if .featured_video.youtube_share_url }}https://www.youtube.com/watch?v={{ .featured_video.youtube_share_url }}{{ end }}"
+                        data-src="{{ if .featured_video.vimeo_id }}https://player.vimeo.com/video/{{ .featured_video.vimeo_id }}?dnt=1&amp;%3Bapp_id=122963&amp;autoplay=1{{ else if .featured_video.youtube_share_url }}https://www.youtube-nocookie.com/embed/{{ .featured_video.youtube_share_url }}&autoplay=1{{ end }}"
+                        data-title="{{ .featured_video.video_title }}">
+                        <div class="video-play-button__wrap | flex flex-column flex-align-center">
+                            <div class="video-play-button__icon | icon icon-fill-white">
+                                <svg class="play-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <span class="video-play-button__button-text">{{ if .featured_video.play_button_text }}{{
+                                .featured_video.play_button_text }}{{ else }}Play Video{{ end }}</span>
+                        </div>
+                    </a>
+                </div>
+                {{ end }}
+                <picture>
+                    <source sizes="(min-width: 993px) 50vw, 100vw" srcset="https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_350,h_300{{ .image.image_url }} 400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_550,h_300{{ .image.image_url }} 600w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1000{{ .image.image_url }} 800w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1200{{ .image.image_url }} 1000w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1400{{ .image.image_url }} 1200w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1600{{ .image.image_url }} 1400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_avif,q_85,w_1800{{ .image.image_url }} 1600w" type="image/avif">
+                
+                    <source sizes="(min-width: 993px) 50vw, 100vw" srcset="https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_350,h_300{{ .image.image_url }} 400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_550,h_300{{ .image.image_url }} 600w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1000{{ .image.image_url }} 800w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1200{{ .image.image_url }} 1000w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1400{{ .image.image_url }} 1200w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1600{{ .image.image_url }} 1400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_webp,q_85,w_1800{{ .image.image_url }} 1600w" type="image/webp">
+                
+                    <img sizes="(min-width: 993px) 50vw, 100vw" src="https://res.cloudinary.com/dpsfyelwp/image/upload{{ .image.image_url }}" srcset="https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_350,h_300{{ .image.image_url }} 400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_550,h_300{{ .image.image_url }} 600w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1000{{ .image.image_url }} 800w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1200{{ .image.image_url }} 1000w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1400{{ .image.image_url }} 1200w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1600{{ .image.image_url }} 1400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1800{{ .image.image_url }} 1600w" alt="{{ .image.image_alt }}" width="600" height="450" loading="lazy" decoding="async">   
+                </picture>
+            </div>
+        </div>
+    </div>
+    {{ if .background_logo.enabled }}
+    <div class="media-text-block__logo">
+        <img src="/uploads/wisconsin-homes-logomark-watermark.svg"
+            alt="Wisconsin Homes logo watermark">
+    </div>
+    {{ end }}
+    {{ if .related_links }}
+    <div class="related-pages | content-full">
+        <div class="related-pages__wrapper | flex flex-wrap flex-justify-between gap-lg">
+            {{ range .related_links }}
+            <a class="related-pages__link" href="{{ .url }}">{{ .title | markdownify }}</a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</section>

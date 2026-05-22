@@ -1,0 +1,137 @@
+.contact-form__form-group {
+  position: relative;
+  width: 100%;
+  margin-top: $ic--200;
+}
+
+.contact-form__form-group:has(select)::after {
+  // Positioning
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  // Box model
+  width: 24px;
+  height: 24px;
+  // Visual
+  background-size: cover;
+  // Misc
+  content: "";
+}
+
+form.hidden {
+  display: none;
+}
+
+.contact-form__form-group input,
+.contact-form__form-group textarea,
+.contact-form__form-group select {
+  // Box model
+  inline-size: 100%;
+  block-size: $ic-800;
+  padding: $ic-100 $ic-400;
+  // Visual
+  border: none;
+  border-radius: 20px;
+  max-width: none;
+
+  &:focus {
+    outline: 2px solid $primary-color;
+  }
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: $black;
+}
+
+.contact-form__form-group textarea {
+  block-size: $ic-1200;
+}
+
+fieldset {
+  // Box model
+  padding-inline: 0;
+  // Visual
+  border: none;
+}
+
+.contact-form__form-group [type="radio"],
+.contact-form__form-group [type="checkbox"] {
+  margin-bottom: 0;
+}
+
+.contact-form__form-group [type="radio"] {
+  inline-size: $ic-200;
+  block-size: $ic-200;
+}
+
+input[type="checkbox"] {
+  // Box model
+  display: grid;
+  place-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  // Typography
+  font: inherit;
+  color: currentColor;
+  // Visual
+  background-color: $white;
+  border: 2px solid $light-gray;
+  border-radius: 10px;
+  // Misc
+  appearance: none;
+  transform: translateY(-0.075em);
+}
+
+input[type="checkbox"]::before {
+  // Box model
+  width: 8px;
+  height: 8px;
+  // Visual
+  background-color: $white;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  // Misc
+  content: "";
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+  background-color: $primary-color;
+  border: 2px solid $primary-color;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.contact-form__select select {
+  appearance: none;
+}
+
+.contact-form__select::after {
+  background-image: url("/uploads/chevron-down-icon.svg");
+}
+
+.contact-form__btn {
+  border: none;
+}
+
+.builder-contact-form {
+  padding: $ic-600;
+}
+
+.builder-contact-form .contact-form__form-group input,
+.builder-contact-form .contact-form__form-group textarea,
+.builder-contact-form .contact-form__form-group select {
+  background-color: $light-gray;
+}
+
+.application-form {
+  margin-inline: auto;
+  padding: $ic-600;
+}

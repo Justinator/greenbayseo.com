@@ -1,0 +1,36 @@
+dialog {
+    border: none;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    width: 90%;
+    overflow: hidden;
+}
+
+dialog::backdrop {
+    background-color: rgba($dark-black, .5);
+}
+
+.site-popup__image {
+    position: relative;
+    z-index: -1;
+    max-height: 300px;
+}
+
+.site-popup__content {
+    padding: clamp($ic-100, 3vw, $ic-300);
+}
+
+.site-popup__close {
+    top: 0;
+    right: 0;
+}
+
+.show-modal {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.prevent-scroll {
+    overflow: hidden;
+}

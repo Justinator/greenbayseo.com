@@ -1,0 +1,46 @@
+@media (prefers-color-scheme: dark) {
+    body,
+    .contact-form__form-group input,
+    .contact-form__form-group textarea,
+    .contact-form__form-group select,
+    .bg-white,
+    .bg-gray .media-text-block__media::after {
+       background-color: $black;
+       color: $white;
+    }
+
+    .header__mobile-nav-link,
+    .header__mobile-dropdown-link,
+    .header__nav-list-link,
+    .header__sub-menu-link,
+    .footer__nav-label,
+    .footer a,
+    .careers-card__link,
+    .font-color-black {
+        color: $white;
+    }
+
+    .header__sub-menu-list {
+        border-top: 1px solid $black;
+    }
+
+    .bg-gray,
+    .number::before,
+    .header__sub-menu,
+    .media-text-block__media::after,
+    .history-block__year::before {
+        background-color: $black;
+    }
+
+    .bg-black,
+    .hero::after,
+    .category-select {
+        background-color: #1E1A1B;
+        color: $white;
+    }
+
+    .border-top-white,
+    .border-top-gray {
+        border-block-start: 1px solid rgba($white,.15);
+    }
+}

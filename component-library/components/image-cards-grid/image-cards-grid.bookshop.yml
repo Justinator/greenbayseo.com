@@ -1,0 +1,41 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Image Cards Grid Block
+  description: Image Cards Grid Block
+  icon: view_column
+  tags: ["Page Components"]
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  preheading: ''
+  heading: ''
+  body: >-
+    
+  cards:
+    - image: 
+        image_url: ''
+        image_alt: ''
+      heading: ''
+      button:
+        enabled: true
+        button_url: ''
+        button_text: ''
+        button_color: ''
+        open_in_new_tab: false
+      button_2:
+        enabled: true
+        button_url: ''
+        button_text: ''
+        button_color: ''
+        open_in_new_tab: false
+      background_color: gray
+  background_color: white
+  css_class: ''
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

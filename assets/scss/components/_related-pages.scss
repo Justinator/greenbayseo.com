@@ -1,0 +1,30 @@
+.related-pages__link {
+    position: relative;
+    color: $tertiary-color;
+    text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $tertiary-color;
+
+    &::before {
+        opacity: 1;
+    }
+  }
+}
+
+.related-pages__link::before {
+    // Positioning
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    // Box model
+    width: 100%;
+    height: 4px;
+    // Visual
+    background-color: $primary-color;
+    // Misc
+    content: "";
+    opacity: 0;
+    transition: $transition;
+}

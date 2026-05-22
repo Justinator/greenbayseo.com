@@ -1,0 +1,18 @@
+{{ $related := .Site.RegularPages.RelatedIndices . "industries" | first 3 }}
+{{ with $related }}
+<div class="content-full block">
+    <div class="flex flex-column flex-row-md flex-justify-between flex-end-md gap-sm">
+        <div class="flow">
+            <h2 class="no-margin">Explore Similar Projects</h2>
+        </div>
+        <div>
+            <a class="btn btn--primary" href="/our-projects/">View All Projects</a>
+        </div>
+    </div>
+    <ul class="grid-columns-3 gap-sm mt-6 max-width-none no-padding" aria-label="Related Projects List">
+        {{ range . }}
+            {{ .Render "project-card-no-cat" }}
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

@@ -1,0 +1,50 @@
+<section
+    class="our-process-block | content-full p-relative block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+    {{ if .heading }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+    <picture class="background-image content-full">
+        <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+        <img class="content-full"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+            alt="{{ .image.image_alt }}" width="1920" height="1080" loading="lazy" decoding="async">
+    </picture>
+    <div class="overlay overlay--dark-black | content-full"></div>
+    <div class="our-process-block__content">
+        <header>
+            {{ if .preheading }}
+            <h2 class="text-style-slub font-color-white text-align-center max-width-none">{{ .preheading | markdownify }}
+            </h2>
+            <h3 class="h2 font-color-white text-align-center max-width-none" id="{{ .heading | urlize }}">{{ .heading |
+                markdownify }}</h3>
+            {{ else }}
+            <h2 class="max-width-none no-margin text-align-center" id="{{ .heading | urlize }}">{{ .heading | markdownify }}
+            </h2>
+            {{ end }}
+        </header>
+        <div class="process-cards | grid-columns-5 block-md">
+            {{ range .steps }}
+            <div class="process-card | text-align-center font-color-white flow">
+                <div>
+                    <img class="process-card__image | margin-inline-auto"
+                        src="https://res.cloudinary.com/dpsfyelwp/image/upload/{{ .image.image_url }}" alt="">
+                    <div class="process-card__step | font-size-xs">{{ .number }}</div>
+                    <h3 class="process-card__heading | max-width-none">{{ .heading }}</h3>
+                </div>
+                <p class="process-card__body | font-size-xs">{{ .body }}</p>
+            </div>
+            {{ end }}
+        </div>
+        {{ if .button.enabled }}
+        {{ with .button }}
+        <a class="btn btn--{{ .button_color }} margin-inline-auto" href="{{ .button_url }}" {{ if .open_in_new_tab
+            }}target="_blank" {{ end }}>
+            {{ .button_text }}
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>

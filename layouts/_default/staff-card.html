@@ -1,0 +1,14 @@
+<li class="staff-card">
+    <div class="staff-card__image">
+        <img sizes="50vw" class="staff-card__image"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-600-auto{{ .Params.seo.featured_image.image_url }}"
+            srcset="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-600-auto{{ .Params.seo.featured_image.image_url }} 400w"
+            alt="{{ .Title }}'s headshot" width="600" height="450" loading="lazy" decoding="async">
+    </div>
+    <div class="staff-card__content">
+        <h3 class="no-margin"><a href="{{ .Permalink }}" class="staff-card__link">{{ .Title }}</a></h3>
+        {{ if .Params.job_title }}
+        <p class="staff-card__job-title text-style-slub">{{ .Params.job_title }}</p>
+        {{ end }}
+    </div>
+</li>

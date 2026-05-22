@@ -1,0 +1,18 @@
+<div>
+    <p class="footer__info-label | text-align-center text-align-start-md">Stay Connected</p>
+    <ul class="social flex flex-justify-center flex-justify-start-md flex-align-center gap-sm">
+        {{ range .Site.Data.site_settings.social_media }}
+            {{ if .link }}
+            <li class="social__list-item">
+                <a href="{{ .link }}" class="social__icon icon-fill-white icon-lg {{ .title | lower }}-icon dim" target="_blank" rel="noopener noreferrer" title="Wisconsin Homes Inc. on {{ .title }}" aria-label="Wisconsin Homes Inc. on {{ .title }} opens in a new tab">
+                    {{ with .title }}
+                    {{ $icon_name := printf "svg-icons/%s.svg" (lower .) }}
+                    {{ partial $icon_name . }}
+                    {{ end }}
+                    <span class="visually-hidden">{{ .title }}</span>
+                </a>
+            </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+</div>

@@ -1,0 +1,50 @@
+{{/* Get the next upcoming event */}}
+{{ $pages := .Site.RegularPages }}
+{{ $events := where $pages "Type" "events" }}
+{{ $todaysDate := now.Format "2006-01-02" }}
+
+{{/* Build a list of all event-date pairs */}}
+{{ $eventDates := slice }}
+{{ range $events }}
+    {{ $event := . }}
+    {{ if .Params.event.dates }}
+        {{/* Multi-date event */}}
+        {{ range .Params.event.dates }}
+            {{ $eventDate := (dateFormat "2006-01-02" .date) }}
+            {{ if ge $eventDate $todaysDate }}
+                {{ $eventDates = $eventDates | append (dict "event" $event "dateInfo" . "sortDate" $eventDate) }}
+            {{ end }}
+        {{ end }}
+    {{ else if .Params.event.date }}
+        {{/* Single-date event (backwards compatibility) */}}
+        {{ $eventDate := (dateFormat "2006-01-02" .Params.event.date) }}
+        {{ if ge $eventDate $todaysDate }}
+            {{ $dateInfo := dict "date" .Params.event.date "start_time" .Params.event.start_time "end_time" .Params.event.end_time }}
+            {{ $eventDates = $eventDates | append (dict "event" $event "dateInfo" $dateInfo "sortDate" $eventDate) }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{/* Sort by date and get first upcoming */}}
+{{ $sortedEvents := sort $eventDates "sortDate" "asc" }}
+{{ if $sortedEvents }}
+    {{ $nextEvent := index $sortedEvents 0 }}
+    {{ $event := $nextEvent.event }}
+    {{ $dateInfo := $nextEvent.dateInfo }}
+    <div class="event-notification | content-full" id="event-notification" role="alert">
+        <div class="event-notification__wrapper | flex flex-align-center flex-justify-center gap-sm">
+            <div class="event-notification__content | flex flex-align-center flex-justify-center flex-wrap gap-sm">
+                <span class="event-notification__label">Upcoming Event:</span>
+                <a href="{{ $event.RelPermalink }}" class="event-notification__link">
+                    {{ $event.Title }} — {{ dateFormat "Monday, January 2" $dateInfo.date }}
+                    {{ with $dateInfo.start_time }}at {{ . }}{{ end }}
+                </a>
+            </div>
+            <button class="event-notification__close" id="event-notification-close" aria-label="Close notification">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" width="16" height="16">
+                    <path d="M289.94,256l95-95A24,24,0,0,0,351,127l-95,95-95-95A24,24,0,0,0,127,161l95,95-95,95A24,24,0,1,0,161,385l95-95,95,95A24,24,0,0,0,385,351Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+{{ end }}

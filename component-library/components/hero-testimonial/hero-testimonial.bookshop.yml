@@ -1,0 +1,33 @@
+spec:
+  structures:
+    - content_blocks
+  label: "Hero Custom"
+  description: Custom hero with testimonial and dual CTA
+  icon: auto_awesome
+  tags: ["Hero", "Page Components"]
+
+blueprint:
+  preheading: ''
+  heading: ''
+  highlighted_text: ''
+  body: ''
+  buttons:
+    - text: ''
+      url: ''
+      style: primary
+    - text: ''
+      url: ''
+      style: secondary
+
+  testimonial:
+    enabled: true
+    stars: 5
+    body: ''
+    name: ''
+    meta: ''
+
+  background_image:
+    image_url: ''
+    image_alt: ''
+
+  css_class: ''

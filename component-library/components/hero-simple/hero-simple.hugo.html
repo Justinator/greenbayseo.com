@@ -1,0 +1,31 @@
+<section class="hero-simple | p-relative block{{ if .css_class }} {{ .css_class }}{{ end }}"{{ if .heading }} aria-labelledby="{{ .heading | urlize }}"{{ end }}>
+  <div class="flow p-relative">
+    <header>
+      {{ if .preheading }}
+        <h1 class="hero__preheading | text-style-slub margin-inline-auto">{{ .preheading }}</h1>
+        <h2 class="hero__heading | h1 margin-inline-auto" id="{{ .heading | urlize }}">{{ .heading }}</h2>
+      {{ else }}
+        <h1 class="text-align-center" id="{{ .heading | urlize }}">{{ .heading }}</h1>
+      {{ end }}
+      {{ if .subheading }}
+        <p class="hero__subheading | margin-inline-auto">{{ .subheading | markdownify }}</p>
+      {{ end }}
+    </header>
+    <div class="text-align-center">
+      {{ if .body }}
+        {{ if in .body "\n" }}
+          {{ .body | markdownify }}
+        {{ else }}
+          <p class="margin-inline-auto">{{ .body | markdownify }}</p>
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ if .button.enabled }}
+      {{ with .button }}
+        <a class="btn btn--{{ .button_color }} | margin-inline-auto" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+          {{ .button_text }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>

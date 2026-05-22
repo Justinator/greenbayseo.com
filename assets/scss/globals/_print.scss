@@ -1,0 +1,36 @@
+/* Hide navigation/interactive bits when printing */
+@media print {
+    .site-main {
+        margin-top: 0;
+    }
+
+    .header, footer, nav, .btn--fixed, .split-hero-block__logo, .breadcrumbs, .floor-plan-swiper-thumbnails, .floor-plan-swiper { display: none !important; }
+
+
+
+  /* Typography and colors */
+  body { font: 12pt/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+  h1 { font-size: 18pt; }
+  h2 { font-size: 14pt; margin-top: 1.2em; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 10pt; }
+
+  /* Images and tables */
+//   img { max-width: 100% !important; page-break-inside: avoid; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #ccc; padding: 6pt; }
+  tr { break-inside: avoid; }
+
+  /* Page breaks */
+  .page-break { break-before: page; }         /* use on section boundaries */
+  .card, .section { break-inside: avoid; }    /* keep blocks intact */
+
+  /* Try to keep background colors (browser setting can still override) */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Page size & margins (Chrome/Edge honor most of this; Firefox limited) */
+@page {
+  size: Letter;          /* or A4 */
+  margin: 12mm;          /* adjust as needed */
+}

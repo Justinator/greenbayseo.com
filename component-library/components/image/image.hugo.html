@@ -1,0 +1,15 @@
+<picture>
+    <source sizes="(min-width: 993px) 50vw, 100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ .image.image_url }} 400w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }} 800w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }} 1200w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .image.image_url }} 1600w
+    ">
+    <img class="media-text-block__image" sizes="(min-width: 993px) 50vw, 100vw"
+        src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }}" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ .image.image_url }} 400w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }} 800w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }} 1200w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .image.image_url }} 1600w
+    " alt="{{ .image.image_alt }}" width="1200" height="800" loading="lazy" decoding="async">
+</picture>

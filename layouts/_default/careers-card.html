@@ -1,0 +1,12 @@
+<li class="careers-card flow">
+    <div>
+        <h2 class="h3 no-margin"><a class="careers-card__link no-decoration" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ $postedDate := (dateFormat "01-02-2006" .Params.date) }}
+        <div class="careers-card__date flex flex-column flex-row-sm flex-align-center-sm gap-lg">
+            <p class="font-size-xs">Posted On: {{ $postedDate }}</p>
+            <p class="font-size-xs">Location: <a href="{{ .Params.googlemaps }}" target="_blank" rel="noreferrer">{{ .Params.location.city }}, {{ .Params.location.state }}</a></p>
+        </div>
+    </div>
+    <p>{{ .Params.seo.meta_description }}</p>
+    <a class="btn btn--primary" href="{{ .Permalink }}">View Full Job Post</a>
+</li>

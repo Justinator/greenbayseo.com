@@ -1,0 +1,166 @@
+{{ $plans := where site.RegularPages "Section" "floor-plans" }}
+{{ if .filter_by_style }}
+    {{ $plans = where $plans "Params.types" .filter_by_style }}
+{{ end }}
+{{ if .filter_by_series }}
+    {{ $plans = where $plans "Params.series" "intersect" (slice .filter_by_series) }}
+{{ end }}
+<div class="floor-plans | content-full block flex flex-wrap gap-md">
+    <div class="floor-plans-filters | bg-white">
+        <div class="floor-plans-filters__inner | flow">
+            <h3 class="h6">Filter Results</h3>
+            <label class="visually-hidden" for="planSearch">Filter Results</label>
+            <p class="font-size-xs" id="plansCount" aria-live="polite"></p>
+            <button class="floor-plans-filters__reset | font-size-xs" type="button" data-reset-filters>Reset
+                All</button>
+            <input id="planSearch" type="search" placeholder="Search floor plans" autocomplete="off">
+            <div class="floor-plans-filters__header | flex flex-justify-between">
+                <p class="fw-700">Square Footage</p>
+                <button type="button" class="floor-plans-filters__clear floor-plans-filters__reset | font-size-xs"
+                    data-clear-group="sqft">Clear</button>
+            </div>
+            <div>
+                <div id="sqftSlider"></div>
+                <div class="sqft-readout | flex flex-justify-between" aria-live="polite">
+                    <div class="sqft-readout__min | font-size-xs" id="sqftMinValue"></div>
+                    <div class="sqft-readout__max | font-size-xs" id="sqftMaxValue"></div>
+                </div>
+            </div>
+            {{ if .show_style_filter }}
+            <hr>
+            <div class="floor-plans-filters__group" data-filter-group="styles">
+                <div class="floor-plans-filters__header | flex flex-justify-between">
+                    <p class="fw-700">Home Style</p>
+                    <button type="button" class="floor-plans-filters__clear floor-plans-filters__reset | font-size-xs"
+                        data-clear-group="styles">Clear</button>
+                </div>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="styles" value="Cape Cod">
+                    <span class="font-size-xs">Cape Cod</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="styles" value="Chalet">
+                    <span class="font-size-xs">Chalet</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="styles" value="Colonial">
+                    <span class="font-size-xs">Colonial</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="styles" value="Cottage">
+                    <span class="font-size-xs">Cottage</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="styles" value="Duplex">
+                    <span class="font-size-xs">Duplex</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="styles" value="Ranch">
+                    <span class="font-size-xs">Ranch</span>
+                </label>
+            </div>
+            {{ end }}
+            <hr>
+            <div class="floor-plans-filters__group" data-filter-group="beds">
+                <div class="floor-plans-filters__header | flex flex-justify-between">
+                    <p class="fw-700">Bedrooms</p>
+                    <button type="button" class="floor-plans-filters__clear floor-plans-filters__reset | font-size-xs"
+                        data-clear-group="beds">Clear</button>
+                </div>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="beds" value="1">
+                    <span class="font-size-xs">1 Bedroom</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="beds" value="2">
+                    <span class="font-size-xs">2 Bedroom</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="beds" value="3">
+                    <span class="font-size-xs">3 Bedroom</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="beds" value="4">
+                    <span class="font-size-xs">4 Bedroom</span>
+                </label>
+            </div>
+            <hr>
+            <div class="filter-group" data-filter-group="baths">
+                <div class="filter-group__header | flex flex-justify-between">
+                    <p class="fw-700">Baths</p>
+                    <button type="button" class="filter-group__clear floor-plans-filters__reset | font-size-xs"
+                        data-clear-group="baths">Clear</button>
+                </div>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="baths" value="1">
+                    <span class="font-size-xs">1 Bath</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="baths" value="1.5">
+                    <span class="font-size-xs">1.5 Bath</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="baths" value="2">
+                    <span class="font-size-xs">2 Bath</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="baths" value="2.5">
+                    <span class="font-size-xs">2.5 Bath</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="baths" value="3">
+                    <span class="font-size-xs">3 Bath</span>
+                </label>
+                <label class="floor-plans-filters__checkbox">
+                    <input type="checkbox" data-filter="baths" value="3.5">
+                    <span class="font-size-xs">3.5 Bath</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="floor-plans__grid | grid-columns-3 gap-sm">
+        {{ range $plans }}
+        <div class="card" data-plan-card data-name="{{ .Title | lower }}" data-beds="{{ .Params.plan_overview.bed }}"
+            data-baths="{{ .Params.plan_overview.bath }}"
+            data-sqft="{{ with .Params.plan_overview.total_sq_ft }}{{ . }}{{ else }}0{{ end }}"
+            data-style="{{ .Params.types }}">
+            <div class="card__image | cover-image">
+                <img src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_floorplan-thumbnail{{ .Params.seo.featured_image.image_url }}"
+                    alt="{{ .Params.seo.featured_image.image_alt }}" width="500" height="300" loading="lazy"
+                    decoding="async">
+                {{ if .Params.virtual_tour }}
+                <div class="card__3d-status | icon icon-xxl icon-fill-white">
+                    {{ partial "svg-icons/3d.svg" . }}
+                </div>
+                {{ end }}
+            </div>
+            <div class="card__body | flow">
+                <h2 class="card__heading | no-margin">{{ .Title }}</h2>
+                <div class="card__specs | flex flex-wrap gap-md">
+                    <span class="card__spec">
+                        {{ .Params.plan_overview.bed }} Bed
+                    </span>
+                    <span class="card__spec">
+                        {{ .Params.plan_overview.bath }} Bath
+                    </span>
+                    <span class="card__spec">
+                        {{ if .Params.plan_overview.total_sq_ft }}{{ .Params.plan_overview.total_sq_ft }}{{ end }} Sq.
+                        Ft.
+                    </span>
+                </div>
+                <a class="card__link | btn btn--primary flex-align-center flex-justify-center gap-xs"
+                    href="{{ .Permalink }}">View Floor Plan <div class="icon icon-lg icon-fill-black">{{ partial
+                        "svg-icons/chevron-right.svg" . }}</div></a>
+            </div>
+            {{ if .Params.on_display }}
+            <div class="card__display-status | bg-white text-style-slub">
+                <span class="font-size-xs">On-Display</span>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        <div id="noResultsMessage" class="no-results" aria-live="polite" hidden>
+            <p>No floor plans found. Adjust your filters and try again.</p>
+        </div>
+    </div>
+</div>

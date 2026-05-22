@@ -1,0 +1,41 @@
+.share-button__list-wrapper {
+  // Positioning
+  position: absolute;
+  inset-inline-start: 0px;
+  z-index: 8;
+  // Box model
+  width: 100px;
+  max-block-size: 0;
+  overflow: hidden;
+  // Visual
+  box-shadow: 0px 4px 12px rgba($black, 0.15);
+  border-radius: 10px;
+  // Misc
+  pointer-events: auto;
+  transition: max-block-size .5s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.share-button__list {
+  padding: $ic-200;
+}
+
+.share-button {
+
+  &:hover,
+  &:focus {
+    .share-button__list-wrapper {
+      max-block-size: 100vh;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+
+.share-button__list-item {
+  // Box model
+  margin-block-start: 0;
+  // Misc
+  list-style-type: none;
+}

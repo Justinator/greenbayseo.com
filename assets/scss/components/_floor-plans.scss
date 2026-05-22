@@ -1,0 +1,63 @@
+.floor-plans {
+    padding-inline: $ic-200;
+}
+
+.floor-plans__grid {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 60%;
+}
+
+.floor-plans-filters {
+    flex-basis: 16rem;
+    flex-grow: 1;
+
+    @include breakpoint(xl) {
+        flex-basis: 22rem;
+    }
+}
+
+.floor-plans-filters__inner {
+    // Box model
+    padding: 1rem;
+    // Visual
+    border: 1px solid rgba($black, .3);
+    border-radius: 20px;
+}
+
+.floor-plans-filters__reset {
+    // Box model
+    width: max-content;
+    // Typography
+    color: $black;
+    // Visual
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $primary-color;
+}
+
+.floor-plans-filters [type="search"] {
+    // Box model
+    width: 100%;
+    padding: $ic--200;
+    // Visual
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.floor-plans-filters__checkbox {
+    display: block;
+    margin-block-start: $ic-100;
+    display: flex;
+    gap: $ic--200;
+}
+
+.no-results {
+    // Box model
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    // Visual
+    border: 1px solid rgba($black, .3);
+    border-radius: 20px;
+}

@@ -1,0 +1,43 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Staff Hero Block"
+  description: Staff Hero Block
+  icon: auto_awesome_mosaic
+  tags: ["Hero", "Page Components"]
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  preheading: ''
+  heading: ''
+  body: >-
+    
+  button:
+    enabled: true
+    button_url: '' 
+    button_text: ''
+    button_color: ''
+    open_in_new_tab: false
+  button_2:
+    enabled: false
+    button_url: '' 
+    button_text: ''
+    button_color: ''
+    open_in_new_tab: false
+  image:
+    image_url: ''
+    image_alt: ''
+  background_color: gray
+  background_image: 
+    image_url: ''
+    image_alt: ''
+  background_logo: 
+    enabled: true
+  css_class: ''
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

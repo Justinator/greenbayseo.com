@@ -1,0 +1,80 @@
+<section class="hero-testimonial | content-full p-relative{{ if .css_class }} {{ .css_class }}{{ end }}"
+  {{ if .heading }}aria-labelledby="{{ .heading | urlize }}"{{ end }}>
+
+  <!-- Background -->
+  <div class="hero-testimonial__background | content-full">
+    {{ if .background_image.image_url }}
+    <picture class="background-image content-full">
+      <source sizes="100vw" srcset="
+        https://res.cloudinary.com/demo/image/upload/w_640{{ .background_image.image_url }} 640w,
+        https://res.cloudinary.com/demo/image/upload/w_1024{{ .background_image.image_url }} 1024w,
+        https://res.cloudinary.com/demo/image/upload/w_1600{{ .background_image.image_url }} 1600w
+      ">
+      <img class="content-full"
+        src="https://res.cloudinary.com/demo/image/upload/w_1600{{ .background_image.image_url }}"
+        alt="{{ .background_image.image_alt }}"
+        loading="eager" decoding="async">
+    </picture>
+    {{ end }}
+    <div class="overlay overlay--black content-full"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="hero-testimonial__content | content-grid p-relative font-color-white">
+    <div class="hero-testimonial__inner | content-sm flow">
+
+      <header class="flow">
+        {{ if .preheading }}
+        <p class="text-style-slub">{{ .preheading }}</p>
+        {{ end }}
+
+        <h1 class="h1" id="{{ .heading | urlize }}">
+          {{ .heading }}
+          {{ if .highlighted_text }}
+            <span class="font-color-primary">{{ .highlighted_text }}</span>
+          {{ end }}
+        </h1>
+
+        {{ if .body }}
+        <p class="fs-300">{{ .body }}</p>
+        {{ end }}
+      </header>
+
+      <!-- Buttons -->
+      {{ if .buttons }}
+      <div class="flex flex-wrap gap-sm mt-4">
+        {{ range .buttons }}
+        <a href="{{ .url }}" class="btn {{ if eq .style `primary` }}btn--primary{{ else }}btn--secondary{{ end }}">
+          {{ .text }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- Testimonial -->
+      {{ if .testimonial.enabled }}
+      <div class="hero-testimonial__testimonial | flow mt-5">
+
+        <div class="flex gap-xs">
+          {{ range seq .testimonial.stars }}
+            <span>★</span>
+          {{ end }}
+        </div>
+
+        <p class="fs-200">"{{ .testimonial.body }}"</p>
+
+        <div class="flex flex-align-center gap-sm">
+          <div class="hero-testimonial__avatar"></div>
+          <div>
+            <strong>{{ .testimonial.name }}</strong><br>
+            <span class="fs-100">{{ .testimonial.meta }}</span>
+          </div>
+        </div>
+
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+</section>

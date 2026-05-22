@@ -1,0 +1,43 @@
+<section
+    class="steps-block | content-full p-relative block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+    {{ if .heading }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+    {{ if .background_image.image_url }}
+    <picture class="background-image content-full">
+        <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+        <img class="content-full"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+            alt="{{ .image.image_alt }}" width="1920" height="1080" loading="lazy" decoding="async">
+    </picture>
+    <div class="overlay overlay--{{ if .overlay_color }}{{ .overlay_color }}{{ end }} | content-full"></div>
+    {{ end }}
+    <div class="steps-block__content | p-relative">
+        <header class="text-align-center">
+            {{ if .preheading }}
+            <h2 class="text-style-slub">{{ .preheading }}</h2>
+            <h3 class="margin-inline-auto h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+            {{ else }}
+            <h2 class="margin-inline-auto" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+            {{ end }}
+        </header>
+        <ul class="steps | grid-columns-2 max-width-none gap-lg no-padding mt-6">
+            {{ range .steps }}
+            <li class="step content-card | bg-white flow border-radius-sm">
+                <span class="step__number">{{ .number }}</span>
+                <h3 class="h5 no-margin">{{ .heading }}</h3>
+                {{ if .body }}
+                {{ if in .body "\n" }}
+                {{ .body | markdownify }}
+                {{ else }}
+                <p>{{ .body | markdownify }}</p>
+                {{ end }}
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>

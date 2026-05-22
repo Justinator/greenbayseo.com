@@ -1,0 +1,6 @@
+{{ $body := .Get 0 }}
+{{ if in $body "\n" }}
+    {{ $body | markdownify }}
+{{ else }}
+    <p>{{ $body }}</p>
+{{ end }}

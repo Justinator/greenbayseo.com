@@ -1,0 +1,45 @@
+logo: /uploads/green-bay-ranking-logo.svg
+footer_logo: /uploads/green-bay-ranking-logo.svg
+business_name: Green Bay Ranking Co.
+phone: (715) 384-2161
+fax: 
+email:
+address:
+  city: Marshfield
+  state: WI
+  street: 425 West McMillan Street
+  zip: 54449
+google_maps_url: https://www.google.com/maps/search/Wisconsin Homes Marshfield Wi
+google_maps_iframe: 
+google_reviews:
+  rating: 4.4
+  count: 81
+hours: M - F 8 AM - 5 PM
+social_media:
+  - title: Facebook
+    link: https://www.facebook.com/Wisconsin-Homes-Inc-422046574620953/
+  - title: LinkedIn
+    link: https://www.linkedin.com/company/wisconsin-homes-inc
+  - title: YouTube
+    link: https://www.youtube.com/channel/UCkLPvjgGeMgbuIT3qKvoGfQ
+  - title: Instagram
+    link: https://www.instagram.com/wisco_homes/
+  - title: X
+    link: 
+  - title: TikTok
+    link: 
+  - title: Google
+    link: https://www.google.com/maps/search/Wisconsin Homes Marshfield Wi
+site_popup: 
+  enabled: false
+  heading: Closed This Friday
+  body: >-
+    We will be closed this Friday, January 26th, 2026. We will be back on Monday, January 27th, 2026.
+  image:
+      image_url:
+      image_alt: 
+  button:
+    enabled: true
+    button_url: /contact/
+    button_text: Contact Us
+    open_in_new_tab: false

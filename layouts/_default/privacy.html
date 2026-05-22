@@ -1,0 +1,8 @@
+{{ define "main" }}
+<section class="content-lg block">
+    <div class="content-sm flow">
+        <h1 class="no-margin" id="{{ .Title | urlize }}">{{ .Title }}</h1>
+        {{ .Content }}
+    </div>
+</section>
+{{ end }}

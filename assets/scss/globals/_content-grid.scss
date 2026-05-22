@@ -1,0 +1,45 @@
+.content-grid {
+    display: grid;
+    grid-template-columns: 
+    [content-full-start] minmax(clamp(1.25rem, 4vw, 3rem), 1fr) 
+    [breakout-start] minmax(0, 10rem)
+    [content-lg-start] minmax(0, 8rem)
+    [content-md-start] minmax(0, 6rem)
+    [content-mid-start] minmax(0, 4rem)
+    [content-sm-start] calc(min(60rem, 100% - clamp(1.25rem, 4vw, 3rem) *2)) [content-sm-end] 
+    minmax(0, 4rem) [content-mid-end]
+    minmax(0, 6rem) [content-md-end]
+    minmax(0, 8rem) [content-lg-end]
+    minmax(0, 10rem) [breakout-end] 
+    minmax(clamp(1.25rem, 4vw, 3rem), 1fr) [content-full-end];
+}
+
+.content-grid > * {
+    grid-column: content-sm;
+}
+
+.content-full > * {
+    grid-column: content-lg;
+}
+
+.content-sm {
+    grid-column: content-sm;
+}
+
+.breakout {
+    grid-column: breakout;
+}
+
+.content-md {
+    grid-column: content-md;
+}
+
+.content-lg {
+    grid-column: content-lg;
+}
+
+.content-full {
+    grid-column: content-full;
+    display: grid;
+    grid-template-columns: inherit;
+}

@@ -1,0 +1,52 @@
+.footer-nav__list-item {
+    // Positioning
+    position: relative;
+    // Box model
+    display: inline-block;
+    margin-top: 0;
+    padding: .25rem $ic-100;
+    // Misc
+    list-style-type: none;
+}
+
+.footer-nav__link {
+  // Positioning
+  position: relative;
+  // Box model
+  padding: $ic--200 0;
+  // Typography
+  font-size: 18px;
+  font-weight: 500;
+  color: $black;
+  letter-spacing: 2px;
+  // Misc
+  transition: .3s ease-out;
+
+  &::after {
+    // Positioning
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    // Box model
+    inline-size: 100%;
+    block-size: 1px;
+    // Visual
+    background-color: $primary-color;
+    // Misc
+    content: "";
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.4s ease-out;
+  }
+
+  @include breakpoint(md) {
+    &:hover,
+    &:focus {
+      color: $primary-color;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}

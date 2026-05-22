@@ -1,0 +1,481 @@
+{
+    "routes": [
+        {
+            "from": "/page/home-building-experience",
+            "status": 301,
+            "to": "/"
+        },
+        {
+            "from": "/page/information-request",
+            "status": 301,
+            "to": "/contact/"
+        },
+        {
+            "from": "/page/video-gallery",
+            "status": 301,
+            "to": "/see-our-homes/videos/"
+        },
+        {
+            "from": "/page/review",
+            "status": 301,
+            "to": "/page/reviews/"
+        },
+        {
+            "from": "/page/search-results",
+            "status": 301,
+            "to": "/"
+        },
+        {
+            "from": "/page/inspiration-homes",
+            "status": 301,
+            "to": "/floor-plans/all-floor-plans/"
+        },
+        {
+            "from": "/inspiration-homes",
+            "status": 301,
+            "to": "/floor-plans/all-floor-plans/"
+        },
+        {
+            "from": "/page/home-options",
+            "status": 301,
+            "to": "/"
+        },
+        {
+            "from": "/page/wisconsin-homes-display-tour",
+            "status": 301,
+            "to": "/visit-our-model-homes/"
+        },
+        {
+            "from": "/q/wisconsin-homes-display-tour",
+            "status": 301,
+            "to": "/visit-our-model-homes/"
+        },
+        {
+            "from": "/page/virtual-tours",
+            "status": 301,
+            "to": "/see-our-homes/virtual-tours/"
+        },
+        {
+            "from": "/page/our-process",
+            "status": 301,
+            "to": "/build-process/"
+        },
+        {
+            "from": "/page/our-philosophy",
+            "status": 301,
+            "to": "/about/our-philosophy/"
+        },
+        {
+            "from": "/page/precision-building",
+            "status": 301,
+            "to": "/build-process/precision-building/"
+        },
+        {
+            "from": "/page/points-of-difference",
+            "status": 301,
+            "to": "/see-our-homes/videos/our-advantage/"
+        },
+        {
+            "from": "/page/home-owner-completed-residences",
+            "status": 301,
+            "to": "/see-our-homes/videos/customer-testimonials/"
+        },
+        {
+            "from": "/page/building-green",
+            "status": 301,
+            "to": "/build-process/building-green/"
+        },
+        {
+            "from": "/page/careers-jobs-in-marshfield",
+            "status": 301,
+            "to": "/careers/"
+        },
+        {
+            "from": "/page/apply-for-jobs",
+            "status": 301,
+            "to": "/apply/"
+        },
+        {
+            "from": "/page/chalet-set",
+            "status": 301,
+            "to": "/see-our-homes/videos/our-advantage/"
+        },
+        {
+            "from": "/page/faqs",
+            "status": 301,
+            "to": "/resources/faqs/"
+        },
+        {
+            "from": "/page/standard-specs",
+            "status": 301,
+            "to": "/build-process/precision-building/"
+        },
+        {
+            "from": "/page/become-a-builder",
+            "status": 301,
+            "to": "/about/become-a-builder/"
+        },
+        {
+            "from": "/page/locate-a-builder",
+            "status": 301,
+            "to": "/builders/"
+        },
+        {
+            "from": "/page/choose-colors",
+            "status": 301,
+            "to": "/resources/color-visualizer/"
+        },
+        {
+            "from": "/page/mortgage-calculator",
+            "status": 301,
+            "to": "/resources/mortgage-calculator/"
+        },
+        {
+            "from": "/page/find-a-builder",
+            "status": 301,
+            "to": "/builders/"
+        },
+        {
+            "from": "/page/contact-builder",
+            "status": 301,
+            "to": "/contact/"
+        },
+        {
+            "from": "/page/choose-a-color",
+            "status": 301,
+            "to": "/resources/color-visualizer/"
+        },
+        {
+            "from": "/page/design-my-kitchen",
+            "status": 301,
+            "to": "/resources/kitchen-visualizer/"
+        },
+        {
+            "from": "/page/404",
+            "status": 301,
+            "to": "/404/"
+        },
+        {
+            "from": "/page/privacy-policy",
+            "status": 301,
+            "to": "/privacy-policy/"
+        },
+        {
+            "from": "https://www.wisconsinhomesinc.com/q/literature",
+            "status": 301,
+            "to": "/resources/home-design-center/"
+        },
+        {
+            "from": "/q/types-of-homes/cape-cod",
+            "status": 301,
+            "to": "/floor-plans/cape-cod/"
+        },
+        {
+            "from": "/q/types-of-homes/cottage",
+            "status": 301,
+            "to": "/floor-plans/cottage/"
+        },
+        {
+            "from": "/q/types-of-homes/ranch",
+            "status": 301,
+            "to": "/floor-plans/ranch/"
+        },
+        {
+            "from": "/q/types-of-homes/colonial",
+            "status": 301,
+            "to": "/floor-plans/colonial/"
+        },
+        {
+            "from": "/q/types-of-homes/chalet",
+            "status": 301,
+            "to": "/floor-plans/chalet/"
+        },
+        {
+            "from": "/q/types-of-homes/duplex",
+            "status": 301,
+            "to": "/floor-plans/duplex/"
+        },
+        {
+            "from": "/page/about-our-company",
+            "status": 301,
+            "to": "/about/"
+        },
+        {
+            "from": "/page/service-area",
+            "status": 301,
+            "to": "/service-area/"
+        },
+        {
+            "from": "/page/service-area/abrams-wi",
+            "status": 301,
+            "to": "/page/service-area/abrams-wi/"
+        },
+        {
+            "from": "/page/service-area/adams-wi",
+            "status": 301,
+            "to": "/page/service-area/adams-wi/"
+        },
+        {
+            "from": "/page/service-area/altoona-wi",
+            "status": 301,
+            "to": "/page/service-area/altoona-wi/"
+        },
+        {
+            "from": "/page/service-area/antigo-wi",
+            "status": 301,
+            "to": "/page/service-area/antigo-wi/"
+        },
+        {
+            "from": "/page/service-area/ashland-wi",
+            "status": 301,
+            "to": "/page/service-area/ashland-wi/"
+        },
+        {
+            "from": "/page/service-area/barnesville-mn",
+            "status": 301,
+            "to": "/page/service-area/barnesville-mn/"
+        },
+        {
+            "from": "/page/service-area/beloit-wi",
+            "status": 301,
+            "to": "/page/service-area/beloit-wi/"
+        },
+        {
+            "from": "/page/service-area/chetek-wi",
+            "status": 301,
+            "to": "/page/service-area/chetek-wi/"
+        },
+        {
+            "from": "/page/service-area/chippewa-falls-wi",
+            "status": 301,
+            "to": "/page/service-area/chippewa-falls-wi/"
+        },
+        {
+            "from": "/page/service-area/decorah-ia",
+            "status": 301,
+            "to": "/page/service-area/decorah-ia/"
+        },
+        {
+            "from": "/page/service-area/duluth-mn",
+            "status": 301,
+            "to": "/page/service-area/duluth-mn/"
+        },
+        {
+            "from": "/page/service-area/durand-wi",
+            "status": 301,
+            "to": "/page/service-area/durand-wi/"
+        },
+        {
+            "from": "/page/service-area/escanaba-mi",
+            "status": 301,
+            "to": "/page/service-area/escanaba-mi/"
+        },
+        {
+            "from": "/page/service-area/estherville-ia",
+            "status": 301,
+            "to": "/page/service-area/estherville-ia/"
+        },
+        {
+            "from": "/page/service-area/friendship-wi",
+            "status": 301,
+            "to": "/page/service-area/friendship-wi/"
+        },
+        {
+            "from": "/page/service-area/hayward-wi",
+            "status": 301,
+            "to": "/page/service-area/hayward-wi/"
+        },
+        {
+            "from": "/page/service-area/hazelhurst-wi",
+            "status": 301,
+            "to": "/page/service-area/hazelhurst-wi/"
+        },
+        {
+            "from": "/page/service-area/hermantown-mn",
+            "status": 301,
+            "to": "/page/service-area/hermantown-mn/"
+        },
+        {
+            "from": "/page/service-area/hudson-wi",
+            "status": 301,
+            "to": "/page/service-area/hudson-wi/"
+        },
+        {
+            "from": "/page/service-area/irma-wi",
+            "status": 301,
+            "to": "/page/service-area/irma-wi/"
+        },
+        {
+            "from": "/page/service-area/ladysmith-wi",
+            "status": 301,
+            "to": "/page/service-area/ladysmith-wi/"
+        },
+        {
+            "from": "/page/service-area/lakewood-wi",
+            "status": 301,
+            "to": "/page/service-area/lakewood-wi/"
+        },
+        {
+            "from": "/page/service-area/marshfield-wi",
+            "status": 301,
+            "to": "/page/service-area/marshfield-wi/"
+        },
+        {
+            "from": "/page/service-area/mauston-wi",
+            "status": 301,
+            "to": "/page/service-area/mauston-wi/"
+        },
+        {
+            "from": "/page/service-area/mercer-wi",
+            "status": 301,
+            "to": "/page/service-area/mercer-wi/"
+        },
+        {
+            "from": "/page/service-area/minocqua-wi",
+            "status": 301,
+            "to": "/page/service-area/minocqua-wi/"
+        },
+        {
+            "from": "/page/service-area/mukwonago-wi",
+            "status": 301,
+            "to": "/page/service-area/mukwonago-wi/"
+        },
+        {
+            "from": "/page/service-area/nekoosa-wi",
+            "status": 301,
+            "to": "/page/service-area/nekoosa-wi/"
+        },
+        {
+            "from": "/page/service-area/ocsceola-ia",
+            "status": 301,
+            "to": "/page/service-area/ocsceola-ia/"
+        },
+        {
+            "from": "/page/service-area/oshkosh-wi",
+            "status": 301,
+            "to": "/page/service-area/oshkosh-wi/"
+        },
+        {
+            "from": "/page/service-area/park-falls-wi",
+            "status": 301,
+            "to": "/page/service-area/park-falls-wi/"
+        },
+        {
+            "from": "/page/service-area/red-wing-mn",
+            "status": 301,
+            "to": "/page/service-area/red-wing-mn/"
+        },
+        {
+            "from": "/page/service-area/rice-lake-wi",
+            "status": 301,
+            "to": "/page/service-area/rice-lake-wi/"
+        },
+        {
+            "from": "/page/service-area/sebeka-mn",
+            "status": 301,
+            "to": "/page/service-area/sebeka-mn/"
+        },
+        {
+            "from": "/page/service-area/shawano-wi",
+            "status": 301,
+            "to": "/page/service-area/shawano-wi/"
+        },
+        {
+            "from": "/page/service-area/stratford-wi",
+            "status": 301,
+            "to": "/page/service-area/stratford-wi/"
+        },
+        {
+            "from": "/page/service-area/three-lakes-wi",
+            "status": 301,
+            "to": "/page/service-area/three-lakes-wi/"
+        },
+        {
+            "from": "/page/service-area/trempealeau-wi",
+            "status": 301,
+            "to": "/page/service-area/trempealeau-wi/"
+        },
+        {
+            "from": "/page/service-area/waupaca-wi",
+            "status": 301,
+            "to": "/page/service-area/waupaca-wi/"
+        },
+        {
+            "from": "/page/service-area/waupun-wi",
+            "status": 301,
+            "to": "/page/service-area/waupun-wi/"
+        },
+        {
+            "from": "/page/service-area/webster-wi",
+            "status": 301,
+            "to": "/page/service-area/webster-wi/"
+        },
+        {
+            "from": "/page/service-area/west-allis-wi",
+            "status": 301,
+            "to": "/page/service-area/west-allis-wi/"
+        },
+        {
+            "from": "/page/service-area/west-bend-wi",
+            "status": 301,
+            "to": "/page/service-area/west-bend-wi/"
+        },
+        {
+            "from": "/page/service-area/westby-wi",
+            "status": 301,
+            "to": "/page/service-area/westby-wi/"
+        },
+        {
+            "from": "/q/literature/",
+            "status": 301,
+            "to": "/resources/home-design-center/"
+        },
+        {
+            "from": "/building-green/",
+            "status": 301,
+            "to": "/build-process/building-green/"
+        },
+        {
+            "from": "/q/wisconsin-homes-display-tour/cavalier/",
+            "status": 301,
+            "to": "/visit-our-model-homes/"
+        },
+        {
+            "from": "/page/",
+            "status": 301,
+            "to": "/"
+        },
+        {
+            "from": "/q/types-of-homes/multi-family/",
+            "status": 301,
+            "to": "/floor-plans/duplex/"
+        }
+    ],
+      "headers": [
+    {
+      "match": "*",
+      "headers": [
+        {
+          "name": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "name": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "name": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "name": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self 'https://my.matterport.com')"
+        },
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=2592000"
+        }
+      ]
+    }
+  ]
+}

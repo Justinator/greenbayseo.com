@@ -1,0 +1,107 @@
+<nav class="content-full footer-nav" aria-label="Footer Navigation">
+  <ul class="footer-nav__list flex flex-align-center flex-wrap no-padding">
+    {{ with .Site.Data.nav }}
+    {{ range .main_nav }}
+    <li class="footer-nav__list-item">
+      <a class="footer-nav__link" href="{{ .url }}">{{ .text }}</a>
+    </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</nav>
+<footer class="footer content-grid" id="footer">
+  <div class="footer__body block content-full bg-black">
+    <div class="footer__body-inner grid gap-sm content-lg">
+      <div class="grid-12 grid-3-md grid-2-xl flow">
+        <div>
+          <p class="footer__info-label | text-align-center text-align-start-md">Address</p>
+          <address class="flex flex-justify-center flex-justify-start-md gap-xs">
+            <span class="footer__location-icon icon icon-md icon-fill-white">
+              {{ partial "svg-icons/location-pin.svg" . }}
+            </span>
+            {{ if .Site.Data.site_settings.address.street }}
+            {{ if .Site.Data.site_settings.google_maps_url }}
+            <a class="footer__address" href="{{ .Site.Data.site_settings.google_maps_url }}" rel="noopener noreferrer"
+              target="_blank" aria-label="Get directions to our location (opens in a new tab)">{{
+              .Site.Data.site_settings.address.street }}<br> {{ .Site.Data.site_settings.address.city }}, {{
+              .Site.Data.site_settings.address.state }} {{ .Site.Data.site_settings.address.zip }}</a>
+            {{ else }}
+            <p class="">{{ .Site.Data.site_settings.address.street }}<br> {{ .Site.Data.site_settings.address.city }},
+              {{ .Site.Data.site_settings.address.state }} {{ .Site.Data.site_settings.address.zip }}</p>
+            {{ end }}
+            {{ end }}
+          </address>
+        </div>
+        <div>
+          <p class="footer__info-label | text-align-center text-align-start-md">{{
+            .Site.Data.site_settings.google_reviews.rating }} Stars {{ .Site.Data.site_settings.google_reviews.count }}+
+            Reviews</p>
+          <div class="flex flex-justify-center flex-justify-start-md gap-xs">
+            <div class="icon icon-md icon-fill-white">
+              {{ partial "svg-icons/star.svg" . }}
+            </div>
+            <div class="icon icon-md icon-fill-white">
+              {{ partial "svg-icons/star.svg" . }}
+            </div>
+            <div class="icon icon-md icon-fill-white">
+              {{ partial "svg-icons/star.svg" . }}
+            </div>
+            <div class="icon icon-md icon-fill-white">
+              {{ partial "svg-icons/star.svg" . }}
+            </div>
+            <div class="icon icon-md icon-fill-white">
+              {{ partial "svg-icons/star.svg" . }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-12 grid-6-md grid-8-xl">
+        <a class="footer__logo" href="/">
+          {{ if .Site.Data.site_settings.footer_logo }}
+          <img src="{{ .Site.Data.site_settings.footer_logo }}" width="200" height="150"
+            alt="{{ .Site.Data.site_settings.business_name }} logo">
+          {{ else }}
+          {{ partialCached "svg-icons/logo.svg" . }}
+          {{ end }}
+        </a>
+      </div>
+      <div class="grid-12 grid-3-md grid-2-xl flow">
+        <div>
+          <p class="footer__info-label | text-align-center text-align-start-md">Contact</p>
+          <div class="flex flex-justify-center flex-justify-start-md flex-align-center gap-xs">
+            <div class="icon icon-md icon-fill-white">
+              {{ partial "svg-icons/phone.svg" . }}
+            </div>
+            {{ if .Site.Data.site_settings.phone }}
+            <a class="" href="tel:+1{{ .Site.Data.site_settings.phone | replaceRE "[^0-9]" "" }}"><span
+                class="visually-hidden">Call {{ .Site.Data.site_settings.business_name }} on the phone at </span>{{
+              .Site.Data.site_settings.phone }}</a>
+            {{ end }}
+          </div>
+        </div>
+        {{ partial "social-media" . }}
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom content-full">
+    <div class="footer__copyright flex flex-column flex-row-md flex-align-center flex-justify-between">
+      <p>© {{ dateFormat "2006" now }} <span translate="no">{{ .Site.Data.site_settings.business_name }}</span></p>
+      <ul class="footer__bottom-links flex flex-align-center no-padding">
+        <li class="footer__bottom-links-item">
+          <a class="footer__bottom-links-link" href="/privacy-policy/">Privacy Policy</a>
+        </li>
+        <li class="footer__bottom-links-item">
+          <a class="footer__bottom-links-link" href="/sitemap/">Sitemap</a>
+        </li>
+        <li class="footer__bottom-links-item">
+          <a class="footer__bottom-links-link" href="/resources/builder-forms/">Builder Forms</a>
+        </li>
+      </ul>
+      <div class="footer__credits">
+        <a class="footer__credits-link" href="https://insightcreative.com" target="_blank">Website by Insight Creative,
+          Inc.</a>
+      </div>
+    </div>
+  </div>
+</footer>
+{{ partial "scripts" . }}

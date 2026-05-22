@@ -1,0 +1,86 @@
+<section
+    class="grid-cards-block | content-full p-relative block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+    {{ if .heading }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+    {{ if .background_image.image_url }}
+    <picture class="background-image content-full">
+        <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+        <img class="content-full"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+            alt="{{ .image.image_alt }}" width="1920" height="1080" loading="lazy" decoding="async">
+    </picture>
+    <div class="overlay overlay--{{ if .overlay_color }}{{ .overlay_color }}{{ end }} | content-full"></div>
+    {{ end }}
+    <div class="content-sm p-relative">
+        <header class="margin-inline-auto flow">
+            {{ if .preheading }}
+            <h2 class="text-align-center text-style-slub">{{ .preheading | markdownify }}</h2>
+            <h3 class="text-align-center no-margin max-width-none" id="{{ .heading | urlize }}">{{ .heading |
+                markdownify }}</h3>
+            {{ else }}
+            <h2 class="text-align-center no-margin max-width-none" id="{{ .heading | urlize }}">{{ .heading |
+                markdownify }}</h2>
+            {{ end }}
+            <div class="text-align-center">
+                {{ if .body }}
+                {{ if in .body "\n" }}
+                {{ .body | markdownify }}
+                {{ else }}
+                <p class="margin-inline-auto">{{ .body | markdownify }}</p>
+                {{ end }}
+                {{ end }}
+            </div>
+        </header>
+    </div>
+    <div class="content-lg grid-columns-3 gap-sm mt-6">
+        {{ range .cards }}
+        <div class="image-card | flow{{ if .background_color }} bg-{{ .background_color }}{{ end }}">
+            {{ if .image.image_url }}
+            <img class="image-card__image"
+                src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-600-auto{{ .image.image_url }}"
+                alt="{{ .image.image_alt }}">
+            {{ end }}
+            <div class="image-card__body | flow">
+                {{ if .heading }}
+                <header>
+                    <h3 class="image-card__heading | max-width-none" id="{{ .heading | urlize }}">{{ .heading |
+                        markdownify }}</h3>
+                </header>
+                {{ end }}
+                <div class="font-size-xs">
+                    {{ if .body }}
+                    {{ if in .body "\n" }}
+                    {{ .body | markdownify }}
+                    {{ else }}
+                    <p>{{ .body | markdownify }}</p>
+                    {{ end }}
+                    {{ end }}
+                </div>
+                <div
+                    class="image-card__buttons | flex flex-wrap gap-sm">
+                    {{ if .button.enabled }}
+                    {{ with .button }}
+                    <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab
+                        }}target="_blank" {{ end }}>
+                        {{ .button_text }}
+                    </a>
+                    {{ end }}
+                    {{ end }}
+                    {{ if .button_2.enabled }}
+                    {{ with .button_2 }}
+                    <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab
+                        }}target="_blank" {{ end }}>
+                        {{ .button_text }}
+                    </a>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>

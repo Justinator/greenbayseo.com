@@ -1,0 +1,194 @@
+.builder-locator {
+  position: relative;
+  height: 100vh;
+
+  @include breakpoint(md) {
+    height: 80vh;
+  }
+}
+
+.sidebar {
+  color: $white;
+}
+
+.sidebar__wrapper {
+  // Positioning
+  position: absolute;
+  z-index: 7;
+  // Box model
+  width: 100%;
+  // height: 100vh;
+  height: 100%;
+  overflow-y: scroll;
+  // Visual
+  background-color: rgba($dark-black, .85);
+
+  @include breakpoint(md) {
+    height: 100%;
+  }
+}
+
+.sidebar__top {
+  background-color: $dark-black;
+}
+
+.sidebar__top,
+.sidebar__bottom {
+  padding: 1rem;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.mapboxgl-canary, 
+.mapboxgl-canvas-container, 
+.mapboxgl-canvas {
+    max-inline-size: none;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+/* Markers */
+.mapboxgl-marker.active {
+  opacity: .8 !important;
+}
+
+.mapboxgl-marker.active svg {
+  animation: bounce 1s infinite;
+}
+
+.mapboxgl-popup-content {
+  width: 250px !important;
+  padding: $ic-300 !important;
+}
+
+.mapboxgl-popup-content a:focus-visible {
+  outline: none;
+}
+
+.selected-builder-overlay {
+  // Positioning
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  // Box model
+  width: 100%;
+  height: 100%;
+  padding: $ic-300;
+  // Visual
+  background-color: rgba($dark-black, .92);
+  // Misc
+  opacity: 0;
+  pointer-events: none;
+}
+
+.selected-builder-overlay__close {
+  // Positioning
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+  // Box model
+  display: grid;
+  place-items: center;
+  width: $ic-600;
+  height: $ic-600;
+  padding: 0;
+  margin: 0;
+  // Typography
+  text-align: center;
+  // Visual
+  background: $dark-black;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.selected-builder-overlay.overlay-is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Sidebar title */
+.sidebar-title {
+  // Box model
+  margin: 0 0 1.5rem 0;
+  // Typography
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Store listings container */
+.builder {
+  // Positioning
+  position: relative;
+  // Box model
+  display: flex;
+  flex-direction: column;
+  margin: .5rem 0;
+  padding: 1rem;
+  scroll-margin: 1.25rem 0 1.25rem 0;
+  // Visual
+  background-color: transparent;
+  background-color: rgba($dark-black, .5);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  // Misc
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.builder:has(.builder__display-status) {
+  padding-block-start: $ic-900;
+}
+
+.builder a {
+  color: $primary-color;
+}
+
+.builder__display-status {
+  // Positioning
+  position: absolute;
+  top: $ic-300;
+  left: $ic-100;
+  z-index: 8;
+  // Box model
+  padding-block: .25rem;
+  // Typography
+  font-size: .7rem;
+  // Visual
+  border-radius: $radius;
+}
+
+.builder:hover {
+  background-color: rgba($dark-black, .5);
+}
+
+.builder__name a:hover .builder__chevron {
+  transform: translateX(4px);
+}
+
+.builder.active {
+  background-color: $dark-black;
+}
+
+.builder a,
+.builder__chevron {
+  transition: $transition;
+}
+
+.builder a:hover {
+  opacity: .7;
+}
+
+.builder__address {
+  margin-block: .5rem;
+}
+
+.builder__details > div {
+  margin-bottom: 0.25rem;
+}

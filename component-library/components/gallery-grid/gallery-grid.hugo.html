@@ -1,0 +1,29 @@
+<section class="gallery-grid | content-full block flow{{ if .css_class }} {{ .css_class }}{{ end }}" {{ if .heading
+    }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+    <h2 class="text-align-center max-width-none" id="{{ .heading | urlize }}">{{ .heading }}</h2>
+    <div class="gallery-grid__wrapper | gap-sm ">
+        {{ range .items }}
+        <div class="gallery-grid__item | flex flex-column flex-justify-end p-relative">
+            <picture class="gallery-grid__image | background-image">
+                <source sizes="(min-width: 993px) 50vw, 100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ .image.image_url }} 400w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }} 800w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }} 1200w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .image.image_url }} 1600w
+    ">
+                <img src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }}"
+                    sizes="(min-width: 993px) 50vw, 100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ .image.image_url }} 400w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }} 800w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }} 1200w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .image.image_url }} 1600w
+    " alt="{{ .image.image_alt }}" width="600" height="450" loading="lazy" decoding="async">
+            </picture>
+
+            <h3 class="gallery-grid__title | h5">
+                <a class="gallery-grid__link" href="{{ .url }}">{{ .title }}</a>
+            </h3>
+        </div>
+        {{ end }}
+    </div>
+</section>

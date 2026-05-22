@@ -1,0 +1,20 @@
+.hero-testimonial__background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-testimonial__content {
+  position: relative;
+  z-index: 2;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-testimonial__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+}

@@ -1,0 +1,632 @@
+collections_config:
+  about_1:
+    path: content/about
+    glob:
+      - '!_index.md'
+    name: About
+    icon: person
+    _enabled_editors:
+      - visual
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/page.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Page
+  blog:
+    path: content/blog
+    glob:
+      - '!_index.md'
+    name: Blog
+    icon: article
+    disable_url: false
+    documentation:
+      url: >-
+        https://client-training.insightcreative.info/wisconsin-homes/#adding-new-blog-posts
+      text:
+      icon:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/post.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Blog Post
+  build_process:
+    path: content/build-process
+    glob:
+      - '!_index.md'
+    icon: build
+    _enabled_editors:
+      - visual
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/page.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Page
+  builders:
+    path: content/builders
+    glob:
+      - '!_index.md'
+    icon: map_search
+    _enabled_editors:
+      - visual
+    disable_url: false
+    documentation:
+      url: >-
+        https://client-training.insightcreative.info/wisconsin-homes/#adding-builders
+      text:
+      icon:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/builders.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Builder
+  careers:
+    path: content/careers
+    glob:
+      - '!_index.md'
+    icon: work
+    disable_url: false
+    documentation:
+      url: >-
+        https://client-training.insightcreative.info/wisconsin-homes/#adding-new-career-posts
+      text:
+      icon:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/job-opening.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Job Opening
+  events:
+    path: content/events
+    glob:
+      - '!_index.md'
+    icon: event
+    disable_url: false
+    documentation:
+      url: >-
+        https://client-training.insightcreative.info/wisconsin-homes/#adding-events
+      text:
+      icon:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/event.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Event
+  floor_plans:
+    path: content/floor-plans
+    glob:
+      - '!_index.md'
+    icon: house
+    _enabled_editors:
+      - visual
+    disable_url: false
+    documentation:
+      url: >-
+        https://client-training.insightcreative.info/wisconsin-homes/#adding-and-managing-floor-plans
+      text:
+      icon:
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: false
+  our_team:
+    path: content/our-team
+    glob:
+      - '!_index.md'
+    icon: groups
+    _enabled_editors:
+      - visual
+    disable_url: false
+    documentation:
+      url: >-
+        https://client-training.insightcreative.info/wisconsin-homes/#adding-new-team-member
+      text:
+      icon:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/staff.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Staff Member
+  pages_1:
+    path: content
+    name: All Top Level Pages
+    icon: two_pager
+    _enabled_editors:
+      - visual
+    disable_url: false
+    documentation:
+      url: https://client-training.insightcreative.info/wisconsin-homes/
+      text:
+      icon:
+    preview:
+      text:
+      subtext:
+      icon:
+      icon_color:
+      icon_background_color:
+      image:
+        - text:
+      metadata:
+      gallery:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/page.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Page
+  resources:
+    path: content/resources
+    glob:
+      - '!_index.md'
+    icon: docs
+    _enabled_editors:
+      - visual
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    include_developer_files: true
+    schemas:
+      default:
+        path: schemas/page.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Page
+  see_our_homes:
+    path: content/see-our-homes
+    glob:
+      - '!_index.md'
+    icon: house
+    _enabled_editors:
+      - visual
+    disable_url: false
+    documentation:
+      url: >-
+        https://client-training.insightcreative.info/wisconsin-homes/#adding-images-to-gallery
+      text:
+      icon:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/page.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Page
+  service_area:
+    path: content/service-area
+    glob:
+      - '!_index.md'
+    icon: pin_drop
+    _enabled_editors:
+      - visual
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/service-area.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Service Area
+  visit_our_model_homes:
+    path: content/visit-our-model-homes
+    glob:
+      - '!_index.md'
+    icon: house
+    _enabled_editors:
+      - visual
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/model-home.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name: New Model Home
+  data:
+    path: data
+    icon: data_usage
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+collection_groups:
+  - heading: Blog
+    collections:
+      - blog
+  - heading: Pages
+    collections:
+      - pages_1
+      - about_1
+      - build_process
+      - builders
+      - careers
+      - events
+      - floor_plans
+      - our_team
+      - resources
+      - see_our_homes
+      - service_area
+      - visit_our_model_homes
+  - heading: Data
+    collections:
+      - data
+_inputs:
+  menu:
+    type: auto
+    hidden: true
+    cascade: true
+  layout:
+    type: auto
+    hidden: true
+    cascade: true
+  id:
+    type: auto
+    instance_value: UUID
+    hidden: true
+    cascade: true
+  logo:
+    type: image
+    comment: Set your brand logo.
+    cascade: true
+  footer_logo:
+    type: image
+    comment: Set your brand logo in the footer.
+    cascade: true
+  featured_image:
+    type: image
+    options:
+      resize_style: contain
+    comment: >-
+      Set your featured image. Featured images are used as your SEO preview
+      image when shared on social media or when your page is found in organic
+      search results. The featured image is also displayed with your blog posts.
+    cascade: true
+  hero.image_url:
+    type: image
+    options:
+      accepts_mime_types:
+        - image/jpeg
+    comment: This is the main image used at the top of every page.
+    cascade: true
+  image_url:
+    type: image
+    options:
+      accepts_mime_types:
+        - image/jpeg
+    comment: >-
+      For best results upload an optimized .jpg image. Recommended image size:
+      1600 w. Make sure to check the documentation for image handling best
+      practices before adding images to the website.
+    cascade: true
+  headshot:
+    type: image
+    options:
+      accepts_mime_types:
+        - image/jpeg
+        - image/svg+xml
+    cascade: true
+  icon:
+    type: image
+    options:
+      accepts_mime_types:
+        - image/jpeg
+        - image/svg+xml
+    cascade: true
+  heading:
+    type: text
+    cascade: true
+  background_color:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - black
+        - gray
+        - white
+    comment: Choose between your brand black, gray or white as a background color
+    cascade: true
+  button.button_color:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - primary
+        - secondary
+    comment: Choose between your brand primary color or secondary color
+    cascade: true
+  text_align:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - start
+        - center
+        - end
+    comment: Choose between start, center or end text alignments.
+    cascade: true
+  text_column_position:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - left
+        - right
+    comment: Choose between left and right text column position
+    cascade: true
+  body:
+    type: markdown
+    cascade: true
+  answer:
+    type: markdown
+    cascade: true
+  employee_testimonial:
+    type: markdown
+    cascade: true
+  challenge:
+    type: markdown
+    cascade: true
+  solution:
+    type: markdown
+    cascade: true
+  result:
+    type: markdown
+    cascade: true
+  cta.body:
+    type: markdown
+    cascade: true
+  card_description:
+    type: markdown
+    cascade: true
+  button.button_url:
+    type: url
+    cascade: true
+  hero.button_url:
+    type: url
+    cascade: true
+  weight:
+    type: number
+    comment: >-
+      The weight value here will set the order in which your staff will be
+      displayed.
+    cascade: true
+  columns:
+    type: number
+    cascade: true
+  draft:
+    type: switch
+    cascade: true
+  button.enabled:
+    type: switch
+    cascade: true
+  featured:
+    type: switch
+    cascade: true
+  open_in_new_tab:
+    type: switch
+    cascade: true
+  categories:
+    type: multiselect
+    options:
+      allow_empty: true
+      values: data.blog-categories
+    cascade: true
+  date:
+    type: date
+    comment: >-
+      Scheduled posts will be published at 12:01 am on the day that they are
+      scheduled to launch
+    cascade: true
+  $.content_blocks[*].background_image:
+    type: image
+    cascade: true
+  $.content_blocks[*].featured_video.youtube_share_url:
+    type: text
+    cascade: true
+  $.content_blocks[*].overlay_color:
+    type: select
+    options:
+      allow_create:
+      allow_empty: true
+      values:
+      value_key:
+      preview:
+      picker_preview:
+      view:
+      picker_view:
+      required:
+      required_message:
+      min_length:
+      min_length_message:
+      max_length:
+      max_length_message:
+      pattern:
+      pattern_message:
+      min_graphemes:
+      min_graphemes_message:
+      max_graphemes:
+      max_graphemes_message:
+      min_words:
+      min_words_message:
+      max_words:
+      max_words_message:
+      locale:
+      empty_type:
+    cascade: true
+  $.owner.email_alt:
+    type: email
+    cascade: true
+  $.plan_description:
+    type: html
+    cascade: true
+  $.pdf:
+    type: file
+    cascade: true
+  $.floorplan:
+    type: image
+    comment: Add your primary floor plan here
+    cascade: true
+  $.google_maps_url:
+    type: text
+    cascade: true
+  $.google_maps_embed:
+    type: textarea
+    cascade: true
+  $.youtube_share_url:
+    type: text
+    cascade: true
+  $.content_blocks[*].videos[*].youtube_share_url:
+    type: text
+    comment: >-
+      To find the share URL, when in YouTube click "Share" then copy everything
+      after "https://youtu.be/" in the URL
+    cascade: true
+  $.content_blocks[*].videos[*].vimeo_id:
+    type: text
+    comment: >-
+      To find your Vimeo ID simply view the URL in your browser. Vimeo displays
+      your video ID right in the URL after vimeo.com/
+    cascade: true
+  $.virtual_tour:
+    type: text
+    comment: Enter in your Matterport URL here
+    cascade: true
+  $.on_display:
+    type: switch
+    comment: Toggle On/Off to feature the floor plans that you have on display
+    cascade: true
+  $.lat:
+    type: number
+    comment: >-
+      Enter in your builder's location latitude coordinates. This is required
+      for pin placement on the builder map.
+    cascade: true
+  $.lng:
+    type: number
+    comment: >-
+      Enter in your builder's location longitude coordinates. This is required
+      for pin placement on the builder map.
+    cascade: true
+_structures:
+  content_blocks:
+    style: modal
+_editables:
+  text:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    italic: true
+  block:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    format: p h3
+    image_size_attributes: true
+    redo: true
+    undo: true
+  content:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    blockquote: true
+    bold: true
+    bulletedlist: true
+    embed: true
+    format: p h2 h3 h4 h5 h6 pre address div
+    horizontalrule: true
+    image_size_attributes: true
+    italic: true
+    link: true
+    numberedlist: true
+    redo: true
+    snippet: true
+    strike: true
+    subscript: true
+    superscript: true
+    table: true
+    underline: true
+    undo: true
+_snippets:
+  responsive_image:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      view: gallery
+      text: Responsive Image
+      subtext: Full-width image with optimized srcset
+      gallery:
+        image:
+          - key: image_url
+        fit: cover
+    definitions:
+      shortcode_name: responsive-image
+      named_args:
+        - editor_key: image_url
+          type: string
+        - editor_key: image_alt
+          type: string
+    _inputs:
+      image_url:
+        type: image
+        cascade: true
+      image_alt:
+        type: text
+        cascade: true
+timezone: Etc/UTC

@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{ partial "bookshop_bindings" `.Params.content_blocks` }}
+{{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+
+{{ $currentTitle := .Title }}
+{{ $portfolio := where .Site.RegularPages "Section" "our-projects" }}
+{{ $industryPortfolio := where $portfolio ".Params.industries" "intersect" (slice $currentTitle) }}
+{{ $servicesPortfolio := where $portfolio ".Params.services" "intersect" (slice $currentTitle) }}
+
+{{ if or $industryPortfolio $servicesPortfolio }}
+    <section class="portfolio-list block content-full" aria-label="Latest {{ .Title }} Projects">
+        <div class="flex flex-column flex-row-md flex-justify-between flex-end-md gap-sm">
+            <div class="flow">
+                <span class="text-style-slub">Featured Projects</span>
+                <h2 class="no-margin">Our Latest {{ .Title }} Projects</h2>
+            </div>
+            <div>
+                <a class="btn btn--primary" href="/our-projects/">View Our Projects</a>
+            </div>
+        </div>
+        <ul class="grid-columns-3 gap-sm mt-6 max-width-none no-padding">
+            {{ if $servicesPortfolio }}
+                {{ range first 3 (sort $servicesPortfolio "Date" "desc") }}
+                    {{ .Render "project-card-no-cat" }}
+                {{ end }}
+            {{ else }}
+                {{ range first 3 (sort $industryPortfolio "Date" "desc") }}
+                    {{ .Render "project-card-no-cat" }}
+                {{ end }}
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}
+
+{{ end }}

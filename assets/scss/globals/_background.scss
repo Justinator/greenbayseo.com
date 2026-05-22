@@ -1,0 +1,58 @@
+.bg-primary {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+  color: $white;
+}
+
+.bg-tertiary {
+  background-color: $tertiary-color;
+  color: $white;
+}
+
+.bg-black {
+  background-color: $dark-black;
+  color: $white;
+}
+
+.bg-black .divider,
+.bg-black .divider--centered {
+  background-color: $white;
+}
+
+.site-main .bg-black:not(.two-columns-block) ul li:not(.featured-services__card,.card,.share-buttons__list-items,.staff-card)::after {
+  border-radius: $radius;
+  border: 1px solid $white;
+  background-color: transparent;
+}
+
+.bg-dark-black {
+  background-color: $dark-black;
+  color: $white;
+}
+
+.bg-black-2 {
+  background-color: rgba($black, .98);
+  color: $white;
+}
+
+.bg-gray {
+  background-color: $light-gray;
+}
+
+.bg-white {
+  background-color: $white;
+  color: $dark-black;
+}
+
+.bg-accent {
+  background-color: $secondary-color;
+}
+
+.bg-squares {
+  background-image: url("/uploads/square-grid.svg");
+  background-repeat: repeat;
+}

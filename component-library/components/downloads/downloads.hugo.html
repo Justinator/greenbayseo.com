@@ -1,0 +1,23 @@
+<section
+	class="downloads-block | p-relative block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+	{{ if .heading }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+	<div class="content-sm p-relative">
+		<header>
+			{{ if .preheading }}
+			<h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+			<h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+			{{ else }}
+			<h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+			{{ end }}
+		</header>
+	</div>
+	<ul class="downloads | no-padding max-width-none">
+		{{ range .downloads }}
+		<li class="downloads__item | flex flex-align-center flex-justify-between max-width-none">
+			<a class="" href="{{ .url }}" target="_blank">{{ .heading }}</a>
+			<a class="btn btn--primary flex flex-align-center gap-sm" href="{{ .url }}" target="_blank">Download PDF
+				<div class="icon icon-sm icon-fill-black">{{ partial "svg-icons/pdf.svg" . }}</div></a>
+		</li>
+		{{ end }}
+	</ul>
+</section>

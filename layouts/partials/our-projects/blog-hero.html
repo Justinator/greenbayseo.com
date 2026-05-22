@@ -1,0 +1,40 @@
+<header class="blog-hero content-full block bg-black">
+  <div class="wrapper-lg columns gap-md">
+    <div class="col margin-block-auto">
+      <a href="/our-news/" class="bounce-left flex flex-align-center">
+        <div class="icon-md icon-stroke-primary icon-fill-primary">{{ partialCached "svg-icons/chevron-left.svg" . }}
+        </div> Back to all posts
+      </a>
+      <h1 id="hero-heading">{{ .Title }}</h1>
+      <div class="flex flex-column flex-row-md flex-justify-between-md gap-sm">
+        <div class="flex flex-wrap gap-sm">
+          {{ if .Params.Categories }}
+          {{ range first 2 (.GetTerms "categories") }}
+          <a href="{{ .Permalink }}" class="btn btn--primary btn--category"
+            aria-label="View all {{ .Page.Title }} posts">{{ .LinkTitle }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+        <div class="reading-time flex flex-align-center">
+          <div class="icon-md">{{ partialCached "svg-icons/clock.svg" . }}</div>
+          <div class="font-size-xs"> {{ .ReadingTime }} min read</div>
+        </div>
+      </div>
+    </div>
+    {{ if .Params.seo.featured_image }}
+    <div class="col">
+      <img class="blog-hero__image"
+        src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-500-auto{{ .Params.seo.featured_image }}"
+        alt="{{ .Params.seo.featured_image_alt }}" width="500" height="300" loading="lazy">
+    </div>
+    {{ end }}
+  </div>
+</header>
+{{ if .TableOfContents }}
+<details class="toc content-full bg-black-2">
+  <summary class="toc__summary margin-inline-auto">In This Article</summary>
+  <div class="toc__list">
+    {{ .TableOfContents }}
+  </div>
+</details>
+{{ end }}

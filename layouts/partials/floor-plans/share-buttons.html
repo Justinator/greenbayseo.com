@@ -1,0 +1,29 @@
+<div class="share-button__list-wrapper">
+    <ul class="share-button__list | flex flex-column flex-align-center bg-white no-margin">
+        <li class="share-button__list-item">
+            <a class="share-buttons__link icon-lg icon-fill-primary" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook" target="_blank">
+                {{ partial "svg-icons/facebook.svg" . }}
+            </a>
+        </li>
+        <li class="share-button__list-item">
+            <a class="share-buttons__link icon-lg icon-fill-primary" href="https://twitter.com/intent/tweet?source={{ .Permalink }}" target="_blank" title="Share on X">
+                {{ partial "svg-icons/x.svg" . }}
+            </a>
+        </li>
+        <li class="share-button__list-item">
+            <a class="share-buttons__link icon-lg icon-fill-primary" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}" target="_blank" title="Share on LinkedIn">
+                {{ partial "svg-icons/linkedin.svg" . }}
+            </a>
+        </li>
+        <li class="share-button__list-item">
+            <a class="share-buttons__link icon-lg icon-fill-primary" href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink }}" target="_blank" title="Share on Pinterest">
+                {{ partial "svg-icons/pinterest.svg" . }}
+            </a>
+        </li>
+        <li class="share-button__list-item">
+            <a class="share-buttons__link icon-lg icon-fill-primary" href="mailto:?subject=Check out this page&body=I thought you might like this: {{ .Permalink }}" target="_blank" title="Send email">
+                {{ partial "svg-icons/email.svg" . }}
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,394 @@
+<form class="application-form | max-width-none bg-gray mt-1 flow" id="apply" name="Wisconsin Homes Job Application"
+    method="POST" action="https://api.web3forms.com/submit">
+    <input type="hidden" name="access_key" value="38a4c104-51a7-4b40-ae02-56d3d23c7144">
+    <input type="hidden" name="redirect" value="https://www.wisconsinhomesinc.com/thank-you-application/">
+    <input type="hidden" name="from_name" value="Wisconsin Homes">
+    <div class="visually-hidden">
+        <label for="subject">New Application From The Wisconsin Homes Job Application Form</label>
+        <input aria-label="subject" id="subject" name="subject"
+            value="New Application From The Wisconsin Homes Job Application Form">
+    </div>
+    <h2 class="h5">Personal Information</h2>
+    <div class="contact-form__form-group">
+        <label for="name">Full Name *</label>
+        <input name="Name" id="name" type="text" class="contact-form__form-control" autocomplete="given-name" required>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="address_line_1">Address Line 1 *</label>
+        <input name="Address Line 1" id="address_line_1" type="text" class="contact-form__form-control"
+            autocomplete="address-line1" required>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="address_line_2">Address Line 2</label>
+        <input name="Address Line 2" id="address_line_2" type="text" class="contact-form__form-control"
+            autocomplete="address-line2">
+    </div>
+    <div class="contact-form__form-group">
+        <label for="city">City *</label>
+        <input name="City" id="city" type="text" class="contact-form__form-control" autocomplete="address-level2"
+            required>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="state">State *</label>
+        <input name="State" id="state" type="text" class="contact-form__form-control" autocomplete="address-level1"
+            required>
+    </div>
+    <div class="contact-form__form-group | flex flex-column">
+        <label for="zip">Zip *</label>
+        <input name="Zip" id="zip" type="text" class="contact-form__form-control" autocomplete="postal-code"
+            required>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="phone">Phone *</label>
+        <input name="Phone" id="phone" type="tel" class="contact-form__form-control" autocomplete="tel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+            title="Please enter a 10-digit phone number (e.g., 123-456-7890)" required>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="email">Email *</label>
+        <input name="Email" id="email" type="email" class="contact-form__form-control" autocomplete="email"
+            required>
+    </div>
+    <h2 class="h5">Employment Information</h2>
+    <div class="contact-form__form-group">
+        <label for="position">Position Applying For?</label>
+        <select name="Position Applying For" id="position" class="contact-form__form-control">
+            <option value=""></option>
+            {{ range where site.RegularPages "Section" "careers" }}
+            <option value="{{ .Title }}">{{ .Title }}</option>
+            {{- end -}}
+        </select>
+    </div>
+    <div class="contact-form__form-group pl-2-m">
+        <label for="start_date">Available Start Date</label>
+        <input name="Available Start Date" id="start_date" type="date" class="contact-form__form-control">
+    </div>
+    <fieldset class="contact-form__form-group">
+        <legend class="contact-form__label">For Construction Only: Are you able to read and use a tape measure?</legend>
+        <div class="flex gap-sm">
+            <label><input type="radio" name="Tape Measure" value="Yes"> Yes</label>
+            <label><input type="radio" name="Tape Measure" value="No"> No</label>
+        </div>
+    </fieldset>
+    <fieldset class="contact-form__form-group">
+        <legend class="contact-form__label">Is this the first time you have applied at Wisconsin Homes?</legend>
+        <div class="flex gap-sm">
+            <label><input type="radio" name="First Time Applied" value="Yes"> Yes</label>
+            <label><input type="radio" name="First Time Applied" value="No"> No</label>
+        </div>
+    </fieldset>
+    <fieldset class="contact-form__form-group">
+        <legend class="contact-form__label">Can you submit proof of legal employment authorization and identity?
+        </legend>
+        <div class="flex gap-sm">
+            <label><input type="radio" name="Work Authorization Proof" value="Yes"> Yes</label>
+            <label><input type="radio" name="Work Authorization Proof" value="No"> No</label>
+        </div>
+    </fieldset>
+    <div class="contact-form__form-group">
+        <label for="referral">Where Did You Hear About Us? *</label>
+        <select name="Where Did You Hear About Us?" id="referral" class="contact-form__form-control" required>
+            <option value=""></option>
+            <option value="Internet Search">Internet Search</option>
+            <option value="ChatGPT/AI">ChatGPT/AI</option>
+            <option value="Digital Ad">Digital Ad</option>
+            <option value="Wisconsin Homes Team Member">Wisconsin Homes Team Member</option>
+            <option value="Wisconsin Homes Email/Social">Wisconsin Homes Email/Social</option>
+            <option value="Wisconsin Homes Blog">Wisconsin Homes Blog</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <h2 class="h5">Education</h2>
+    <div class="contact-form__form-group">
+        <label for="education_high_school">High School (name, years completed, degree)</label>
+        <input name="Education - High School" id="education_high_school" type="text" class="contact-form__form-control"
+            autocomplete="off">
+    </div>
+    <div class="contact-form__form-group">
+        <label for="education_technical">Technical Training (name, years completed, degree)</label>
+        <input name="Education - Technical Training" id="education_technical" type="text"
+            class="contact-form__form-control" autocomplete="off">
+    </div>
+    <div class="contact-form__form-group">
+        <label for="education_college">College (name, years completed, degree)</label>
+        <input name="Education - College" id="education_college" type="text" class="contact-form__form-control"
+            autocomplete="off">
+    </div>
+    <div class="contact-form__form-group">
+        <label for="training_certifications">Other Training or Certifications</label>
+        <input name="Other Training or Certifications" id="training_certifications" type="text"
+            class="contact-form__form-control" autocomplete="off">
+    </div>
+    <h2 class="h5">Skills</h2>
+    <div class="contact-form__form-group">
+        <div class="flex flex-wrap gap-sm">
+            <label><input type="checkbox" name="Skills[]" value="Nail Guns"> Nail Guns</label>
+            <label><input type="checkbox" name="Skills[]" value="Skill Saw"> Skill Saw</label>
+            <label><input type="checkbox" name="Skills[]" value="Drills"> Drills</label>
+            <label><input type="checkbox" name="Skills[]" value="Heights"> Heights</label>
+            <label><input type="checkbox" name="Skills[]" value="Electrical"> Electrical</label>
+            <label><input type="checkbox" name="Skills[]" value="Staple Guns"> Staple Guns</label>
+            <label><input type="checkbox" name="Skills[]" value="Table Saw"> Table Saw</label>
+            <label><input type="checkbox" name="Skills[]" value="Miter Saw"> Miter Saw</label>
+            <label><input type="checkbox" name="Skills[]" value="Drywall Mudding"> Drywall Mudding</label>
+            <label><input type="checkbox" name="Skills[]" value="Plumbing"> Plumbing</label>
+        </div>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="skills_explanation">List any special skills, hobbies or work related skills</label>
+        <textarea name="Skills Explanation" id="skills_explanation" class="contact-form__form-control"
+            rows="5"></textarea>
+    </div>
+    <h2 class="h5">References</h2>
+    <div class="contact-form__form-group">
+        <h3 class="h6">Reference 1</h3>
+        <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+            <div class="contact-form__form-group">
+                <label for="ref1_name">Name</label>
+                <input name="Reference 1 - Name" id="ref1_name" type="text" class="contact-form__form-control">
+            </div>
+            <div class="contact-form__form-group">
+                <label for="ref1_phone">Phone</label>
+                <input name="Reference 1 - Phone" id="ref1_phone" type="tel" class="contact-form__form-control"
+                    placeholder="Phone: 123-456-7890" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+                    title="Please enter a 10-digit phone number (e.g., 123-456-7890)">
+            </div>
+            <div class="contact-form__form-group">
+                <label for="ref1_years">Years Known</label>
+                <input name="Reference 1 - Years Known" id="ref1_years" type="text" class="contact-form__form-control">
+            </div>
+        </div>
+    </div>
+    <div class="contact-form__form-group">
+        <h3 class="h6">Reference 2</h3>
+        <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+            <div class="contact-form__form-group">
+                <label for="ref2_name">Name</label>
+                <input name="Reference 2 - Name" id="ref2_name" type="text" class="contact-form__form-control">
+            </div>
+            <div class="contact-form__form-group">
+                <label for="ref2_phone">Phone</label>
+                <input name="Reference 2 - Phone" id="ref2_phone" type="tel" class="contact-form__form-control"
+                    placeholder="Phone: 123-456-7890" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+                    title="Please enter a 10-digit phone number (e.g., 123-456-7890)">
+            </div>
+            <div class="contact-form__form-group">
+                <label for="ref2_years">Years Known</label>
+                <input name="Reference 2 - Years Known" id="ref2_years" type="text" class="contact-form__form-control">
+            </div>
+        </div>
+    </div>
+    <div class="contact-form__form-group">
+        <h3 class="h6">Reference 3</h3>
+        <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+            <div class="contact-form__form-group">
+                <label for="ref3_name">Name</label>
+                <input name="Reference 3 - Name" id="ref3_name" type="text" class="contact-form__form-control">
+            </div>
+            <div class="contact-form__form-group">
+                <label for="ref3_phone">Phone</label>
+                <input name="Reference 3 - Phone" id="ref3_phone" type="tel" class="contact-form__form-control"
+                    placeholder="Phone: 123-456-7890" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+                    title="Please enter a 10-digit phone number (e.g., 123-456-7890)">
+            </div>
+            <div class="contact-form__form-group">
+                <label for="ref3_years">Years Known</label>
+                <input name="Reference 3 - Years Known" id="ref3_years" type="text" class="contact-form__form-control">
+            </div>
+        </div>
+    </div>
+    <h2 class="h5">Employment History</h2>
+    <h3 class="h6 mt-1">Employer 1</h3>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp1_company">Company Name</label>
+            <input name="Employer 1 - Company Name" id="emp1_company" type="text" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp1_address_city">Address or City</label>
+            <input name="Employer 1 - Address or City" id="emp1_address_city" type="text"
+                class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp1_phone">Phone</label>
+            <input name="Employer 1 - Phone" id="emp1_phone" type="tel" class="contact-form__form-control"
+                placeholder="Phone: 123-456-7890" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+                title="Please enter a 10-digit phone number (e.g., 123-456-7890)">
+        </div>
+    </div>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp1_start">Start Date</label>
+            <input name="Employer 1 - Start Date" id="emp1_start" type="date" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp1_end">End Date</label>
+            <input name="Employer 1 - End Date" id="emp1_end" type="date" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp1_supervisor">Supervisor</label>
+            <input name="Employer 1 - Supervisor" id="emp1_supervisor" type="text" class="contact-form__form-control">
+        </div>
+    </div>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp1_position">Your Position</label>
+            <input name="Employer 1 - Your Position" id="emp1_position" type="text" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp1_reason">Reason for Leaving</label>
+            <input name="Employer 1 - Reason for Leaving" id="emp1_reason" type="text"
+                class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp1_wage">Wage</label>
+            <input name="Employer 1 - Wage" id="emp1_wage" type="text" class="contact-form__form-control">
+        </div>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="emp1_duties">Job Duties</label>
+        <textarea name="Employer 1 - Job Duties" id="emp1_duties" class="contact-form__form-control"
+            rows="3"></textarea>
+    </div>
+    <h3 class="h6 mt-1">Employer 2</h3>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp2_company">Company Name</label>
+            <input name="Employer 2 - Company Name" id="emp2_company" type="text" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp2_address_city">Address or City</label>
+            <input name="Employer 2 - Address or City" id="emp2_address_city" type="text"
+                class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp2_phone">Phone</label>
+            <input name="Employer 2 - Phone" id="emp2_phone" type="tel" class="contact-form__form-control"
+                placeholder="Phone: 123-456-7890" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+                title="Please enter a 10-digit phone number (e.g., 123-456-7890)">
+        </div>
+    </div>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp2_start">Start Date</label>
+            <input name="Employer 2 - Start Date" id="emp2_start" type="date" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp2_end">End Date</label>
+            <input name="Employer 2 - End Date" id="emp2_end" type="date" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp2_supervisor">Supervisor</label>
+            <input name="Employer 2 - Supervisor" id="emp2_supervisor" type="text" class="contact-form__form-control">
+        </div>
+    </div>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp2_position">Your Position</label>
+            <input name="Employer 2 - Your Position" id="emp2_position" type="text" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp2_reason">Reason for Leaving</label>
+            <input name="Employer 2 - Reason for Leaving" id="emp2_reason" type="text"
+                class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp2_wage">Wage</label>
+            <input name="Employer 2 - Wage" id="emp2_wage" type="text" class="contact-form__form-control">
+        </div>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="emp2_duties">Job Duties</label>
+        <textarea name="Employer 2 - Job Duties" id="emp2_duties" class="contact-form__form-control"
+            rows="3"></textarea>
+    </div>
+    <h3 class="h6 mt-1">Employer 3</h3>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp3_company">Company Name</label>
+            <input name="Employer 3 - Company Name" id="emp3_company" type="text" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp3_address_city">Address or City</label>
+            <input name="Employer 3 - Address or City" id="emp3_address_city" type="text"
+                class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp3_phone">Phone</label>
+            <input name="Employer 3 - Phone" id="emp3_phone" type="tel" class="contact-form__form-control"
+                placeholder="Phone: 123-456-7890" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+                title="Please enter a 10-digit phone number (e.g., 123-456-7890)">
+        </div>
+    </div>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp3_start">Start Date</label>
+            <input name="Employer 3 - Start Date" id="emp3_start" type="date" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp3_end">End Date</label>
+            <input name="Employer 3 - End Date" id="emp3_end" type="date" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp3_supervisor">Supervisor</label>
+            <input name="Employer 3 - Supervisor" id="emp3_supervisor" type="text" class="contact-form__form-control">
+        </div>
+    </div>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="emp3_position">Your Position</label>
+            <input name="Employer 3 - Your Position" id="emp3_position" type="text" class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp3_reason">Reason for Leaving</label>
+            <input name="Employer 3 - Reason for Leaving" id="emp3_reason" type="text"
+                class="contact-form__form-control">
+        </div>
+        <div class="contact-form__form-group">
+            <label for="emp3_wage">Wage</label>
+            <input name="Employer 3 - Wage" id="emp3_wage" type="text" class="contact-form__form-control">
+        </div>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="emp3_duties">Job Duties</label>
+        <textarea name="Employer 3 - Job Duties" id="emp3_duties" class="contact-form__form-control"
+            rows="3"></textarea>
+    </div>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <fieldset class="contact-form__form-group">
+            <legend class="contact-form__label">After an interview, may we contact previous employers?</legend>
+            <div class="flex gap-sm">
+                <label><input type="radio" name="Contact Previous Employers" value="Yes"> Yes</label>
+                <label><input type="radio" name="Contact Previous Employers" value="No"> No</label>
+            </div>
+        </fieldset>
+        <div class="contact-form__form-group">
+            <label for="contact_prev_explanation">Explanation</label>
+            <input name="Contact Previous Employers - Explanation" id="contact_prev_explanation" type="text"
+                class="contact-form__form-control">
+        </div>
+    </div>
+    <h2 class="h5">Authorization</h2>
+    <div class="contact-form__form-group">
+        <label for="authorization_ack">
+            <input type="checkbox" id="authorization_ack" name="Authorization Acknowledgement" value="I agree" required>
+            I certify that the information provided is true and complete to the best of my knowledge.
+        </label>
+    </div>
+    <div class="contact-form__form-row | flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group">
+            <label for="signature">Signature (type full name) *</label>
+            <input name="Signature" id="signature" type="text" class="contact-form__form-control" required>
+        </div>
+        <div class="contact-form__form-group">
+            <label for="signature_date">Date *</label>
+            <input name="Signature Date" id="signature_date" type="date" class="contact-form__form-control" required>
+        </div>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="message">Message</label>
+        <textarea name="Message" id="message" class="contact-form__form-control" rows="4"></textarea>
+    </div>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAACKkhLH5ESS4AezH" data-theme="light"></div>
+    <br>
+    <button type="submit" class="contact-form__btn btn btn--primary">Send Application</button>
+</form>

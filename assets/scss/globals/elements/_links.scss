@@ -1,0 +1,55 @@
+a {
+  color: $tertiary-color;
+  text-decoration: none;
+}
+
+a:not([class], .hero a:not(.btn), .toc a, .bg-primary a:not(.btn), .card__link, .media-text-block__card-link) {
+  color: $primary-color;
+  text-decoration: none;
+  background-image: linear-gradient($primary-color, $primary-color),linear-gradient(270deg,$gray 0%,$gray 100%);
+  background-size: 100% 2px,0 2px;
+  background-position: 100% 100%,0 100%;
+  background-repeat: no-repeat;
+  transition: background-size $transition,background-position $transition,color $transition;
+
+  &:hover,
+  &:focus {
+    background-size: 0 2px,100% 2px;
+    background-position: 100% 100%,0 100%;
+    text-decoration: none;
+  }
+}
+
+.bg-primary a:not(.btn, .card__link, .media-text-block__card-link) {
+  color: $white;
+  text-decoration: none;
+  background-image: linear-gradient(#207DE5, #207DE5),linear-gradient(270deg,$light-gray 0%,$light-gray 100%);
+  background-size: 100% 2px,0 2px;
+  background-position: 100% 100%,0 100%;
+  background-repeat: no-repeat;
+  transition: background-size $transition,background-position $transition,color $transition;
+
+  &:hover,
+  &:focus {
+    background-size: 0 2px,100% 2px;
+    background-position: 100% 100%,0 100%;
+    text-decoration: none;
+  }
+}
+
+.hero:not(.page-home .hero) a:not(.btn) {
+  color: $white;
+  text-decoration: none;
+  background-image: linear-gradient($white, $white),linear-gradient(270deg,$gray 0%,$gray 100%);
+  background-size: 100% 2px,0 2px;
+  background-position: 100% 100%,0 100%;
+  background-repeat: no-repeat;
+  transition: background-size $transition,background-position $transition,color $transition;
+
+  &:hover,
+  &:focus {
+    background-size: 0 2px,100% 2px;
+    background-position: 100% 100%,0 100%;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,41 @@
+.category-wrapper {
+  position: relative;
+}
+
+.category-list {
+  // Positioning
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-start: 0;
+  z-index: 3;
+  // Box model
+  inline-size: max-content;
+  padding: $ic-300;
+  // Misc
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: $transition;
+
+  @include breakpoint(md) {
+    columns: 2;
+    inline-size: 500px;
+  }
+}
+
+.category-list__item {
+  // Box model
+  padding: 0;
+  // Misc
+  list-style-type: none;
+}
+
+.category-list__link {
+  // Box model
+  padding: 0.5rem 1rem;
+  // Typography
+  color: $white;
+}
+
+.category-list.list-open {
+  transform: scaleY(1);
+}

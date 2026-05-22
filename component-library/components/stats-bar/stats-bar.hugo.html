@@ -1,0 +1,10 @@
+<div class="stats-bar | content-full{{ if .background_color }} bg-{{ .background_color }}{{ end }}">
+    <div class="stats-bar__inner | content-lg grid gap-md">
+        {{ range .stats }}
+        <div class="stats-bar__stat | text-align-center font-color-white block-sm">
+            <p class="stats-bar__stat-number | h2 fw-700 no-margin">{{ .number }}</p>
+            <p class="stats-bar__stat-label | fs-100 no-margin">{{ .label }}</p>
+        </div>
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.image-card {
+    border-radius: 10px;
+}
+
+.image-card__image {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.image-card__body {
+    padding: $ic-200;
+}
+
+.image-card__heading {
+    font-size: 1.1rem;
+}
+
+.image-card__buttons {
+    margin-block-start: $ic-300;
+}
+
+.image-card .btn {
+    font-size: $ic-100;
+    padding: $ic--200 $ic-300;
+    margin-block-start: 0;
+}
+
+.image-card__buttons .btn + .btn {
+    margin-block-start: 0;
+}

@@ -1,0 +1,27 @@
+ul li + li,
+ol li + li {
+  margin-block-start: $ic-100;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.site-main ul li:not(.split-hero-block__trust-item, .featured-services__card, .card, .share-buttons__list-items, .staff-card, .swiper-slide, .gallery-dropdown__list li, .city-card, .downloads__item, .step, .careers-card, .share-button__list-item, .event, .event__date) {
+  position: relative;
+  list-style-type: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    padding: 4px;
+    background: $primary-color;
+    border-radius: $radius;
+    left: -24px;
+    top: 10px;
+  }
+}
+
+.has-two-column-list ul {
+  columns: 2;
+}

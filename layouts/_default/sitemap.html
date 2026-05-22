@@ -1,0 +1,53 @@
+{{ define "main" }}
+<section class="sitemap-content content-lg block">
+    <div class="">
+        <h1>Sitemap</h1>
+        <div class="columns">
+            <div class="col">
+                <h2>Pages</h2>
+                <ul>
+                    {{ range where .Site.Pages "Type" "not in" (slice "categories" "tags" "blog" "builders" "floor-plans") }}
+                        {{ if not (in (slice "Thank You") .Title) }}
+                            <li>
+                                <a href="{{ .RelPermalink }}" title="{{ .Name }}">{{ .Name | markdownify }}</a>
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Builders</h2>
+                <ul>
+                    {{ $pages := .Site.RegularPages }}
+                    {{ $builders := where $pages "Type" "builders" }}
+                    {{ range $builders }}
+                        <li>
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+                <h2>Floor Plans</h2>
+                <ul>
+                    {{ $pages := .Site.RegularPages }}
+                    {{ $plans := where $pages "Type" "floor-plans" }}
+                    {{ range $plans }}
+                        <li>
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+                <h2>Posts</h2>
+                <ul>
+                    {{ $pages := .Site.RegularPages }}
+                    {{ $blog := where $pages "Type" "our-news" }}
+                    {{ range $blog }}
+                        <li>
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

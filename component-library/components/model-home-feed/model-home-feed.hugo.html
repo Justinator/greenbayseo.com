@@ -1,0 +1,38 @@
+{{ $models := where site.RegularPages "Section" "visit-our-model-homes" }}
+{{ $models = sort $models "Weight" }}
+<div class="model-home-feed | content-lg block">
+    <div class="grid-columns-3 gap-sm">
+        {{ range $models }}
+        <div class="card">
+            <div class="card__image | cover-image">
+                <img src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_floorplan-thumbnail{{ .Params.seo.featured_image.image_url }}"
+                    alt="{{ .Params.seo.featured_image.image_alt }}" width="500" height="300" loading="lazy"
+                    decoding="async">
+                {{ if .Params.virtual_tour }}
+                <div class="card__3d-status | icon icon-xxl icon-fill-white">
+                    {{ partial "svg-icons/3d.svg" . }}
+                </div>
+                {{ end }}
+            </div>
+            <div class="card__body | flow">
+                <h2 class="card__heading | no-margin">{{ .Title }}</h2>
+                <div class="card__specs | flex flex-wrap gap-md">
+                    <span class="card__spec">
+                        {{ .Params.plan_overview.bed }} Bed
+                    </span>
+                    <span class="card__spec">
+                        {{ .Params.plan_overview.bath }} Bath
+                    </span>
+                    <span class="card__spec">
+                        {{ if .Params.plan_overview.total_sq_ft }}{{ .Params.plan_overview.total_sq_ft }}{{ end }} Sq.
+                        Ft.
+                    </span>
+                </div>
+                <a class="card__link | btn btn--primary flex-align-center flex-justify-center gap-xs"
+                    href="{{ .Permalink }}">View Model Home <div class="icon icon-lg icon-fill-black">{{ partial
+                        "svg-icons/chevron-right.svg" . }}</div></a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>

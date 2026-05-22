@@ -1,0 +1,89 @@
+<section class="split-hero-block | content-full p-relative{{ if .css_class }} {{ .css_class }}{{ end }}" {{ if .heading
+    }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+    {{ if .background_image.image_url }}
+    <picture class="background-image content-full">
+        <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+        <img class="content-full"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+            alt="{{ .image.image_alt }}" width="1920" height="1080" loading="eager" fetchpriority="high"
+            decoding="async">
+    </picture>
+    <div class="overlay overlay--white content-full"></div>
+    {{ end }}
+    <div class="split-hero-block__content | flow">
+        <div class="breadcrumbs">
+            <ol class="breadcrumbs__list | text-style-slub flex flex-center">
+                {{ if page.Parent }}
+                <li class="breadcrumbs__list-item"><a class="breadcrumbs__link" href="{{ page.Parent.Permalink }}">{{
+                        page.Parent.Title }}</a></li>
+                {{ end }}
+                <li class="breadcrumbs__list-item">{{ page.Title }}</li>
+            </ol>
+        </div>
+        <header>
+            {{ if .preheading }}
+            <h1 class="text-style-slub h2">{{ .preheading }}</h1>
+            <h2 id="{{ .heading | urlize }}">{{ .heading }}</h2>
+            {{ else }}
+            <h1 class="h2" id="{{ .heading | urlize }}">{{ .heading }}</h1>
+            {{ end }}
+            {{ if .subheading }}
+            <p class="split-hero-block__subheading">{{ .subheading | markdownify }}</p>
+            {{ end }}
+        </header>
+        {{ if .body }}
+        {{ if in .body "\n" }}
+        {{ .body | markdownify }}
+        {{ else }}
+        <p>{{ .body | markdownify }}</p>
+        {{ end }}
+        {{ end }}
+        <div class="flex flex-column flex-row-md flex-align-start flex-align-end-md gap-sm">
+            {{ if .button.enabled }}
+            {{ with .button }}
+            <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{
+                end }}>
+                {{ .button_text }}
+            </a>
+            {{ end }}
+            {{ end }}
+            {{ if .button_2.enabled }}
+            {{ with .button_2 }}
+            <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{
+                end }}>
+                {{ .button_text }}
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+    <div class="split-hero-block__media">
+        <picture class="split-hero-block__headshot">
+            <source sizes="(min-width: 993px) 50vw, 100vw" srcset="
+        https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-320-auto{{ .image.image_url }} 320w,
+        https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .image.image_url }} 640w,
+        https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-960-auto{{ .image.image_url }} 960w,
+        https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1280-auto{{ .image.image_url }} 1280w
+      ">
+            <img class="split-hero-block__image"
+                src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .image.image_url }}"
+                sizes="(min-width: 993px) 50vw, 100vw" srcset="
+        https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-320-auto{{ .image.image_url }} 320w,
+        https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .image.image_url }} 640w,
+        https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-960-auto{{ .image.image_url }} 960w,
+        https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1280-auto{{ .image.image_url }} 1280w
+      " alt="{{ .image.image_alt }}" width="600" height="450" loading="lazy" decoding="async">
+        </picture>
+    </div>
+    {{ if .background_logo.enabled }}
+        <div class="split-hero-block__logo">
+            <img src="/uploads/wisconsin-homes-logomark-watermark.svg"
+                alt="Wisconsin Homes logo watermark">
+        </div>
+    {{ end }}
+</section>

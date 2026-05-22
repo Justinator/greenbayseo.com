@@ -1,0 +1,84 @@
+details {
+    // background-color: $white;
+    cursor: pointer;
+    padding-block: $ic-100;
+    // margin-bottom: $ic-100;
+
+    summary::marker {
+        color: $primary-color;
+    }
+}
+
+/* Hide default arrow */
+details > summary::-webkit-details-marker {
+    display: none;
+}
+  
+details > summary {
+    position: relative;
+    list-style: none;
+    padding: $ic--200 0;
+    transition: $transition;
+}
+  
+.faq__status-icon {
+    position: relative;
+    transform: rotate(270deg);
+    transition: $transition;
+}
+
+.faq__status-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $ic-500;
+    height: $ic-500;
+    border: 1px solid $primary-color;
+    border-radius: $radius;
+}
+
+/* Change marker when details is open */
+details[open] .faq__status-icon {
+    transform: rotate(90deg);
+}
+
+// details > summary::before,
+// details > summary::after {
+//   content: "";
+//   inline-size: 1rem;
+//   block-size: 2px;
+//   background-color: $black;
+//   position: absolute;
+//   transition: 0.3s ease;
+//   inset-block-start: 26px;
+//   inset-inline-end: 16px;
+//   transform: translate(-30%, -30%);
+// }
+
+// details > summary::before {
+//     transform: translate(-30%, -30%) rotate(90deg);
+// }
+
+/* Change marker when details is open */
+// details[open] > summary:before {
+//     transform: translate(-30%, -30%) rotate(0deg);
+// }
+
+// details[open] > summary {
+//     border-top-right-radius: $radius;
+//     border-top-left-radius: $radius;
+//     border-bottom-right-radius: 0;
+//     border-bottom-left-radius: 0;
+// }
+
+// details p,
+// details img {
+//     padding-inline-end: $ic-100;
+//     margin-block-end: $ic-100 !important;
+// }
+
+// details p {
+//     max-width: none;
+// }

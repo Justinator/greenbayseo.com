@@ -1,0 +1,41 @@
+<section class="videos-block | content-full block" aria-labelledby="Videos List">
+  <div class="grid-columns-2 gap-xl">
+    {{ range .videos }}
+    <div>
+      <div class="video | p-relative">
+        {{ if .background_image.image_url }}
+        <picture class="background-image">
+          <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+          <img class="content-full"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+            alt="{{ .image.image_alt }}" width="1920" height="1080" loading="lazy" decoding="async">
+        </picture>
+        {{ end }}
+        <div class="video-play-button">
+          <a class="video-play-button__link | border-radius-sm"
+            href="{{ if .vimeo_id }}https://vimeo.com/{{ .vimeo_id }}{{ else if .youtube_share_url }}https://www.youtube.com/watch?v={{ .youtube_share_url }}{{ end }}"
+            data-src="{{ if .vimeo_id }}https://player.vimeo.com/video/{{ .vimeo_id }}?dnt=1&amp;%3Bapp_id=122963&amp;autoplay=1{{ else if .youtube_share_url }}https://www.youtube-nocookie.com/embed/{{ .youtube_share_url }}&autoplay=1{{ end }}"
+            data-title="{{ .video_title }}">
+            <div class="video-play-button__wrap | flex flex-column flex-align-center">
+              <div class="video-play-button__icon | icon icon-fill-white">
+                <svg class="play-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <span class="video-play-button__button-text">{{ if .play_button_text }}{{ .play_button_text }}{{ else
+                }}Play Video{{ end }}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <p class="h5 fw-700 mt-1">{{ .heading }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,65 @@
+<section class="hero | content-full p-relative{{ if .css_class }} {{ .css_class }}{{ end }}" {{ if .heading }}
+  aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+  {{ if .featured_video.enabled }}
+    <div class="video-play-button | content-full flex flex-justify-end">
+      <a class="video-play-button__link | border-radius-sm"
+        href="{{ if .featured_video.vimeo_id }}https://vimeo.com/{{ .featured_video.vimeo_id }}{{ else if .featured_video.youtube_share_url }}https://www.youtube.com/watch?v={{ .featured_video.youtube_share_url }}{{ end }}"
+        data-src="{{ if .featured_video.vimeo_id }}https://player.vimeo.com/video/{{ .featured_video.vimeo_id }}?dnt=1&amp;%3Bapp_id=122963&amp;autoplay=1{{ else if .featured_video.youtube_share_url }}https://www.youtube-nocookie.com/embed/{{ .featured_video.youtube_share_url }}&autoplay=1{{ end }}"
+        data-title="{{ .featured_video.video_title }}">
+        <div class="video-play-button__wrap | flex flex-column flex-align-center">
+          <div class="video-play-button__icon | icon icon-fill-white">
+            <svg class="play-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+          <span class="video-play-button__button-text">{{ if .featured_video.play_button_text }}{{
+            .featured_video.play_button_text }}{{ else }}Play Video{{ end }}</span>
+        </div>
+      </a>
+    </div>
+  {{ end }}
+  <div class="hero__background | content-full">
+    {{ if .background_image.image_url }}
+    <picture class="background-image content-full">
+      <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+      <img class="content-full"
+        src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+        alt="{{ .image.image_alt }}" width="1920" height="1080" loading="eager" decoding="async">
+    </picture>
+    {{ end }}
+    {{ if .background_video.enabled }}
+    <video class="background-video content-full" autoplay muted loop playsinline preload="none">
+      <source src="{{ .background_video.video_url_mobile }}" type="video/mp4" media="(max-width: 640px)" />
+      <source src="{{ .background_video.video_url_desktop }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    {{ end }}
+    <div class="overlay overlay--black content-full"></div>
+  </div>
+  <div class="hero__content | flow p-relative font-color-white">
+    <header>
+      {{ if .preheading }}
+      <h1 class="hero__preheading | text-style-slub">{{ .preheading }}</h1>
+      <h2 class="hero__heading | h1" id="{{ .heading | urlize }}">{{ .heading }}</h2>
+      {{ else }}
+      <h1 id="{{ .heading | urlize }}">{{ .heading }}</h1>
+      {{ end }}
+      {{ if .subheading }}
+      <p class="hero__subheading">{{ .subheading | markdownify }}</p>
+      {{ end }}
+    </header>
+    {{ if .button.enabled }}
+    {{ with .button }}
+    <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{ end }}>
+      {{ .button_text }}
+    </a>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>

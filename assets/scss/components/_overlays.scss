@@ -1,0 +1,23 @@
+.overlay {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+.overlay--black {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay--dark-black {
+    background-color: rgba(0, 0, 0, .85);
+}
+
+.overlay--white {
+    background-color: rgba($white, .96);
+}
+
+.overlay--dark-black-gradient {
+  background: linear-gradient(90deg,rgba(0, 0, 0, .85) 25%, rgba(0, 0, 0, 0) 100%);
+}

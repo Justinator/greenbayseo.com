@@ -1,0 +1,241 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  font-family: $primary-font;
+  font-size: $ic-100;
+  font-weight: 400;
+  line-height: 1.5;
+
+  @include breakpoint(sm) {
+    font-size: 1.125rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font;
+  font-weight: 700;
+  line-height: 1.2;
+  // margin-bottom: 0.65em;
+  max-inline-size: 32ch;
+  text-wrap: balance;
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient($light-gray, $light-gray);
+  background-size: 100% 6px,0 6px;
+  background-position: 100% 100%,0 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-primary h1 strong,
+.bg-primary h2 strong,
+.bg-primary h3 strong,
+.bg-primary h4 strong,
+.bg-primary h5 strong,
+.bg-primary h6 strong {
+  background-image: linear-gradient(#207DE5, #207DE5);
+}
+
+.bg-gray h1 strong,
+.bg-gray h2 strong,
+.bg-gray h3 strong,
+.bg-gray h4 strong,
+.bg-gray h5 strong,
+.bg-gray h6 strong {
+  background-image: linear-gradient($white, $white);
+}
+
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3:not(.card h3),
+.bg-primary p:not(.card p) {
+  color: $white;
+}
+
+.max-80 {
+  max-inline-size: $measure;
+}
+
+h1,
+.h1 {
+  font-size: $ic-800;
+  font-size: clamp($ic-500, 6vw, $ic-800);
+}
+
+h2,
+.h2 {
+  font-size: $ic-700;
+  font-size: clamp($ic-400, 5vw, $ic-600);
+}
+
+h3,
+.h3 {
+  font-size: $ic-600;
+  font-size: clamp($ic-300, 4vw, $ic-600);
+}
+
+h4,
+.h4 {
+  font-size: $ic-500;
+  font-size: clamp($ic-200, 4vw, $ic-500);
+}
+
+h5,
+.h5 {
+  font-size: $ic-400;
+  font-size: clamp($ic-200, 4vw, $ic-400);
+}
+
+h6,
+.h6 {
+  font-size: $ic-300;
+  font-size: clamp($ic-100, 4vw, $ic-300);
+}
+
+p {
+  margin: 0;
+}
+
+.i {
+  font-style: italic;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.shift-first {
+  text-transform: capitalize;
+}
+
+.shift-up {
+  text-transform: uppercase;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.font-primary {
+  font-family: $primary-font;
+}
+
+.font-secondary {
+  font-family: $secondary-font;
+}
+
+.font-color-black {
+  color: $black;
+  transition: $transition;
+}
+
+.font-color-white {
+  color: $white;
+}
+
+.font-color-primary {
+  color: $primary-color;
+}
+
+.font-color-secondary {
+  color: $secondary-color;
+}
+
+.font-color-accent {
+  color: $secondary-color;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.font-size-xs {
+  font-size: $ic-100;
+}
+
+.font-size-sm {
+  font-size: $ic-200;
+}
+
+.font-size-md {
+  font-size: $ic-300;
+}
+
+.font-size-lg {
+  font-size: $ic-400;
+}
+
+.font-size-xl {
+  font-size: $ic-500;
+}
+
+.font-size-xxl {
+  font-size: $ic-600;
+}
+
+.font-size-xxxl {
+  font-size: $ic-700;
+}
+
+.text-align-start {
+  text-align: start
+}
+
+.text-align-center {
+  text-align: center
+}
+
+.text-align-end {
+  text-align: end
+}
+
+@include breakpoint(md) {
+  .text-align-start-md {
+    text-align: start
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+.text-style-slub {
+  font-size: clamp($ic--100, 3vw, $ic-100);
+  opacity: .8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  max-inline-size: none;
+}

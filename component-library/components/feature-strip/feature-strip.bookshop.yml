@@ -1,0 +1,36 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Feature Strip"
+  description: Three-column feature strip with icons and short supporting text
+  icon: view_column
+  tags: ["Features", "Page Components"]
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  features:
+    - icon: location
+      heading: Rank Higher Locally
+      body: Get found by more customers in Green Bay searching for your services.
+    - icon: growth
+      heading: More Traffic, More Leads
+      body: Drive qualified website traffic that turns into calls, forms, and new customers.
+    - icon: results
+      heading: Real Results, Transparent
+      body: Clear reports, honest updates, and strategies built for long-term growth.
+  background_color: white
+  css_class: ''
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  icon:
+    type: select
+    options:
+      values:
+        - location
+        - growth
+        - results

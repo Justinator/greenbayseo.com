@@ -1,0 +1,67 @@
+.gallery-dropdown {
+    position: relative;
+}
+
+.gallery-dropdown__trigger {
+    // Positioning
+    position: relative;
+    // Box model
+    width: 200px;
+    height: 100%;
+    padding: 1rem;
+    padding-inline-end: $ic-700;
+    // Typography
+    text-align: start;
+    // Visual
+    background-color: $light-gray;
+    border: 1px solid rgba($black, .3);
+    border-radius: $radius;
+}
+
+.gallery-dropdown__trigger::after {
+    // Positioning
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    // Box model
+    width: 24px;
+    height: 24px;
+    // Visual
+    background-image: url("/uploads/chevron-down-icon.svg");
+    background-size: cover;
+    // Misc
+    content: "";
+}
+
+.gallery-dropdown__list {
+    // Positioning
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    // Box model
+    width: 100%;
+    max-height: 350px;
+    padding: 1rem;
+    margin: 0;
+    overflow-y: scroll;
+    // Typography
+    text-decoration: none;
+    // Visual
+    background: white;
+    box-shadow: 0 6px 15px rgba($primary-color, .15);
+    // Misc
+    list-style: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform $transition;
+    cursor: pointer;
+}
+
+.gallery-dropdown__link {
+    color: $black;
+}
+
+.gallery-list-open ul {
+    transform: scaleY(1);
+}

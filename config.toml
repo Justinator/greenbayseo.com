@@ -1,0 +1,48 @@
+baseURL = "https://www.wisconsinhomesinc.com"
+languageCode = "en-us"
+title = "Wisconsin Homes Inc."
+enableRobotsTXT = true
+paginate = "12"
+summaryLength = 20
+
+#################### default parameters ################################
+
+[params]
+  minifyBundles = true
+  imgixDomain = ""
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[markup.goldmark.renderer]
+  unsafe= true
+
+[module]
+replacements = "components.local -> ../component-library"
+
+[[module.imports]]
+path = 'components.local'
+
+[[module.imports]]
+path = 'github.com/cloudcannon/bookshop/hugo/v3'
+
+[taxonomies]
+  category = 'categories'
+  type = 'types'
+  tag = 'tags'
+  year = 'years'
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+[[related.indices]]
+  name = "categories"
+  weight = 100
+
+[[related.indices]]
+  name = "types"
+  weight = 100

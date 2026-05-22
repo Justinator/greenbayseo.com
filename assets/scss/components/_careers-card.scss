@@ -1,0 +1,23 @@
+.careers-card {
+    list-style-type: none;
+}
+
+.careers-card + .careers-card {
+    border-top: 1px solid $black;
+    margin-top: $ic-500;
+    padding-block-start: $ic-400;
+}
+
+.careers-card__link {
+    color: $dark-black;
+    transition: $transition;
+
+    &:hover, 
+    &:focus {
+        color: $primary-color;
+    }
+}
+
+.careers-card__date {
+    margin-top: 8px;
+}

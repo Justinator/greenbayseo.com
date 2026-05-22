@@ -1,0 +1,14 @@
+.two-columns-block:has(.overlay--black),
+.two-columns-block:has(.overlay--dark-black) {
+    color: $white;
+}
+
+.two-columns-block:has(.overlay--black) .text-block,
+.two-columns-block:has(.overlay--dark-black) .text-block,
+.two-columns-block:has(.overlay--white) .text-block {
+    background-color: rgba($white, .9);
+    color: $black;
+    padding: $ic-400;
+    position: relative;
+    border-radius: 20px;
+}

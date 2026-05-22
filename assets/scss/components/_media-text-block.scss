@@ -1,0 +1,202 @@
+.media-text-block__content {
+    position: relative;
+    z-index: 3;
+}
+
+.media-text-block__media {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    grid-column: 1 / -1;
+    min-height: 300px;
+
+    @include breakpoint(md) {
+        min-height: 600px;
+        grid-column: 3 / -1;
+    }
+}
+
+.media-text-block__media-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.media-text-block__media-wrapper picture {
+    position: relative;
+    block-size: 100%;
+}
+
+.media-text-block__media-wrapper picture::after {
+    // Positioning
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    // Box model
+    width: 100%;
+    height: 100%;
+    // Visual
+    border-radius: 50%;
+    // Misc
+    content: "";
+    transform: translate(-50%, -50%);
+}
+
+.media-text-block__media-wrapper picture img {
+    // Box model
+    width: 100%;
+    height: 100%;
+    block-size: 100%;
+    // Visual
+    object-fit: cover;
+}
+
+.media-text-block .video-play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.media-text-block__video {
+    // Positioning
+    position: absolute;
+    top: 50%;
+    // Box model
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4/1;
+    // Visual
+    object-fit: cover;
+    // Misc
+    transform: translateY(-50%);
+}
+
+.media-text-block__video {
+    // Positioning
+    z-index: 2;
+    // Box model
+    overflow: hidden;
+}
+
+.media-text-block__video iframe {
+    // Positioning
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // Box model
+    width: 150%;
+    height: 150%;
+    // Misc
+    transform: translate(-50%, -50%);
+}
+
+.media-text-block__logo {
+    // Positioning
+    position: absolute;
+    top: 50%;
+    left: 0;
+    // Box model
+    width: 600px;
+    height: 600px;
+    // Misc
+    transform: translateY(-50%) translateX(-50%);
+
+    @include breakpoint(md) {
+        width: 800px; 
+        height: 800px;
+    }
+}
+
+.media-text-block--text-left .media-text-block__content {
+
+    @include breakpoint(md) {
+        padding-inline-end: $ic-600;
+    }
+}
+
+.media-text-block--text-left .media-text-block__image {
+    @include breakpoint(md) {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+.media-text-block--text-right .media-text-block__content {
+
+    @include breakpoint(md) {
+        order: 2;
+        grid-column: 3 / 4;
+        margin-left: auto;
+        padding-inline-start: $ic-600;
+    }
+}
+
+.media-text-block--text-right .media-text-block__media {
+
+    @include breakpoint(md) {
+        order: 1;
+        grid-column: 1 / 3;
+    }
+}
+
+.media-text-block--text-right .media-text-block__media-wrapper {
+    &::after {
+        left: -15px;
+    }
+}
+
+.media-text-block--text-right .media-text-block__image {
+    @include breakpoint(md) {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.media-text-block--text-right .media-text-block__logo {
+    @include breakpoint(md) {
+        left: initial;
+        right: -100px;
+    }
+}
+
+@include breakpoint(md) {
+    .media-text-block__content-wrapper {
+        display: grid;
+        grid-template-columns:
+          minmax(clamp(1.25rem, 4vw, 3rem), 1fr)
+          minmax(0, calc(96rem / 2))
+          minmax(0, calc(96rem / 2))
+          minmax(clamp(1.25rem, 4vw, 3rem), 1fr)
+    }
+
+    .media-text-block__content {
+        grid-column: 2 / 3;
+        max-width: 650px;
+    }
+}
+
+.media-text-block:has(.related-pages) {
+    padding-block-end: 0;
+
+    .related-pages {
+        padding-block: clamp($ic-400, 10%, $ic-900);
+    }
+}
+
+.media-text-block__media-grid-image:nth-of-type(odd) img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    @include breakpoint(md) {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+.media-text-block__media-grid-image:nth-of-type(even) img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}

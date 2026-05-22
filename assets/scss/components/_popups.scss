@@ -1,0 +1,87 @@
+.popup {
+    // Box model
+    width: calc(100% - 32px);
+    max-width: none;
+    max-width: 1200px;
+    max-height: none;
+    padding: 0;
+    overflow: visible;
+    // Visual
+    background: transparent;
+    border: none;
+
+    &::backdrop {
+        background: rgba($dark-black, .75);
+    }
+}
+
+
+.popup__close,
+.site-popup__close {
+    // Positioning
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    z-index: 100;
+    // Box model
+    display: grid;
+    place-items: center;
+    width: $ic-600;
+    height: $ic-600;
+    padding: 0;
+    margin: 0;
+    // Typography
+    text-align: center;
+    // Visual
+    background: $dark-black;
+    border: 2px solid $white;
+    border-radius: 50%;
+    outline: none;
+}
+
+.popup--quote {
+    max-width: 900px;
+    max-height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: $white;
+}
+
+.popup--quote .popup__header {
+    padding: $ic-300;
+    border-bottom: 1px solid $light-gray;
+}
+
+.popup--quote .popup__close {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.popup--quote .quote-form {
+    padding-block: $ic-300;
+}
+
+.popup--quote .contact-form__form-group-wrapper {
+    padding-inline: $ic-300;
+    padding-block-end: $ic-300;
+    border-bottom: 1px solid $light-gray;
+}
+
+.popup--quote .contact-form__form-group input,
+.popup--quote .contact-form__form-group textarea,
+.popup--quote .contact-form__form-group select {
+    border: 1px solid rgba($black, .5);
+}
+
+.popup--quote .btn--secondary {
+    margin-block-start: 0;
+}
+
+.popup--quote mapbox-search-box div:first-of-type {
+    border-radius: 20px !important;
+}
+
+.popup--quote mapbox-search-box input {
+    max-width: none !important;
+}

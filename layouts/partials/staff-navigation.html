@@ -1,0 +1,14 @@
+{{ if or .PrevInSection .NextInSection }}
+<div class="post-navigation content-full flex">
+    <div class="post-navigation__prev w-50 flex flex-justify-end">
+        {{ with .NextInSection }}
+        <a href="{{ .Permalink }}" class="post-navigation__link shift-up letter-spacing-2 fw-700 font-size-xs flex flex-align-center"><div class="icon-lg icon-stroke-primary">{{ partialCached "svg-icons/double-chevron-left.svg" . }}</div> Previous</a>
+        {{ end }}
+    </div>
+    <div class="post-navigation__next w-50 flex flex-justify-start">
+        {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}" class="post-navigation__link shift-up letter-spacing-2 fw-700 font-size-xs flex flex-align-center">Next <div class="icon-lg icon-stroke-primary">{{ partialCached "svg-icons/double-chevron-right.svg" . }}</div></a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

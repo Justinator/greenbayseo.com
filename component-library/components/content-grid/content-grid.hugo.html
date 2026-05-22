@@ -1,0 +1,21 @@
+<section class="block content-full bg-{{ .background_color }}" {{ if .heading }}aria-labelledby="{{ .heading | urlize }}"{{ end }}>
+    {{ if .heading }}
+	    <h2 class="mb-6 max-width-none text-align-center" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+    {{ end }}
+	<div class="border-grid grid-columns-3">
+        {{ range .columns }}
+            <div class="border-grid__col flow">
+                <h3 class="h4">{{ .heading }}</h3>
+                <div class="font-size-xs">
+                    {{ if .body }}
+                        {{ if in .body "\n" }}
+                            {{ .body | markdownify }}
+                        {{ else }}
+                            <p>{{ .body | markdownify }}</p>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+	</div>
+</section>

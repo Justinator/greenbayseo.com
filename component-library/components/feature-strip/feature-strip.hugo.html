@@ -1,0 +1,49 @@
+<section
+  class="feature-strip | content-full block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+  aria-label="Key benefits">
+  <div class="feature-strip__inner | wrapper-md pt-4 pb-4">
+    <div class="feature-strip__grid | grid gap-md">
+      {{ range .features }}
+      <div class="feature-strip__item | grid-12 grid-4-md flex gap-sm">
+        {{ if .icon }}
+        <div class="feature-strip__icon" aria-hidden="true">
+          {{ if eq .icon "location" }}
+          <div class="icon icon-xxl icon-fill-tertiary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" />
+            </svg>
+          </div>
+          {{ else if eq .icon "growth" }}
+          <div class="icon icon-xxl icon-fill-tertiary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+              <path d="M4 17.25 9.25 12l3.5 3.5L20 8.25V13h2V5h-8v2h4.75l-6 6-3.5-3.5L2.5 16.25 4 17.25Z" />
+            </svg>
+          </div>
+          {{ else if eq .icon "results" }}
+          <div class="icon icon-xxl icon-fill-tertiary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+              <path d="M13 2v9h9c-.47-5.05-3.95-8.53-9-9Zm-2 1C5.95 3.5 2 7.77 2 13c0 5.52 4.48 10 10 10 5.23 0 9.5-3.95 10-9H11V3Z" />
+            </svg>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <div class="feature-strip__content | flow">
+          {{ if .heading }}
+          <h2 class="feature-strip__heading | h6 no-margin">{{ .heading | markdownify }}</h2>
+          {{ end }}
+
+          {{ if .body }}
+          {{ if in .body "\n" }}
+          {{ .body | markdownify }}
+          {{ else }}
+          <p class="feature-strip__body | no-margin">{{ .body | markdownify }}</p>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

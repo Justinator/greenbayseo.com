@@ -1,0 +1,25 @@
+<div class="share-buttons flex flex-row flex-align-center">
+    <span>Share:</span>
+    <ul class="flex flex-row flex-align-center gap-sm">
+        <li class="share-buttons__list-items">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook" target="_blank" class="share-buttons__link icon-lg icon-fill-primary">
+                {{ partial "svg-icons/facebook.svg" . }}
+            </a>
+        </li>
+        <li class="share-buttons__list-items">
+            <a href="https://twitter.com/intent/tweet?text=Check out this project by {{ .Site.Data.site_settings.business_name }}: {{ .Permalink }}" target="_blank" title="Tweet" class="share-buttons__link icon-lg icon-fill-primary">
+                {{ partial "svg-icons/x.svg" . }}
+            </a>
+        </li>
+        <li class="share-buttons__list-items">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}" target="_blank" title="Share on LinkedIn" class="share-buttons__link icon-lg icon-fill-primary">
+                {{ partial "svg-icons/linkedin.svg" . }}
+            </a>
+        </li>
+        <li class="share-buttons__list-items">
+            <a href="mailto:?subject=Check out this page&body=I thought you might like this: {{ .Permalink }}" target="_blank" title="Send email" class="share-buttons__link icon-lg icon-fill-primary">
+                {{ partial "svg-icons/email.svg" . }}
+            </a>
+        </li>
+    </ul>
+</div>

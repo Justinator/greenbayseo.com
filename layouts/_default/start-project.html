@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ partial "bookshop_bindings" `.Params.content_blocks` }}
+{{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+<section class="block content-full">
+  <div class="contact block flex flex-wrap gap-lg">
+      <div class="contact__body">
+        <div class="contact-form">
+          <div class="contact-form__wrapper bg-gray">
+            {{ partial "forms/project-form" . }}
+          </div>
+        </div>
+      </div>
+      <div class="contact__sidebar flow">
+        <div class="testimonial testimonial--full block content-lg bg-black bg-squares">
+          <div class="wrapper-md flow">
+              <div>
+                <div class="testimonial__icon icon-xxl icon-fill-primary">
+                  {{ partial "svg-icons/quote.svg" . }}
+                </div>
+                <p class="testimonial__body fw-700">Your group and subcontractors were excellent to work with and should be commended for a superior installation and excellent attitude. I’ve been doing this for 35 years and I cannot think of a better bunch of people to work with us.</p>
+              </div>
+              <div>
+                  <div class="testimonial__name text-style-slub">Steve Gering</div>
+                  <div class="testimonial__title">Assistant Director of Facilities<br>University of Wisconsin–Green Bay</div>
+              </div>
+          </div>
+          {{ partial "svg-icons/hmi-watermark.svg" . }}
+      </div>
+      </div>
+  </div>
+</section>
+{{ end }}

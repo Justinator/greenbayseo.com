@@ -1,0 +1,107 @@
+<section
+	class="two-columns-block | content-full p-relative block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+	{{ if .heading }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+	{{ if .background_image.image_url }}
+	<picture class="background-image content-full">
+		<source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+		<img class="content-full"
+			src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+			alt="{{ .image.image_alt }}" width="1920" height="1080" loading="lazy" decoding="async">
+	</picture>
+	<div class="overlay overlay--{{ if .overlay_color }}{{ .overlay_color }}{{ end }} content-full"></div>
+	{{ end }}
+	{{ if .heading }}
+	<div class="content-sm p-relative">
+		<header class="margin-inline-auto flow">
+			{{ if .preheading }}
+			<h2 class="text-align-center text-style-slub">{{ .preheading | markdownify }}</h2>
+			<h3 class="text-align-center no-margin max-width-none" id="{{ .heading | urlize }}">{{ .heading |
+				markdownify }}</h3>
+			{{ else if .heading }}
+			<h2 class="text-align-center no-margin max-width-none" id="{{ .heading | urlize }}">{{ .heading |
+				markdownify }}</h2>
+			{{ else }}
+
+			{{ end }}
+			<div class="text-align-center">
+				{{ if .body }}
+				{{ if in .body "\n" }}
+				{{ .body | markdownify }}
+				{{ else }}
+				<p class="margin-inline-auto">{{ .body | markdownify }}</p>
+				{{ end }}
+				{{ end }}
+			</div>
+		</header>
+	</div>
+	{{ end }}
+	<div class="content-lg grid gap-lg{{ if .heading }} mt-6{{ end }}">
+		<div class="text-block | grid-12 grid-6-md flow">
+			{{ with .left_column }}
+			{{ if .heading }}
+			<header>
+				{{ if .preheading }}
+				<h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+				<h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+				{{ else if .heading }}
+				<h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+				{{ else }}
+
+				{{ end }}
+			</header>
+			{{ end }}
+			{{ if .body }}
+			{{ if in .body "\n" }}
+			{{ .body | markdownify }}
+			{{ else }}
+			<p>{{ .body | markdownify }}</p>
+			{{ end }}
+			{{ end }}
+			{{ if .button.enabled }}
+			{{ with .button }}
+			<a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{
+				end }}>
+				{{ .button_text }}
+			</a>
+			{{ end }}
+			{{ end }}
+			{{ end }}
+		</div>
+		<div class="text-block | grid-12 grid-6-md flow">
+			{{ with .right_column }}
+			{{ if .heading }}
+			<header class="flow">
+				{{ if .preheading }}
+				<h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+				<h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+				{{ else if .heading }}
+				<h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+				{{ else }}
+
+				{{ end }}
+			</header>
+			{{ end }}
+			{{ if .body }}
+			{{ if in .body "\n" }}
+			{{ .body | markdownify }}
+			{{ else }}
+			<p>{{ .body | markdownify }}</p>
+			{{ end }}
+			{{ end }}
+			{{ if .button.enabled }}
+			{{ with .button }}
+			<a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{
+				end }}>
+				{{ .button_text }}
+			</a>
+			{{ end }}
+			{{ end }}
+			{{ end }}
+		</div>
+	</div>
+</section>

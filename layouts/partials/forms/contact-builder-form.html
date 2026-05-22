@@ -1,0 +1,144 @@
+{{ $emails := slice }}
+{{ if .Params.active }}
+{{ if .Params.owner.email }}{{ $emails = $emails | append .Params.owner.email }}{{ end }}
+{{ if .Params.owner.email_alt }}{{ $emails = $emails | append .Params.owner.email_alt }}{{ end }}
+{{ if .Params.sales_rep.email }}{{ $emails = $emails | append .Params.sales_rep.email }}{{ end }}
+{{ if .Params.sales_rep.email_alt }}{{ $emails = $emails | append .Params.sales_rep.email_alt }}{{ end }}
+{{ end }}
+<form class="builder-contact-form | flow shadow-xl max-width-none" name="Contact Wisconsin Homes"
+    action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="e893421b-d515-4c4a-b4f9-ffee70361266">
+    <input type="hidden" name="redirect" value="https://www.wisconsinhomesinc.com/thank-you/">
+    <input type="hidden" name="ccemail" value="{{ delimit $emails `; ` }}" />
+    <input type="hidden" name="from_name" value="Wisconsin Homes">
+    {{ if eq .Params.active false }}
+    <input type="hidden" name="no_active_builder"
+        value="No active builders were found for this customer. Need to assign lead to a builder.">
+    {{ end }}
+    <div class="visually-hidden">
+        <label for="subject">New Form Submission From The Wisconsin Homes Builder Form</label>
+        <input aria-label="subject" id="subject" name="subject"
+            value="New Form Submission From The Wisconsin Homes Builder Form">
+    </div>
+    <div class="contact-form__form-row | visually-hidden flex flex-column flex-row-md gap-sm">
+        <div class="contact-form__form-group flex-grow-1">
+            <label for="builder-name">Contacting:</label>
+            <input class="contact-form__form-control max-width-none" name="Builder Name" id="builder-name" type="text"
+                value="{{ .Title }}" readonly>
+        </div>
+    </div>
+    <div class="contact-form__form-group-wrapper">
+        <strong>Personal Information</strong>
+        <div class="contact-form__form-group contact-form__name">
+            <label for="full_name">Full Name*</label>
+            <input class="contact-form__form-control max-width-none" name="Full Name"
+                id="full_name" type="text" autocomplete="name" required>
+        </div>
+        <div class="contact-form__form-group contact-form__email">
+            <label for="email">Email*</label>
+            <input class="contact-form__form-control max-width-none" name="email" id="email"
+                type="email" autocomplete="email" required>
+        </div>
+        <div class="contact-form__form-group contact-form__phone">
+            <label for="phone">Phone*</label>
+            <input class="contact-form__form-control max-width-none" name="Phone"
+                id="phone" type="tel" autocomplete="tel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+                title="Please enter a 10-digit phone number (e.g., 123-456-7890)" required>
+        </div>
+        <div class="contact-form__form-group">
+            <label for="contact_preference">How Would You Prefer To Be Contacted?</label>
+            <select class="contact-form__form-control max-width-none" name="Contact Preference" id="contact_preference"
+                placeholder="How Would You Prefer To Be Contacted?">
+                <option value=""></option>
+                <option value="No Preference">No Preference</option>
+                <option value="Phone">Phone</option>
+                <option value="Email">Email</option>
+            </select>
+        </div>
+    </div>
+    <div class="contact-form__form-group-wrapper">
+        <strong>Build Location</strong>
+        <div class="contact-form__form-group contact-form__location">
+            <label for="city">City Where You Want To Build*</label>
+            <input class="contact-form__form-control max-width-none"
+                name="City" id="city" type="text" autocomplete="address-level2" required>
+        </div>
+        <div class="contact-form__form-group contact-form__location">
+            <label for="state">State Where You Want To Build*</label>
+            <input class="contact-form__form-control max-width-none"
+                name="State" id="state" type="text" autocomplete="address-level1" required>
+        </div>
+        <div class="contact-form__form-group contact-form__location">
+            <label for="zip">Zip*</label>
+            <input class="contact-form__form-control max-width-none"
+                name="Zip" id="zip" type="text" autocomplete="postal-code" required>
+        </div>
+    </div>
+    <div class="contact-form__form-group-wrapper">
+        <strong>Home Preferences</strong>
+        <div class="contact-form__form-group">
+            <label for="home_style">Preferred Home Style*</label>
+            <select class="contact-form__form-control max-width-none" name="Home Style" id="home_style" required>
+                <option value=""></option>
+                <option value="Cape Cod">Cape Cod</option>
+                <option value="Chalet">Chalet</option>
+                <option value="Colonial">Colonial</option>
+                <option value="Cottage">Cottage</option>
+                <option value="Duplex">Duplex</option>
+                <option value="Ranch">Ranch</option>
+            </select>
+        </div>
+        <div class="contact-form__form-group">
+            <label for="floor_plan">Preferred Floor Plan*</label>
+            <select class="contact-form__form-control max-width-none"
+                name="Floor Plan" id="floor_plan" required>
+                <option value=""></option>
+                {{ range where site.RegularPages "Section" "floor-plans" }}
+                <option value="{{ .Title }}">{{ .Title }}</option>
+                {{- end -}}
+            </select>
+        </div>
+        <div class="contact-form__form-group">
+            <label for="alt_floor_plan">Alternate Preferred Floor Plan*</label>
+            <select class="contact-form__form-control max-width-none"
+                name="Alternate Floor Plan" id="alt_floor_plan" required>
+                <option value=""></option>
+                {{ range where site.RegularPages "Section" "floor-plans" }}
+                <option value="{{ .Title }}">{{ .Title }}</option>
+                {{- end -}}
+            </select>
+        </div>
+        <div class="contact-form__form-group">
+            <label for="budget">What’s Your Budget (Excluding Cost of Land)?*</label>
+            <select class="contact-form__form-control max-width-none"
+                placeholder="What’s Your Budget (Excluding Cost of Land)?*" name="Budget" id="budget" required>
+                <option value=""></option>
+                <option value="No budget has been established yet">No budget has been established yet</option>
+                <option value="$225,000 - $325,000">$225,000 - $325,000</option>
+                <option value="$325,000 - $450,000">$325,000 - $450,000</option>
+                <option value="$450,000 - $700,000+">$450,000 - $700,000+</option>
+            </select>
+        </div>
+        <small>General budget information will allow our builders to recommend alternatives if your selected floorplan is out of budget.</small>
+    </div>
+    <div class="contact-form__form-group">
+        <label for="referral">Where Did You Hear About Us?*</label>
+        <select name="Where Did You Hear About Us?" id="referral" class="contact-form__form-control max-width-none"
+            required>
+            <option value=""></option>
+            <option value="Internet Search">Internet Search</option>
+            <option value="ChatGPT/AI">ChatGPT/AI</option>
+            <option value="Digital Ad">Digital Ad</option>
+            <option value="Wisconsin Homes Team Member">Wisconsin Homes Team Member</option>
+            <option value="Wisconsin Homes Email/Social">Wisconsin Homes Email/Social</option>
+            <option value="Wisconsin Homes Blog">Wisconsin Homes Blog</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="contact-form__form-group contact-form__message">
+        <label for="message">Message*</label>
+        <textarea class="contact-form__form-control max-width-none" name="Message" id="message" rows="4" required></textarea>
+    </div>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAACKkhLH5ESS4AezH" data-theme="light"></div>
+    <button type="submit" class="contact-form__btn btn btn--primary">Send Message</button>
+</form>

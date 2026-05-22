@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="hero content-full block bg-black" aria-labelledby="{{ .Title | urlize }}">
+  <div class="hero__content">
+    <h1 class="no-margin max-width-none" id="{{ .Title | urlize }}">{{ .Title }} Archive</h1>
+  </div>
+</section>
+<section class="block content-full" aria-label="Blog post list">
+  {{ partial "blog/category-filter" . }}
+  <ul class="grid-columns-3 gap-sm max-width-none no-padding">
+    {{ range .Paginator.Pages.ByDate.Reverse }}
+      {{ .Render "blog-card" }}
+    {{ end }}
+  </ul>
+  {{ partial "blog/custom-pagination.html" . }}
+</section>
+{{ end }}

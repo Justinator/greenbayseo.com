@@ -1,0 +1,12 @@
+<section class="block content-full flow bg-{{ .background_color }}" id="open-positions" aria-label="Job Openings">
+    <div class="content-sm flow">
+        {{ if .heading }}
+            <h2 class="text-align-center max-width-none">{{ .heading | markdownify }}</h2>
+        {{ end }}
+        <ul class="max-width-none no-margin no-padding">
+            {{ range where site.RegularPages "Section" "careers" }}
+                {{ .Render "careers-card" }}
+            {{- end -}}
+        </ul>
+    </div>
+</section>

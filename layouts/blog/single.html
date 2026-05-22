@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="content-full max-width-none">
+    {{ partial "blog/blog-hero" . }}
+    <div class="post block content-md flex flex-wrap gap-md">
+        <div class="post__body flow">
+            {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+            {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+        </div>
+        <div class="post__sidebar">
+            <div class="post__sidebar-inner">
+                {{ partial "blog/share-buttons" . }}
+                <hr>
+                {{ partial "blog/related-posts" . }}
+            </div>
+        </div>
+    </div>
+</article>
+{{ partial "blog/post-navigation" . }}
+{{ end }}

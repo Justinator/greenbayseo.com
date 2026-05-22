@@ -1,0 +1,45 @@
+{{ $globalCTAData  := "" }}
+
+{{ if eq .Title "Home" }}
+  {{ $globalCTAData  = .Site.Data.global_blocks.home_cta }}
+{{ else if eq .Title "Contact" }}
+  {{ $globalCTAData  = .Site.Data.global_blocks.careers_cta }}
+{{ else if eq .Section "our-services" }}
+  {{ $globalCTAData  = .Site.Data.global_blocks.services_cta }}
+{{ else if eq .Section "our-projects" }}
+  {{ $globalCTAData  = .Site.Data.global_blocks.projects_cta }}
+{{ else if eq .Section "our-industries" }}
+  {{ $globalCTAData  = .Site.Data.global_blocks.industries_cta }}
+{{ else if eq .Section "our-careers" }}
+  {{ $globalCTAData  = .Site.Data.global_blocks.apply_cta }}
+{{ else if eq .Section "our-company" }}
+  {{ $globalCTAData  = .Site.Data.global_blocks.home_cta }}
+{{ else }}
+  {{ $globalCTAData  = .Site.Data.global_blocks.general_contact_cta }}
+{{ end }}
+
+{{ with $globalCTAData }}
+<section class="cta block content-lg bg-black bg-squares text-align-center flow" aria-labelledby="{{ .heading | urlize }}">
+    {{ if .preheading }}
+        <span class="text-style-slub">{{ .preheading }}</span>
+    {{ end }}
+    {{ if .heading }}
+        <h2 class="margin-inline-auto" id="{{ .heading | urlize }}">{{ .heading }}</h2>
+    {{ end }}
+    {{ if .body }}
+        <p class="margin-inline-auto" style="max-width: 650px;">{{ .body }}</p>
+    {{ end }}
+    <div class="flex flex-column flex-row-md flex-align-center flex-justify-center gap-sm">
+      {{ if .button_1.enabled }}
+          {{ with .button_1 }}
+              <a class="btn btn--primary" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .button_text }}</a>
+          {{ end }}
+      {{ end }}
+      {{ if .button_2.enabled }}
+          {{ with .button_2 }}
+              <a class="btn btn--primary" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .button_text }}</a>
+          {{ end }}
+      {{ end }}
+    </div>
+</section>
+{{ end }}

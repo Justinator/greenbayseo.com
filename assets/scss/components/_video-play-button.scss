@@ -1,0 +1,44 @@
+.video-play-button {
+  position: absolute;
+  z-index: 8;
+}
+
+.video-play-button__link {
+  height: 175px;
+  width: 175px;
+  background-color: rgba($dark-black, .7);
+  color: $white;
+  display: grid;
+  place-items: center;
+  transition: $transition;
+
+  @include breakpoint(sm) {
+    height: 225px;
+    width: 225px;
+  }
+}
+
+.video-play-button:hover .video-play-button__icon,
+.video-play-button:focus .video-play-button__icon {
+  transform: scale(1.05);
+}
+
+.video-play-button__icon {
+  display: grid;
+  inline-size: $ic-1000;
+  block-size: $ic-1000;
+  border: 4px solid white;
+  border-radius: 50px;
+  padding: 1rem;
+  margin-bottom: $ic--200;
+  transition: $transition;
+
+  svg {
+    inline-size: 100%;
+    block-size: 100%;
+  }
+}
+
+.video-play-button__button-text {
+  font-size: clamp($ic--200, 2vw, $ic-100);
+}

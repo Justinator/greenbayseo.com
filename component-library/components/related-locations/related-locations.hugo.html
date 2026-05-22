@@ -1,0 +1,11 @@
+<section class="content-full block bg-black flow" aria-labelledby="services-list">
+    <h2 class="text-align-center max-width-none" id="services-list">{{ .heading }}</h2>
+    <ul class="grid-columns-3 max-width-none gap-sm no-margin no-padding">
+    {{ range .related_locations }}
+      <li class="city-card flex flex-justify-center flex-center gap-sm font-color-white">
+        <div class="icon-sm icon-fill-white">{{ partial "svg-icons/location.svg" . }}</div>
+        <a class="city-card__link" href="{{ .url }}">{{ .title }}</a>
+      </li>
+    {{ end }}
+    </ul>
+</section>

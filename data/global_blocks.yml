@@ -1,0 +1,15 @@
+general_contact_cta: 
+  preheading: Work with us
+  heading: Ready to work with us?
+  body: >-
+    Contact us today and experience the difference of having a true partner in success.
+  button_1:
+    enabled: true
+    button_url: /start-project/
+    button_text: Start a Project With Us
+    open_in_new_tab: false
+  button_2:
+    enabled: false
+    button_url: 
+    button_text: 
+    open_in_new_tab: false

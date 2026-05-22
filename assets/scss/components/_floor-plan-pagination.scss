@@ -1,0 +1,43 @@
+.floor-plan-pagination {
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+    font-size: clamp($ic--100, 3vw, $ic-100);
+}
+
+.floor-plan-pagination__back {
+    padding: $ic-200 $ic-200 $ic-200 0;
+}
+
+.floor-plan-pagination__prev {
+    padding: $ic-200;
+}
+
+.floor-plan-pagination__next {
+    padding: $ic-200 0 $ic-200 $ic-200;
+    border-left: 1px solid $light-gray;
+
+    &:hover,
+    &:focus {
+        svg {
+            transform: translateX(5px);
+        }
+    }
+}
+
+.floor-plan-pagination__back svg,
+.floor-plan-pagination__next svg,
+.floor-plan-pagination__prev svg {
+    transition: $transition;
+}
+
+.floor-plan-pagination__back,
+.floor-plan-pagination__prev {
+
+    &:hover,
+    &:focus {
+        svg {
+            transform: translateX(-5px);
+        }
+    }
+}

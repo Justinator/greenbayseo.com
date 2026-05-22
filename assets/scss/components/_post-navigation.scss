@@ -1,0 +1,54 @@
+.post-navigation {
+  border-block-start: 1px solid $black;
+  border-block-end: 1px solid $black;
+}
+
+.post-navigation__next,
+.post-navigation__prev {
+  padding: $ic-100;
+}
+
+.post-navigation__next a,
+.post-navigation__prev a,
+.post-navigation__back a {
+  display: flex;
+  text-decoration: none;
+} 
+
+.post-navigation__next svg,
+.post-navigation__prev svg {
+  position: relative; 
+  top: 1px;
+  transition: $transition;
+}
+
+.post-navigation__next {
+  padding-left: $ic-200;
+  border-inline-start: 1px solid $black;
+
+  svg {
+    left: .5rem;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.post-navigation__prev {
+  padding-right: $ic-200;
+  
+  svg {
+    right: .5rem;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      transform: translateX(-5px);
+    }
+  }
+}

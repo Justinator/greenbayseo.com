@@ -1,0 +1,62 @@
+<section
+    class="service-area-block media-text-block | content-full p-relative block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+    {{ if .heading }}aria-labelledby="{{ .heading | urlize }}" {{ end }}>
+    {{ if .background_image.image_url }}
+    <picture class="background-image content-full">
+        <source sizes="100vw" srcset="
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-640-auto{{ .background_image.image_url }} 640w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1024-auto{{ .background_image.image_url }} 1024w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }} 1600w,
+      https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-2200-auto{{ .background_image.image_url }} 2200w
+    ">
+        <img class="content-full"
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .background_image.image_url }}"
+            alt="{{ .image.image_alt }}" width="1920" height="1080" loading="lazy" decoding="async">
+    </picture>
+    <div class="overlay overlay--white content-full"></div>
+    {{ end }}
+    <div class="media-text-block__content-wrapper | content-full gap-lg {{ if eq .text_column_position " left"
+        }}media-text-block--text-left{{ else }}media-text-block--text-right{{ end }}">
+        <div class="media-text-block__content | block flow">
+            <header>
+                {{ if .preheading }}
+                <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+                <h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+                {{ else }}
+                <h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+                {{ end }}
+            </header>
+            {{ range where site.RegularPages "Section" "service-area" }}
+            <a class="flex flex-align-center gap-xs" href="{{ .Permalink }}">
+                <div class="icon icon-md icon-fill-tertiary">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5 1.75C7.11375 1.75 4.375 4.48875 4.375 7.875C4.375 12.4687 10.5 19.25 10.5 19.25C10.5 19.25 16.625 12.4687 16.625 7.875C16.625 4.48875 13.8863 1.75 10.5 1.75ZM10.5 10.0625C9.2925 10.0625 8.3125 9.0825 8.3125 7.875C8.3125 6.6675 9.2925 5.6875 10.5 5.6875C11.7075 5.6875 12.6875 6.6675 12.6875 7.875C12.6875 9.0825 11.7075 10.0625 10.5 10.0625Z" />
+                    </svg>
+                </div>
+                {{ .Title }}
+            </a>
+            {{- end -}}
+            {{ if .button.enabled }}
+            {{ with .button }}
+            <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{
+                end }}>
+                {{ .button_text }}
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="media-text-block__media">
+            <div class="media-text-block__media-wrapper | flex flex-align-center">
+                <img class="media-text-block__image" sizes="(min-width: 993px) 50vw, 100vw"
+                    src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }}"
+                    srcset="
+    https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-400-auto{{ .image.image_url }} 400w,
+    https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-800-auto{{ .image.image_url }} 800w,
+    https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1200-auto{{ .image.image_url }} 1200w,
+    https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-1600-auto{{ .image.image_url }} 1600w
+  " alt="{{ .image.image_alt }}" width="1200" height="800" loading="lazy" decoding="async">
+            </div>
+        </div>
+    </div>
+</section>

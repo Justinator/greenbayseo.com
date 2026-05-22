@@ -1,0 +1,104 @@
+<div class="content-lg block{{ if .css_classes }} {{ .css_classes }}{{ end }}">
+  <header class="margin-inline-auto mb-4">
+    {{ if .preheading }}
+    <h2 class="text-align-center text-style-slub">{{ .preheading | markdownify }}</h2>
+    <h3 class="text-align-center no-margin max-width-none h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}
+    </h3>
+    {{ else }}
+    <h2 class="text-align-center no-margin max-width-none" id="{{ .heading | urlize }}">{{ .heading | markdownify }}
+    </h2>
+    {{ end }}
+    <div class="text-align-center">
+      {{ if .body }}
+      {{ if in .body "\n" }}
+      {{ .body | markdownify }}
+      {{ else }}
+      <p>{{ .body | markdownify }}</p>
+      {{ end }}
+      {{ end }}
+    </div>
+  </header>
+  <div class="gallery-filters | block-md flex flex-column flex-row-md flex-justify-between gap-sm">
+    <div class="gallery-dropdown" data-filter-type="gallery">
+      <button class="gallery-dropdown__trigger" aria-label="open gallery filters" aria-expanded="false">Select a Gallery
+        <span class="gallery-dropdown__arrow"></span></button>
+      <ul class="gallery-dropdown__list">
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/ranch/">Ranch</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/cottage/">Cottage</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/chalet/">Chalet</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/colonial/">Colonial</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/cape-cod/">Cape Cod</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/duplex/">Duplex</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/kitchen/">Kitchen</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/dining-room/">Dining Room</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/living-room/">Living Room</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/bedroom/">Bedroom</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/bathroom/">Bathroom</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/laundry-room/">Laundry Room</a>
+        </li>
+        <li>
+          <a class="gallery-dropdown__link | transform-x-8" href="/see-our-homes/gallery/other/">Other</a>
+        </li>
+      </ul>
+    </div>
+    {{ if .filters.enabled }}
+    <div class="flex gap-sm">
+      <div class="gallery-dropdown" data-filter-type="room">
+        <button class="gallery-dropdown__trigger" aria-label="open room type filters" aria-expanded="false">Filter By
+          Room <span class="gallery-dropdown__arrow"></span></button>
+        <ul class="gallery-dropdown__list">
+          <li class="transform-x-8" data-value="">All Rooms</li>
+          <li class="transform-x-8" data-value="Kitchen">Kitchen</li>
+          <li class="transform-x-8" data-value="Dining Room">Dining Room</li>
+          <li class="transform-x-8" data-value="Living Room">Living Room</li>
+          <li class="transform-x-8" data-value="Bedroom">Bedroom</li>
+          <li class="transform-x-8" data-value="Bathroom">Bathroom</li>
+          <li class="transform-x-8" data-value="Laundry Room">Laundry Room</li>
+          <li class="transform-x-8" data-value="Other">Other</li>
+        </ul>
+      </div>
+      <div class="filter">
+        <button type="button" class="btn btn--primary gallery-reset">Reset filters</button>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="pswp-gallery | grid-columns-3 gap-sm" id="my-gallery">
+    {{ range .gallery }}
+    <a class="pswp-gallery__image-link" data-gallery-item {{ with .image.home_type }}data-home-type="{{ . }}" {{ end }}
+      {{ with .image.room_type }}data-room-type="{{ . }}" {{ end }}
+      href="https://res.cloudinary.com/dpsfyelwp/image/upload/t_auto{{ .image.image_url }}" data-pswp-width=""
+      data-pswp-height="" data-cropped="true" target="_blank">
+      <img class="pswp-gallery__image"
+        src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_auto{{ .image.image_url }}"
+        alt="{{ .image.image_alt }}" />
+      {{ if .image.caption }}
+      <div class="badge">{{ .image.caption }}</div>
+      {{ end }}
+    </a>
+    {{ end }}
+  </div>
+</div>
