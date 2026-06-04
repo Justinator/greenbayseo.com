@@ -1,0 +1,67 @@
+<section
+  class="service-cards | content-full block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_class }} {{ .css_class }}{{ end }}"
+  {{ if .heading }}aria-labelledby="{{ .heading | urlize }}"{{ end }}>
+  
+  <div class="content-lg">
+    <div class="service-cards__intro | flow">
+      <header>
+        {{ if .preheading }}
+          <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+          <h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
+        {{ else }}
+          <h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
+        {{ end }}
+      </header>
+
+      {{ if .body }}
+        {{ if in .body "\n" }}
+          {{ .body | markdownify }}
+        {{ else }}
+          <p>{{ .body | markdownify }}</p>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    {{ if .services }}
+      <div class="service-cards__grid | grid gap-lg mt-6">
+        {{ range .services }}
+          <article class="service-card | grid-12 grid-6-md grid-4-lg flow pt-4 pr-4 pb-4 pl-4">
+            {{ if .icon.image_url }}
+              <img
+                class="service-card__icon"
+                src="{{ .icon.image_url }}"
+                alt="{{ .icon.image_alt }}"
+                width="48"
+                height="48"
+                loading="lazy"
+                decoding="async">
+            {{ end }}
+
+            {{ if .heading }}
+              <h3 class="service-card__heading | no-margin">{{ .heading | markdownify }}</h3>
+            {{ end }}
+
+            {{ if .body }}
+              {{ if in .body "\n" }}
+                {{ .body | markdownify }}
+              {{ else }}
+                <p>{{ .body | markdownify }}</p>
+              {{ end }}
+            {{ end }}
+
+            {{ if .button.enabled }}
+              {{ with .button }}
+                <a
+                  class="btn btn--{{ .button_color }}"
+                  href="{{ .button_url }}"
+                  {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+                  {{ .button_text }}
+                </a>
+              {{ end }}
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

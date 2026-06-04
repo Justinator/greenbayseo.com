@@ -17,7 +17,7 @@
     {{ end }}
     <div class="media-text-block__content-wrapper | content-full {{ if eq .text_column_position `left`
         }}media-text-block--text-left{{ else }}media-text-block--text-right{{ end }}">
-        <div class="media-text-block__content | block margin-block-auto flow">
+        <div class="media-text-block__content | margin-block-auto flow">
             <header>
                 {{ if .preheading }}
                 <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
@@ -70,6 +70,9 @@
                 
                     <img sizes="(min-width: 993px) 50vw, 100vw" src="https://res.cloudinary.com/dpsfyelwp/image/upload{{ .image.image_url }}" srcset="https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_350,h_300{{ .image.image_url }} 400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_550,h_300{{ .image.image_url }} 600w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1000{{ .image.image_url }} 800w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1200{{ .image.image_url }} 1000w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1400{{ .image.image_url }} 1200w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1600{{ .image.image_url }} 1400w, https://res.cloudinary.com/dpsfyelwp/image/upload/f_jpg,q_85,w_1800{{ .image.image_url }} 1600w" alt="{{ .image.image_alt }}" width="600" height="450" loading="lazy" decoding="async">   
                 </picture>
+                {{ if .image.image_credit }}
+                    <small class="media-text-block__image-credit | p-absolute">{{ .image.image_credit | safeHTML }}</small>
+                {{ end }}
             </div>
         </div>
     </div>

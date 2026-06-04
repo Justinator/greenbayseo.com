@@ -1,0 +1,75 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Service Cards"
+  description: Service card grid section
+  icon: dashboard
+  tags: ["Services", "Cards", "Page Components"]
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  preheading: ''
+  heading: ''
+  body: >-
+
+  services:
+    - icon:
+        image_url: ''
+        image_alt: ''
+      heading: ''
+      body: >-
+      button:
+        enabled: false
+        button_url: ''
+        button_text: ''
+        button_color: ''
+        open_in_new_tab: false
+  background_color: ''
+  css_class: ''
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  preheading: Our Local SEO Services
+  heading: Green Bay Local SEO Services Built to Generate More Leads
+  body: >-
+    At Green Bay Ranking Co., we focus on local SEO services designed to help service businesses show up when people are actively looking for help nearby.
+  services:
+    - icon:
+        image_url: /uploads/map-pin-icon.svg
+        image_alt: ''
+      heading: Google Business Profile Optimization
+      body: >-
+        We optimize your Google Business Profile to improve visibility in local search and Google Maps.
+      button:
+        enabled: false
+        button_url: ''
+        button_text: ''
+        button_color: ''
+        open_in_new_tab: false
+    - icon:
+        image_url: /uploads/website-icon.svg
+        image_alt: ''
+      heading: Local On-Page SEO
+      body: >-
+        We optimize your website’s pages to align with local search intent.
+      button:
+        enabled: false
+        button_url: ''
+        button_text: ''
+        button_color: ''
+        open_in_new_tab: false
+    - icon:
+        image_url: /uploads/citation-icon.svg
+        image_alt: ''
+      heading: Citation Management
+      body: >-
+        We build and maintain consistent business listings across top directories.
+      button:
+        enabled: false
+        button_url: ''
+        button_text: ''
+        button_color: ''
+        open_in_new_tab: false
+
+_inputs:

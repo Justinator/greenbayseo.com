@@ -39,14 +39,6 @@
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
 
-  <printfriendly-css style="display: none;">
-    .background-image, .breadcrumbs, .floor-plan-pill, .floor-plan-swiper-thumbnails, .floor-plan-swiper
-    .swiper-button-prev, .floor-plan-swiper .swiper-button-next, .related-plans-block, .btn, .post-navigation,
-    .cta-block {
-    display: none !important;
-    }
-  </printfriendly-css>
-
   <link rel="icon" href="{{ .Site.BaseURL }}uploads/favicon.png" type="image/png">
   <!-- <link rel="icon" href="{{ .Site.BaseURL }}/uploads/favicon.svg" type="image/svg+xml" sizes="any"> -->
   <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}uploads/apple-touch-icon.png">

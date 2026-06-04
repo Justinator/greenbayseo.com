@@ -21,6 +21,7 @@ content_blocks:
     image:
       image_url: /justin-parsons-green-bay-seo-4_g1co6h.jpg
       image_alt: 
+      image_credit: ''
     button:
       enabled: true
       button_url: /contact/
@@ -30,6 +31,7 @@ content_blocks:
     background_image: 
       image_url: /black-marble-background_mrigsw.jpg
       image_alt: ''
+      image_credit: ''
     trust_items:
       - text: "No Contracts"
       - text: "ROI Focused"
@@ -72,18 +74,20 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /justin-parsons-green-bay-seo-4_g1co6h.jpg
+      image_url: /local-business-pin-on-laptop_z1xjhp.jpg
       image_alt: ''
+      image_credit: ''
     featured_video:
       enabled: false
       vimeo_id: ''
       youtube_share_url:
       video_title: ''
       play_button_text:
-    background_color:
+    background_color: white
     background_image:
       image_url:
       image_alt: ''
+      image_credit: ''
     background_logo:
       enabled: false
     text_column_position: left
@@ -100,7 +104,90 @@ content_blocks:
       - icon: results
         heading: Real Results, Transparent
         body: Clear reports, honest updates, and strategies built for long-term growth.
-    background_color: white
+    background_color: primary
+    css_class: ''
+  - _bookshop_name: service-cards
+    preheading: Our Local SEO Services
+    heading: Green Bay Local SEO Services Built to Generate More Leads
+    body: >-
+      At Green Bay Ranking Co., we focus on local SEO services designed to help service businesses show up when people are actively looking for help nearby. That includes improving your visibility in Google Maps, strengthening your local landing pages, and building location-focused content that supports real buying intent.
+
+
+      Our campaigns are built around practical local SEO work that helps businesses compete better in their local markets without wasting time on traffic that rarely converts.
+    services:
+      - icon:
+          image_url: /uploads/gbp-optimization.png
+          image_alt: ''
+        heading: Google Business Profile Optimization
+        body: >-
+          Your Google Business Profile is one of the most important ranking factors for local SEO. If your profile is incomplete, poorly optimized or inactive, your competitors can outrank you even if your business provides better service.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/local-on-page-seo.png
+          image_alt: ''
+        heading: Local On-Page SEO
+        body: >-
+          Many local businesses have websites that are built around broad company messaging instead of the search terms customers actually use. We build and optimize local service pages designed around real buying intent. That means creating stronger pages for services, cities and high-conversion search terms that help generate calls and form submissions.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/citation-management.png
+          image_alt: ''
+        heading: Citation Management
+        body: >-
+          Local citations help search engines verify that your business is legitimate and trustworthy. If your business name, address or phone number is inconsistent across the web, it can weaken your local authority and confuse search engines. We help improve citation consistency across major local directories and business listings to strengthen local trust signals.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/lead-generation-seo.png
+          image_alt: ''
+        heading: Lead Generation SEO
+        body: >-
+          A lot of SEO campaigns focus heavily on increasing traffic numbers without improving the quality of the people visiting your website. More traffic does not always mean more calls, quote requests, or booked jobs. Our lead generation SEO services focus on helping local businesses attract people who are actively searching for services and ready to take action.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/seo-audits.png
+          image_alt: ''
+        heading: SEO Audits
+        body: >-
+          Many businesses know they should be ranking better in Google search and Google Maps, but they are not sure what is actually causing the problem. It is usually a combination of weak local optimization, poor website structure, or limited service pages. Our local SEO audits help businesses in Green Bay identify what may be limiting visibility, traffic and lead generation from local search.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/multi-location-seo.png
+          image_alt: ''
+        heading: Multi-Location SEO
+        body: >-
+          Multi-location SEO becomes much more complicated as businesses expand into additional markets. Many companies run into problems with duplicate content, weak location pages, inconsistent Google Business Profiles, or locations competing against each other in search results. We help businesses in and around Green Bay build local SEO strategies designed specifically for companies with multiple offices, storefronts or service locations.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+    background_color:
     css_class: ''
   - _bookshop_name: media-text
     preheading:  
@@ -132,18 +219,20 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /justin-parsons-green-bay-seo-4_g1co6h.jpg
+      image_url: /als-hamburger-restaurant-green-bay-wi_womezn.jpg
       image_alt: ''
+      image_credit: By Michael Steeber from USA - Al's Hamburger- Green Bay, WI, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=75810187
     featured_video:
       enabled: false
       vimeo_id: ''
       youtube_share_url:
       video_title: ''
       play_button_text:
-    background_color:
+    background_color: gray
     background_image:
       image_url:
       image_alt: ''
+      image_credit: ''
     background_logo:
       enabled: false
     text_column_position: left
@@ -160,8 +249,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     background_image:
-      image_url: /justin-parsons-green-bay-seo-4_g1co6h.jpg
+      image_url: /dark-blue-rough-texture_endwal.jpg
       image_alt: ''
+      image_credit: ''
     background_color: black
     css_class: ''
     button_2:
@@ -170,356 +260,449 @@ content_blocks:
       button_text: ''
       button_color: ''
       open_in_new_tab: false
-  - _bookshop_name: our-process
-    preheading: Our Proven Process Since 1965
-    heading: A Custom Home Building Process That Works
-    steps:
-      - image:
-          image_url: /floorplan-icon_dzvjeb.svg
-          image_alt: ''
-        heading: Select a Floorplan
-        number: Step 1
-        body: >-
-          Optional: Choose the look and style of your modular home. Or we can
-          help!
-      - image:
-          image_url: /builder-icon_txzlae.svg
-          image_alt: ''
-        heading: Contact a Builder
-        number: Step 2
-        body: Find a local builder to kick off the process.
-      - image:
-          image_url: /customize-icon_m7rvfw.svg
-          image_alt: ''
-        heading: Customize Your Home
-        number: Step 3
-        body: Customize your modular home with cabinetry that fits your lifestyle.
-      - image:
-          image_url: /built-indoors-icon_be0qgz.svg
-          image_alt: ''
-        heading: Built Indoors
-        number: Step 4
-        body: Your custom home is built in our climate-controlled factory.
-      - image:
-          image_url: /delivery-icon_gtkavj.svg
-          image_alt: ''
-        heading: Delivered on Time
-        number: Step 5
-        body: >-
-          Your home is delivered on time and on budget to your build site and
-          finished by your builder.
-    button:
-      enabled: true
-      button_url: /build-process/
-      button_text: Learn More About Our Process
-      button_color: primary
-      open_in_new_tab: false
-    background_image:
-      image_url: >-
-        /two-story-home-with-full-height-stone-chimney-large-windows-upper-balcony_ococqa.jpg
-      image_alt: ''
-    background_color: black
-    css_class: ''
   - _bookshop_name: media-text
-    preheading:
-    heading: “They’ve got a reputation for doing things right and doing them on time.”
+    preheading:  
+    heading: Why Businesses in Green Bay Choose Green Bay Ranking Co.
     body: >-
-      “In this part of the country—especially lake country—it’s tough to find
-      people who will consistently show up and get a home built. I didn’t want
-      my family to lose a season. That’s when I turned to Wisconsin Homes.
-      They’ve got a reputation for doing things right and doing them on time.
-      They built us a beautiful, precision-built home, brought it up here, set
-      it up, and within a couple of weeks, we were already enjoying it.”
+      A lot of business owners have worked with marketing companies that focused heavily on impressions, vanity traffic, or generic reports without clearly connecting SEO work to actual business growth. Our approach is different.
 
 
-      – Chuck and Nancy Kramer, North Dakota
+      We focus on local SEO strategies built around visibility, qualified traffic, and lead generation for local service businesses. Instead of chasing national traffic or publishing endless blog content, we prioritize the searches people make when they are ready to call, request a quote, or schedule service.
+      
+      
+      We also understand the realities of local businesses in Northeast Wisconsin. Competition in local search is different than national SEO. Businesses are competing for visibility inside Google Maps, local service searches, and highly specific geographic areas. That requires a more focused strategy tied directly to local intent.
     button:
-      enabled: true
-      button_url: /see-our-homes/videos/customer-testimonials/
-      button_text: View More Testimonials
+      enabled: false
+      button_url:
+      button_text:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /kramer-headshot_mxaghz.jpg
-      image_alt: Chuck Kramer Headshot
+      image_url: /downtown-green-bay-city-deck-along-the-fox-river_h0vdyz.jpg
+      image_alt: ''
+      image_credit: By Chris Rand - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34696968
     featured_video:
-      enabled: true
+      enabled: false
       vimeo_id: ''
-      youtube_share_url: Sjl-Lvl2xuc?si=4s8sqIxdxzk7kyAF
-      video_title: Kramer Family Testimonial
-      play_button_text: Watch The Kramer Story
-    background_color:
-    background_image:
-      image_url: /kramer-house-interior_qbeblw.jpg
-      image_alt: ''
-    background_logo:
-      enabled: false
-    text_column_position: left
-    related_links:
-    css_class: ''
-  - _bookshop_name: two-columns
-    preheading: ''
-    heading: ''
-    body: ''
-    left_column:
-      preheading: The Modular Home Advantage
-      heading: Controlled Costs, Predictable Outcomes
-      body: ''
-      button:
-        enabled: false
-        button_url: ''
-        button_text: ''
-        button_color: ''
-        open_in_new_tab: false
-      text_align: ''
-    right_column:
-      preheading: ''
-      heading: ''
-      body: "The last thing you want when building a home is out-of-control costs and unpredictable timelines. With modular construction, there are fewer surprises and fewer delays. Our factory-built approach keeps projects on track, giving you a smoother experience from start to finish.\_\_"
-      button:
-        enabled: false
-        button_url: ''
-        button_text: ''
-        button_color: ''
-        open_in_new_tab: false
-      text_align: ''
-    background_color:
-    overlay_color:
-    background_image:
-      image_url: ''
-      image_alt: ''
-    css_class: ''
-  - _bookshop_name: call-to-action
-    preheading: ''
-    heading: Our Builder Partnerships
-    body: >-
-      We partner with multi-generational builders—some now in their third
-      generation—who have their own time-tested processes. Just like us. We’ve
-      been around since 1965, and we’re always evolving, constantly improving
-      both our product and our process to make things easier.
-    button:
-      enabled: true
-      button_url: /builders/
-      button_text: Connect with a Local Builder
-      button_color: primary
-      open_in_new_tab: false
-    background_image:
-      image_url: /wisconsin-homes-rep-meeting-with-centerville-homes-rep_p3e5do.jpg
-      image_alt: ''
-    background_color: black
-    css_class: ''
-    button_2:
-      enabled: true
-      button_url: ''
-      button_text: ''
-      button_color: ''
-      open_in_new_tab: false
-  - _bookshop_name: media-text
-    preheading:
-    heading: Custom Details and Cabinetry
-    body: >-
-      Once your layout is locked in, it’s time for the fun part: the details,
-      especially cabinetry. Give us your ideas, and we’ll give you suggestions
-      on how to bring them to life. Our in-house cabinet shop is a unique perk
-      in the modular home industry. It’s something you’re just not going to find
-      in many other places. 
-
-
-      We offer a variety of wood species, styles and finishes, so you can get
-      exactly the look you want. Want to add some personality? Go for it. Think
-      spice racks, Lazy Susan kits, tip-outs, broom closets and lockers.
-    button:
-      enabled: true
-      button_url: /builders/
-      button_text: Get Started on Your Dream Home
-      button_color: primary
-      open_in_new_tab: false
-    image:
-      image_url: >-
-        /custom-wood-kitchen-cabinets-by-wisconsin-homes-with-decorative-glass-inserts_ujpicf.jpg
-      image_alt: >-
-        Custom wood kitchen cabinets by Wisconsin Homes with decorative glass
-        inserts and modern black handles.
-    featured_video:
-      enabled: true
-      vimeo_id: '1025096093'
       youtube_share_url:
-      video_title: Wisconsin Homes - Cabinet Specialty
-      play_button_text: Play Cabinet Specialty Video
-    background_color:
-    background_image:
-      image_url: /rustic-wood-drawer-cabinet-wisconsin-homes_waqzz4.jpg
-      image_alt: >-
-        Rustic wood drawer cabinet by Wisconsin Homes with dark metal cup-style
-        handles and textured grain finish.
-    background_logo:
-      enabled: false
-    text_column_position: left
-    related_links:
-    css_class: ''
-  - _bookshop_name: testimonials-slider
-    preheading: ''
-    heading: Customer Testimonials
-    body: >-
-      See for yourself why our customers fall in love with our one-of-a-kind,
-      custom modular homes.
-    testimonials:
-      - body: >-
-          Wisconsin Homes provided a quality experience in building our dream
-          home. We were given detailed information on the building process and
-          the necessary steps to ensure our understanding of all the components
-          in our build. The local dealer and staff were so kind and helpful to
-          ensure our success in our build. We highly recommend Wisconsin Homes
-          to interested parties who seek a quality manufactured home experience.
-        name: Chris and Amanda Johannsen, Wisconsin
-      - body: >-
-          We’ve built four Wisconsin Homes. What brings us back is that you can
-          build exactly what you want. It’s going to be a well-built,
-          energy-efficient, low-maintenance home with great service.
-        name: Monte and Cathy Burrell, Iowa
-      - body: >-
-          Our Wisconsin Home will be 18 years old this year — as nice as the day
-          they set it. We changed appliances last year. Nothing was wrong with
-          them; I just decided to upgrade. We put our own stone floors and
-          carpet in, and some light fixtures. Very happy all the way around
-          working with them.
-        name: Pam
-      - body: >-
-          We did two tours of the homes, and both were very helpful in our
-          decisions. We watched part of our home being built, which was amazing.
-          We have had many compliments on our home, and no one can believe it
-          was made prior to being brought to our site. We have thoroughly
-          enjoyed every experience with Wisconsin Homes.
-        name: Becky Benjegerdes
-      - body: >-
-          Just a quick note to let the world know that our Wisconsin Home is
-          wonderful!! We live in Hayward, Wisconsin, and have the best
-          constructed and decorative home ever. Nobody believes this is a
-          modular home. This home, after a year of settling, never had one
-          settling crack anywhere. If you’re thinking of modular, please go with
-          Wisconsin Homes — you will not regret it.
-        name: Rita and Bob, Hayward, Wisconsin
-      - body: >-
-          Wisconsin Homes provided a quality experience in building our dream
-          home. We were given detailed information on the building process and
-          the necessary steps to ensure our understanding of all the components
-          in our build. The local dealer and staff were so kind and helpful to
-          ensure our success in our build. We highly recommend Wisconsin Homes
-          to interested parties who seek a quality manufactured home experience.
-        name: Kristi Rooney
-      - body: >-
-          Wisconsin Homes, Inc. was great to work with. My husband has set these
-          homes with his family since he was young, and when looking at building
-          our dream home we didn’t look anywhere else. We were able to customize
-          a floor plan to fit our family’s needs. We’ve been in our home for
-          nine months, and we wouldn’t change a thing!
-        name: Brooke Lingren-Vote
-      - body: >-
-          Our decision here at Dowling Construction to partner with Wisconsin
-          Homes has been very beneficial to both of us. They build high-quality
-          and beautiful homes. Their customer service is exceptional, and their
-          employees are a pleasure to work with. We look forward to many more
-          years of business together.
-        name: Teri Dowling
-      - body: >-
-          My wife and I have purchased other modular homes in the past, and the
-          quality and design of the Wisconsin Home we purchased met all of our
-          expectations. We were very pleased to have chosen Centerville Homes in
-          Trempealeau as our Wisconsin Homes dealer. If we had any questions
-          from design to delivery and installation, they responded quickly and
-          professionally to all of our concerns.
-        name: Joe Dunow
-    background_image:
-      image_url: /ranch-home-on-hill-by-wisconsin-homes-with-stone-accents_nihpzi.jpg
-      image_alt: >-
-        Spacious ranch home on hill by Wisconsin Homes with stone accents and
-        landscaped front yard.
-    background_color: black
-    css_class: ''
-  - _bookshop_name: media-grid-text
-    preheading: Building Custom Homes in Wisconsin Since 1965
-    heading: What Sets Us Apart? Our People.
-    body: "Wisconsin Homes brings a strong reputation and depth of experience in every department, from engineering to sales to production. We have team members with 20, 30, even 40 years of proficiency. Our team takes pride in their work, and the quality follows.\_\n\nIf you were to walk through the plant, you would see it all:\_\n\n* Wall-set crews\_\n* Drywallers\_\n* Electricians\_\n* Plumbers\_\n\nThey're all working side-by-side. We also have in-house and third-party inspections happening during the build process to ensure quality every step of the way.\_"
-    images:
-      - image:
-          image_url: /wisconsin-homes-electrician-wiring-installation_zopcus.jpg
-          image_alt: >-
-            Electrician at Wisconsin Homes installing electrical wiring in new
-            home with safety glasses and ear protection.
-      - image:
-          image_url: /wisconsin-homes-construction-worker-measuring-door_djnxqm.jpg
-          image_alt: >-
-            Construction worker measuring door frame at Wisconsin Homes build
-            site with BLOCK-IT house wrap visible.
-      - image:
-          image_url: /wisconsin-homes-worker-insulation-installation_ahcmvy.jpg
-          image_alt: >-
-            Wisconsin Homes worker installing insulation into floor system at
-            factory using large hose equipment.
-      - image:
-          image_url: /wisconsin-homes-worker-cutting-wood-paneling_e7wxoa.jpg
-          image_alt: >-
-            Wisconsin Homes factory worker inspecting wood panel for quality in
-            custom home manufacturing shop.
-    button:
-      enabled: true
-      button_url: /about/
-      button_text: Learn More About Wisconsin Homes
-      button_color: primary
-      open_in_new_tab: false
-    background_color: ''
-    background_image:
-      image_url: ''
-      image_alt: ''
-    text_column_position: left
-    related_links:
-    css_class: ''
-  - _bookshop_name: media-text
-    preheading:
-    heading: Delivering Homes to These Midwest Markets and More!
-    body: >-
-      Wisconsin Homes proudly delivers custom modular homes across the Midwest.
-      With a network of trusted, local builders and a proven factory-built
-      process, we make it easy to bring a high-quality, energy-efficient home to
-      your exact location. Explore our service areas to find a builder near you
-      and see where your dream home can take shape.
-    button:
-      enabled: true
-      button_url: /service-area/
-      button_text: View Service Area
-      button_color: primary
-      open_in_new_tab: false
-    image:
-      image_url: /wisconsin-homes-area-served_f0rsdt.jpg
-      image_alt:
-    featured_video:
-      enabled: false
-      vimeo_id:
-      youtube_share_url:
-      video_title:
+      video_title: ''
       play_button_text:
     background_color: gray
     background_image:
       image_url:
-      image_alt:
+      image_alt: ''
+      image_credit: ''
+    background_logo:
+      enabled: false
+    text_column_position: left
+    related_links:
+    css_class: ''
+  - _bookshop_name: media-text
+    preheading: Real SEO Growth Backed by Measurable Results
+    heading: We Focus on Visibility That Leads to More Opportunities
+    body: >-
+      Our campaigns are designed to improve both rankings and business visibility over time. Recent campaigns have produced results including:
+      
+      
+      * 512% increase in total ranking keywords after a website rebuild and an ongoing local SEO campaign
+      
+      * 369% increase in page one keyword rankings
+      
+      * 2,550% increase in SERP feature visibility, including local packs and AI Overviews
+      
+      * 590% increase in monthly users
+
+
+      An automotive client shifted from mostly informational traffic to stronger commercial rankings by focusing on local service pages and bottom-of-the-funnel SEO content. Their keyword visibility increased from roughly 2,300 keywords to over 10,500 keywords, while monthly traffic grew from around 6,500 visitors to roughly 23,000.
+      
+      
+      These campaigns focused heavily on local intent, service visibility, and improving rankings for searches tied directly to revenue-generating services.
+    button:
+      enabled: false
+      button_url:
+      button_text:
+      button_color: primary
+      open_in_new_tab: false
+    image:
+      image_url: /titletown-brewing-company-green-bay-wisconsin_a7hgym.jpg
+      image_alt: ''
+      image_credit: By Tony Webster from Minneapolis, Minnesota - Titletown Brewing Company, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=54799023
+    featured_video:
+      enabled: false
+      vimeo_id: ''
+      youtube_share_url:
+      video_title: ''
+      play_button_text:
+    background_color:
+    background_image:
+      image_url:
+      image_alt: ''
+      image_credit: ''
     background_logo:
       enabled: false
     text_column_position: right
     related_links:
     css_class: ''
+  - _bookshop_name: media-text
+    preheading: Built Around Bottom-of-the-Funnel Local SEO
+    heading: More Qualified Traffic. More Local Leads. Less Wasted Effort.
+    body: >-
+      Many agencies prioritize informational blog traffic because it is easier to grow traffic numbers quickly. The problem is that informational traffic often does little to help local service businesses generate revenue.
+      
+      
+      Our strategy focuses heavily on bottom-of-the-funnel local SEO pages targeting searches with strong purchase intent. That means building and optimizing pages around:
+      
+      
+      * Local services
+      
+      * Service + city combinations
+      
+      * Google Maps visibility
+      
+      * Commercial-intent searches
+      
+      * High-conversion landing pages
+      
+      
+      This approach helps businesses compete where buying decisions actually happen.
+    button:
+      enabled: false
+      button_url:
+      button_text:
+      button_color: primary
+      open_in_new_tab: false
+    image:
+      image_url: /lambeau-field-green-bay-wi_vlffzc.jpg
+      image_alt: ''
+      image_credit: “<a class="" href="https://www.flickr.com/photos/diversey/54572845621" title="Lambeau Field - Green Bay Packers">Lambeau Field - Green Bay Packers</a>” by <a class="" href="https://www.flickr.com/photos/diversey/">Tony Webster</a>, <a class="" href="https://creativecommons.org/licenses/by/2.0/deed.en" rel="license noopener noreferrer">CC BY 2.0</a>
+    featured_video:
+      enabled: false
+      vimeo_id: ''
+      youtube_share_url:
+      video_title: ''
+      play_button_text:
+    background_color: gray
+    background_image:
+      image_url:
+      image_alt: ''
+      image_credit: ''
+    background_logo:
+      enabled: false
+    text_column_position: left
+    related_links:
+    css_class: ''
+  - _bookshop_name: service-cards
+    preheading: 
+    heading: Local SEO for Service Businesses in Green Bay
+    body: >-
+      Every local industry competes differently in Google search and Google Maps. A roofing company is not competing the same way as a dental office or law firm. That is why we build local SEO strategies around the services, search behavior and customer intent specific to your industry.
+
+
+      Our local SEO agency in Green Bay works with service businesses that rely on local visibility, inbound leads and strong Google rankings to grow.
+    services:
+      - icon:
+          image_url: /uploads/hvac-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: HVAC SEO
+        body: >-
+          HVAC companies compete heavily in local search, especially for emergency repair and seasonal services. We help heating and cooling businesses improve visibility for high-intent searches tied to repairs, installations and maintenance services.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/roofing-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Roofing SEO
+        body: >-
+          Roofing searches are highly competitive in local markets. Strong local SEO can help smaller and mid-sized contractors compete more effectively for high-intent searches tied to inspections, repairs, storm damage, and roof replacement.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/dental-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Dental SEO
+        body: >-
+          Dental practices rely heavily on local trust and visibility in Google Maps. We help dental offices improve rankings for treatment-based and location-based searches so more patients can find and contact your practice.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/plumbing-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Plumbing SEO
+        body: >-
+          Plumbing companies compete heavily in local search, especially for emergency service calls and high-intent repair searches. If your business is not showing up near the top of Google Maps or local search results, nearby homeowners are often calling competitors instead.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/auto-repair-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Auto Repair Shop SEO
+        body: >-
+          Auto repair shops compete heavily in local search, especially for high-frequency services like oil changes, brake repair, tires, alignments, and diagnostics. If your business is not showing up near the top of Google Maps or local search results, nearby drivers are often calling competing shops first.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/custom-home-builder-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Custom Home Builder SEO
+        body: >-
+          Custom home builders compete in a very different type of search environment than most service businesses. Buyers spend more time researching, comparing builders, reviewing floor plans, and evaluating trust before ever reaching out. That means your website needs to do more than just rank it needs to build confidence.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/concrete-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Concrete Contractor SEO
+        body: >-
+          If your business is not showing up when homeowners or commercial clients search for concrete services nearby, those leads are likely going to competitors first. Our concrete contractor SEO services help businesses in Green Bay improve rankings for local searches tied to concrete installation, repair and specialty concrete work.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/law-firm-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Law Firm SEO
+        body: >-
+          Legal searches are highly competitive and often tied directly to major buying decisions. We help law firms improve local visibility for practice area searches while building stronger authority and trust signals online.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+    background_color:
+    css_class: ''
   - _bookshop_name: call-to-action
     preheading: ''
-    heading: Start Your Dream Home Today
-    body: "Whether you have a clear vision or you’re just starting to explore your options, we’re here to make the process easy—and even enjoyable. From personalized floor plans to trusted builders that truly care, we’ll help you build your dream home at a guaranteed factory-built price.\_"
+    heading: Looking for a Local SEO Partner That Focuses on Real Growth?
+    body: We’ll walk through your current rankings, local visibility, and competitive landscape to help identify where the biggest opportunities exist.
     button:
       enabled: true
-      button_url: /builders/
-      button_text: Connect with a Local Builder
+      button_url: /contact/
+      button_text: Request Your Free SEO Strategy
       button_color: primary
       open_in_new_tab: false
     background_image:
-      image_url: /wisconsin-homes-design-team-reviewing-floor-plans_walqvh.jpg
+      image_url: /dark-blue-rough-texture_endwal.jpg
       image_alt: ''
+      image_credit: ''
+    background_color: black
+    css_class: ''
+    button_2:
+      enabled: true
+      button_url: ''
+      button_text: ''
+      button_color: ''
+      open_in_new_tab: false
+  - _bookshop_name: faq
+    preheading: Local SEO FAQs
+    heading: Frequently Asked Questions
+    body: >-
+      Local SEO can feel confusing, especially with how often Google changes rankings, map visibility and search results. Below are answers to some of the most common questions businesses ask before starting a local SEO campaign.
+    button:
+      enabled: false
+      button_url: ""
+      button_text: ""
+      button_color: primary
+      open_in_new_tab: false
+    questions: 
+      - question: How Long Does Local SEO Take?
+        answer: >-
+          Most businesses begin seeing movement within the first few months, but stronger local SEO growth usually builds over time. The timeline depends on factors like:
+          
+          
+          * Competition in your industry
+          
+          * Current website strength
+          
+          * Google Business Profile optimization
+          
+          * Existing local authority
+          
+          * Content quality
+          
+          * Review signals
+          
+          * Geographic competition
+          
+
+          Some businesses in Green Bay may see early ranking improvements quickly, while highly competitive industries may take longer to build momentum.
+
+      - question: What Is Google Business Profile Optimization?
+        answer: >-
+          Google Business Profile optimization helps improve your visibility in Google Maps and local search results. Optimization may include:
+          
+          
+          * Updating categories and services
+          
+          * Improving business descriptions
+          
+          * Adding photos and updates
+          
+          * Improving review signals
+          
+          * Optimizing local keywords
+          
+          * Strengthening map relevance
+          
+          
+          A properly optimized GBP can help increase calls, clicks and map visibility from nearby customers.
+
+      - question: How Much Does Local SEO Cost in Green Bay?
+        answer: >-
+          Local SEO pricing varies depending on:
+          
+          
+          * Your industry
+          
+          * Number of locations
+          
+          * Competitive difficulty
+          
+          * Website condition
+          
+          * Campaign aggressiveness
+          
+          * Scope of work needed
+          
+
+          Some businesses only need local optimization improvements, while others require ongoing content development, local landing pages, reporting and authority building.
+          
+
+          We build strategies around your goals, competition and growth opportunities instead of using one-size-fits-all SEO packages.
+
+      - question: Why Are Local Citations Important?
+        answer: >-
+          Local citations are online mentions of your business name, address and phone number across directories and local listings. Consistent citations help:
+          
+          
+          * Verify business legitimacy
+          
+          * Strengthen local trust signals
+          
+          * Improve local relevance
+          
+          * Support Google Maps visibility
+          
+          * Reduce conflicting business information online
+          
+
+          Inconsistent citations can weaken local SEO performance and create confusion for both search engines and customers.
+
+      - question: How Do Online Reviews Impact Local Rankings?
+        answer: >-
+          Reviews help search engines understand that your business is active, trusted and relevant locally. Strong review signals can improve:
+          
+          
+          * Google Maps visibility
+          
+          * Click-through rates
+          
+          * Customer trust
+          
+          * Local engagement
+          
+          * Conversion rates
+          
+          
+          Reviews also influence whether potential customers choose your business over competitors after finding you in local search.
+
+      - question: Why Does My Business Rank Poorly in Google Maps?
+        answer: >-
+          Businesses may struggle in Google Maps because of:
+          
+          
+          * Weak Google Business Profile optimization
+          
+          * Poor local relevance
+          
+          * Limited reviews
+          
+          * Weak service pages
+          
+          * Inconsistent citations
+          
+          * Stronger local competitors
+          
+          * Limited geographic targeting
+          
+          * Poor website authority
+          
+          
+          Local SEO works best when your website, GBP and local trust signals all support each other together.
+
+      - question: Do You Focus More on Blog Content or Service Pages?
+        answer: >-
+          Many agencies focus heavily on informational blog traffic. While blogs can support SEO, local service businesses often generate better leads through stronger service pages and commercial-intent local searches. Our strategies focus heavily on:
+          
+          
+          * Local service pages
+          
+          * Service + city targeting
+          
+          * Google Maps visibility
+          
+          * Commercial-intent rankings
+          
+          * Lead generation SEO
+          
+          
+          This helps businesses compete for searches tied more closely to actual buying behavior.
+
+    background_color: ""
+    css_class: ""
+  - _bookshop_name: call-to-action
+    preheading: Ready to Generate More Local Leads From Google Search?
+    heading: Let’s Build a Local SEO Strategy Around What Actually Drives Revenue
+    body: >-
+      If your business is struggling to rank in Google Maps, losing visibility to competitors or relying too heavily on referrals alone, now is the time to build a stronger local SEO strategy.
+      
+      
+      Our local SEO agency in Green Bay helps service businesses improve local rankings, increase visibility and generate more qualified leads from customers already searching for their services.
+    button:
+      enabled: true
+      button_url: /contact/
+      button_text: Request Your Free SEO Strategy
+      button_color: primary
+      open_in_new_tab: false
+    background_image:
+      image_url: /dark-blue-rough-texture_endwal.jpg
+      image_alt: ''
+      image_credit: ''
     background_color: black
     css_class: ''
     button_2:

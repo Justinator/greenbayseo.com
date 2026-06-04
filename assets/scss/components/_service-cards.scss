@@ -1,0 +1,30 @@
+.service-cards__intro {
+  max-inline-size: 62rem;
+}
+
+.service-card {
+  // Visual
+//   background-color: $white;
+  border: 1px solid rgba($black, 0.06);
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba($black, 0.08);
+
+  // Misc
+  transition: $transition;
+}
+
+.service-card:hover,
+.service-card:focus-within {
+  box-shadow: 0 24px 60px rgba($black, 0.12);
+  transform: translateY(-4px);
+}
+
+.service-card__icon {
+  inline-size: $ic-900;
+  block-size: $ic-900;
+  object-fit: contain;
+}
+
+.service-card__heading {
+  font-size: clamp($ic-200, 3vw, $ic-300);
+}
