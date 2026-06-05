@@ -80,15 +80,17 @@
     </div>
     <div class="hero__form | grid-12 grid-2-md"></div>
     <div class="hero__form | grid-12 grid-5-md p-relative">
-      <form name="Contact Wisconsin Homes" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="184d502a-d82a-4005-b276-66a7ff3c57a8">
-        <input type="hidden" name="redirect" value="https://www.wisconsinhomesinc.com/thank-you/">
-        <input type="hidden" name="from_name" value="Wisconsin Homes">
-        <div class="visually-hidden">
-          <label for="subject">New Form Submission From The Wisconsin Homes Contact Form</label>
-          <input aria-label="subject" id="subject" name="subject"
-            value="New Form Submission From The Wisconsin Homes Contact Form">
-        </div>
+      <form name="Contact Green Bay Ranking Co" method="post" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
+      <div hidden>
+          <label>
+              Don't fill this out if you're human:
+              <input name="bot-field" aria-label="bot-field" />
+          </label>
+      </div>
+      <div class="visually-hidden">
+          <label for="subject">New lead from greenbayseo.com</label>
+          <input aria-label="subject" name="subject" value="New lead from greenbayseo.com" />
+      </div>
         <div class="contact-form__form-group">
           <label for="name">Name*</label>
           <input class="contact-form__form-control" name="Name" id="name" type="text"
@@ -121,9 +123,9 @@
                 <option value="Internet Search">Internet Search</option>
                 <option value="ChatGPT/AI">ChatGPT/AI</option>
                 <option value="Digital Ad">Digital Ad</option>
-                <option value="Wisconsin Homes Team Member">Wisconsin Homes Team Member</option>
-                <option value="Wisconsin Homes Email/Social">Wisconsin Homes Email/Social</option>
-                <option value="Wisconsin Homes Blog">Wisconsin Homes Blog</option>
+                <option value="Green Bay Ranking Team Member">Green Bay Ranking Team Member</option>
+                <option value="Green Bay Ranking Email/Social">Green Bay Ranking Email/Social</option>
+                <option value="Green Bay Ranking Blog">Green Bay Ranking Blog</option>
                 <option value="Other">Other</option>
             </select>
         </div>
@@ -132,7 +134,6 @@
           <textarea class="contact-form__form-control" name="Message" id="message" rows="4"
             required></textarea>
         </div>
-        <div class="cf-turnstile" data-sitekey="0x4AAAAAACKkhLH5ESS4AezH" data-theme="light"></div>
         <button type="submit" class="contact-form__btn btn btn--secondary">Send Message</button>
       </form>
     </div>

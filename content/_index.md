@@ -249,7 +249,7 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     background_image:
-      image_url: /dark-blue-rough-texture_endwal.jpg
+      image_url: /blue-background-curves_tqw8w9.jpg
       image_alt: ''
       image_credit: ''
     background_color: black
@@ -517,7 +517,7 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     background_image:
-      image_url: /dark-blue-rough-texture_endwal.jpg
+      image_url: /blue-background-curves_tqw8w9.jpg
       image_alt: ''
       image_credit: ''
     background_color: black
@@ -700,7 +700,7 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     background_image:
-      image_url: /dark-blue-rough-texture_endwal.jpg
+      image_url: /blue-background-curves_tqw8w9.jpg
       image_alt: ''
       image_credit: ''
     background_color: black

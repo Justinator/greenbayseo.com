@@ -17,19 +17,19 @@ google_reviews:
 hours: M - F 8 AM - 5 PM
 social_media:
   - title: Facebook
-    link: https://www.facebook.com/Wisconsin-Homes-Inc-422046574620953/
+    link: 
   - title: LinkedIn
-    link: https://www.linkedin.com/company/wisconsin-homes-inc
+    link: 
   - title: YouTube
-    link: https://www.youtube.com/channel/UCkLPvjgGeMgbuIT3qKvoGfQ
+    link: 
   - title: Instagram
-    link: https://www.instagram.com/wisco_homes/
+    link: 
   - title: X
     link: 
   - title: TikTok
     link: 
   - title: Google
-    link: https://www.google.com/maps/search/Wisconsin Homes Marshfield Wi
+    link: 
 site_popup: 
   enabled: false
   heading: Closed This Friday

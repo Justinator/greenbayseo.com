@@ -11,10 +11,10 @@ seo:
 content_blocks:
   - _bookshop_name: hero-w-form
     preheading: 
-    heading: Contact Us and Design Your Dream Home
+    heading: Contact Us To Start Improving Your Local Rankings
     subheading:
     body: >-
-      Questions about Wisconsin Homes, our floor plans or modular homebuilding? Use this form to schedule a village tour, factory tour or ask a general question. Our Marshfield, WI team will get back to you promptly. For house design or pricing questions, please submit a quote request so a local builder can respond.
+      If your business is hard to find online, you’re likely losing calls, form submissions and customers to competitors showing up higher in Google Maps and local search. Contact us today and start working on a plan to improve.
     button:
       enabled: false
       button_url: 
