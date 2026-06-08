@@ -75,7 +75,7 @@ content_blocks:
       open_in_new_tab: false
     image:
       image_url: /local-business-pin-on-laptop_z1xjhp.jpg
-      image_alt: ''
+      image_alt: Local SEO services in Green Bay WI shown with business location pin, online reviews, and laptop dashboard.
       image_credit: ''
     featured_video:
       enabled: false
@@ -220,7 +220,7 @@ content_blocks:
       open_in_new_tab: false
     image:
       image_url: /als-hamburger-restaurant-green-bay-wi_womezn.jpg
-      image_alt: ''
+      image_alt: Al’s Hamburger restaurant storefront in downtown Green Bay WI with brick buildings and street view.
       image_credit: By Michael Steeber from USA - Al's Hamburger- Green Bay, WI, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=75810187
     featured_video:
       enabled: false
@@ -279,7 +279,7 @@ content_blocks:
       open_in_new_tab: false
     image:
       image_url: /downtown-green-bay-city-deck-along-the-fox-river_h0vdyz.jpg
-      image_alt: ''
+      image_alt: Aerial view of downtown Green Bay WI waterfront along the Fox River with boats, buildings, and riverwalk.
       image_credit: By Chris Rand - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34696968
     featured_video:
       enabled: false
@@ -325,7 +325,7 @@ content_blocks:
       open_in_new_tab: false
     image:
       image_url: /titletown-brewing-company-green-bay-wisconsin_a7hgym.jpg
-      image_alt: ''
+      image_alt: Titletown Brewing Company historic brick building in Green Bay WI with clock tower and winter landscape.
       image_credit: By Tony Webster from Minneapolis, Minnesota - Titletown Brewing Company, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=54799023
     featured_video:
       enabled: false
@@ -373,7 +373,7 @@ content_blocks:
       open_in_new_tab: false
     image:
       image_url: /lambeau-field-green-bay-wi_vlffzc.jpg
-      image_alt: ''
+      image_alt: Lambeau Field Atrium in Green Bay WI featuring Green Bay Packers branding and Miller Lite Gate entrance.
       image_credit: “<a class="" href="https://www.flickr.com/photos/diversey/54572845621" title="Lambeau Field - Green Bay Packers">Lambeau Field - Green Bay Packers</a>” by <a class="" href="https://www.flickr.com/photos/diversey/">Tony Webster</a>, <a class="" href="https://creativecommons.org/licenses/by/2.0/deed.en" rel="license noopener noreferrer">CC BY 2.0</a>
     featured_video:
       enabled: false
