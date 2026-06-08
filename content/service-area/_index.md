@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Service Area
-draft: false
+draft: true
 seo:
   page_title: 
   meta_description: Wisconsin Homes serves homeowners across Wisconsin and the Midwest with custom modular and factory-built homes. Explore our full service area map. 

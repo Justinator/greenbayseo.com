@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Abrams, WI
-draft: false
+draft: true
 seo:
   page_title: Custom Modular Homes in Abrams, WI
   meta_description:

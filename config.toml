@@ -30,9 +30,6 @@ path = 'github.com/cloudcannon/bookshop/hugo/v3'
 
 [taxonomies]
   category = 'categories'
-  type = 'types'
-  tag = 'tags'
-  year = 'years'
 
 [related]
   includeNewer = true
@@ -41,8 +38,4 @@ path = 'github.com/cloudcannon/bookshop/hugo/v3'
 
 [[related.indices]]
   name = "categories"
-  weight = 100
-
-[[related.indices]]
-  name = "types"
   weight = 100

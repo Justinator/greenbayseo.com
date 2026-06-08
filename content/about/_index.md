@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: About
-draft: false
+draft: true
 seo:
   page_title:
   meta_description: Learn more about Wisconsin Homes, a three-generation modular homebuilder known for quality craftsmanship, structural strength and lasting value. 

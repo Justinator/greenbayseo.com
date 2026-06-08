@@ -1,6 +1,6 @@
 ---
 title: FAQs
-draft: false
+draft: true
 seo:
   page_title: Custom Modular Home FAQs
   meta_description: Find answers to common modular home questions in Wisconsin and the Midwest, including build times, customization and how to tour our homes.

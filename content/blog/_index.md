@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Blog
-draft: false
+draft: true
 seo:
   page_title: 
   meta_description:

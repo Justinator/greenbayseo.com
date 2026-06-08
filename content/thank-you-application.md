@@ -1,6 +1,6 @@
 ---
 title: Job Application Thank You
-draft: false
+draft: true
 seo:
   page_title: Thank you for your job application
   meta_description:

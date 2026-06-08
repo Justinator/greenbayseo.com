@@ -1,6 +1,6 @@
 ---
 title: Quote Request Thank You
-draft: false
+draft: true
 seo:
   page_title: Thank you for your quote request
   meta_description:

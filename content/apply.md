@@ -1,6 +1,6 @@
 ---
 title: Apply
-draft: false
+draft: true
 layout: apply
 seo:
   page_title:
