@@ -39,9 +39,10 @@
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
 
-  <link rel="icon" href="{{ .Site.BaseURL }}uploads/favicon.png" type="image/png">
-  <!-- <link rel="icon" href="{{ .Site.BaseURL }}/uploads/favicon.svg" type="image/svg+xml" sizes="any"> -->
-  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}uploads/apple-touch-icon.png">
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="icon" href="/uploads/favicon.svg">
+  <link rel="mask-icon" href="mask-icon.svg" color="#000000">
+  <link rel="apple-touch-icon" href="/uploads/apple-touch-icon.png">
 
   {{ if hugo.IsProduction }}
   <!-- Google tag (gtag.js) -->
