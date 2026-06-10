@@ -2,7 +2,7 @@
   <div class="content-sm flow">
     <header class="margin-inline-auto flow">
         {{ if .preheading }}
-          <h2 class="text-align-center text-style-slub">{{ .preheading | markdownify }}</h2>
+          <h2 class="text-align-center text-style-slub font-color-accent">{{ .preheading | markdownify }}</h2>
           <h3 class="text-align-center no-margin max-width-none" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
         {{ else }}
             <h2 class="text-align-center no-margin max-width-none" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>

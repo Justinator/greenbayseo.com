@@ -6,7 +6,7 @@
     <div class="service-cards__intro | flow">
       <header>
         {{ if .preheading }}
-          <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+          <h2 class="text-style-slub font-color-accent">{{ .preheading | markdownify }}</h2>
           <h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
         {{ else }}
           <h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
