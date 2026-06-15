@@ -3,11 +3,9 @@ _schema: default
 title: Home
 draft: false
 seo:
-  page_title: Custom Modular Homes in Wisconsin
+  page_title: Local SEO Agency in Green Bay, WI | Build a Smarter Local SEO Strategy
   meta_description: >-
-    Wisconsin Homes in Marshfield, WI, builds quality, energy-efficient modular
-    homes through a seamless process with upfront pricing. Proudly serving the
-    Midwest!
+    Bottom-of-the-funnel local SEO for service businesses that want leads, not vanity traffic. Build a smarter SEO strategy today!
   featured_image:
     image_url: /wisconsin-homes-social-preview_gx9hzo.jpg
     image_alt:
