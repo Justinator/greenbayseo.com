@@ -45,31 +45,13 @@
   <link rel="apple-touch-icon" href="/uploads/apple-touch-icon.png">
 
   {{ if hugo.IsProduction }}
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S606D1S766"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-S606D1S766');
-  </script>
-
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TPWR4QKB');</script>
+  })(window,document,'script','dataLayer','GTM-W3DH6RQZ');</script>
   <!-- End Google Tag Manager -->
-
-  <script type="text/javascript">
-    (function (c, l, a, r, i, t, y) {
-      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "v1fafbb05w");
-  </script>
   {{ end }}
 
   {{ $pageSection := .Section }}
@@ -86,27 +68,5 @@
   {{ end }}
   {{ else if eq .RelPermalink "/contact/" }}
   {{ partialCached "schema-data/contact-page" . }}
-  {{ end }}
-
-  {{ if or ( eq .Title "Contact" ) ( eq .Title "Apply" ) (eq .Section "builders") (eq .Section "floor-plans") }}
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
-  {{ end }}
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  {{ if or ( eq .Section "floor-plans" ) ( eq .Section "see-our-homes" ) }}
-  <link rel="stylesheet" href="/plugins/photoswipe/photoswipe.css">
-  {{ end }}
-
-  <!-- Mapbox GL JS -->
-  {{ if or ( eq .Title "Builders" ) ( eq .Section "floor-plans" ) }}
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.js"></script>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.css" rel="stylesheet" />
-  <script id="search-js" defer src="https://api.mapbox.com/search-js/v1.5.0/web.js"></script>
-  {{ end }}
-
-
-  {{ if or ( eq .Section "floor-plans" ) ( eq .Title "Visit Our Model Homes" ) }}
-  <link rel="stylesheet" href="/plugins/nouislider/nouislider.min.css">
   {{ end }}
 </head>

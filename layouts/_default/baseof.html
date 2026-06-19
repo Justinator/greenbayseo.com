@@ -8,6 +8,12 @@
 <body
   class="page-{{ anchorize $mainClass }}{{ if .Params.page_class }} {{ .Params.page_class }}{{ end }}{{ if $pageParent }} parent-page-{{ $pageParent | urlize }}{{ end }} page-id-{{ with .File }}{{ .UniqueID }}{{ end }}"
   data-instant-intensity="viewport">
+  {{ if hugo.IsProduction }}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3DH6RQZ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {{ end }}
   <div class="site-wrap">
     {{ block "header" . }}{{ partialCached "header" . }}{{end}}
     <main id="main-content" class="site-main content-grid">
