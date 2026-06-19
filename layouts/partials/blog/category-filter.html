@@ -1,4 +1,4 @@
-<div class="flex flex-column flex-row-md flex-align-center-md gap-sm">
+<div class="flex flex-column flex-row-md flex-center-md gap-sm">
   <span>Browse all articles by</span>
   <div class="category-wrapper">
     <label for="categoryFilter" class="visually-hidden">Filter by Category</label>
@@ -7,20 +7,6 @@
       <select id="categoryFilter" class="category-select" onchange="location = this.value;">
         <option value="">Category</option>
         {{- range .Site.Taxonomies.categories -}}
-        <option value="{{ .Page.Permalink }}">{{ .Page.Title }}</option>
-        {{- end -}}
-      </select>
-    {{- end -}}
-    {{- end -}}
-  </div>
-  <span>or</span>
-  <div class="year-wrapper">
-    <label for="yearFilter" class="visually-hidden">Filter by Year</label>
-    {{- if isset .Site.Taxonomies "years" -}}
-    {{- if not (eq (len .Site.Taxonomies.years) 0) -}}
-      <select id="yearFilter" class="category-select" onchange="location = this.value;">
-        <option value="">Year</option>
-        {{- range .Site.Taxonomies.years -}}
         <option value="{{ .Page.Permalink }}">{{ .Page.Title }}</option>
         {{- end -}}
       </select>

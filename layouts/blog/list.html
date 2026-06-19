@@ -2,10 +2,11 @@
 {{ partial "bookshop_bindings" `.Params.content_blocks` }}
 {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
 <section class="block content-full" aria-label="Blog post list">
+  {{ partial "blog/category-filter" . }}
   <ul class="grid-columns-3 gap-sm max-width-none no-padding">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "our-news") }}
     {{ range $paginator.Pages }}
-    {{ .Render "blog-card" }}
+        {{ .Render "blog-card" }}
     {{ end }}
   </ul>
   {{ partial "blog/custom-pagination.html" . }}

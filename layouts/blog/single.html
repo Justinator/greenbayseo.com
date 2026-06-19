@@ -1,10 +1,44 @@
 {{ define "main" }}
 <article class="content-full max-width-none">
     {{ partial "blog/blog-hero" . }}
-    <div class="post block content-md flex flex-wrap gap-md">
+    <div class="post block flex flex-wrap gap-md">
         <div class="post__body flow">
-            {{ partial "bookshop_bindings" `.Params.content_blocks` }}
-            {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+            <div class="flow">
+                {{ .Content  }}
+            </div>
+            {{ $hasExpert := false }}
+            {{ if .Params.experts }}
+                {{ range .Params.experts }}
+                    {{ if ne . "" }}
+                        {{ $hasExpert = true }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+    
+            {{ if $hasExpert }}
+                {{ range .Params.experts }}
+                {{ $expert := . }}
+                    <div class="expert-cta-card bg-black bg-squares grid">
+                        {{ $team := where $.Site.RegularPages "Section" "our-company" }}
+                        {{ range where $team ".Params.title"  $expert }}
+                        <div class="expert-cta-card__image-wrapper grid-12 grid-4-md">
+                            <img class="expert-cta-card__image" src="https://res.cloudinary.com/hurckman-mechanical/image/upload/f_auto,q_90,w_400,h_450,c_fill{{ .Params.seo.featured_image }}" alt="">
+                        </div>
+                        <div class="expert-cta-card__body grid-12 grid-8-md flow">
+                            <h2 class="h3 no-margin">Contact {{ .Title }}</h2>
+                            <p class="expert-cta-card__job-title font-size-xs">{{ .Params.job_title }}</p>
+                            {{ if .Params.seo.meta_description }}
+                                <p>{{ .Params.seo.meta_description }}</p>
+                            {{ end }}
+                            <a href="/our-company/our-team/{{ .Title | urlize }}/" class="btn btn--primary">Contact {{ .Title }}</a>
+                            {{ if .Params.phone }}
+                                <p>or call at <a href="tel:+1{{ .Params.phone | replaceRE "[^0-9]" "" }}">{{ .Params.phone }}</a></p>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            {{ end }}
         </div>
         <div class="post__sidebar">
             <div class="post__sidebar-inner">
@@ -15,5 +49,5 @@
         </div>
     </div>
 </article>
-{{ partial "blog/post-navigation" . }}
+{{ partial "post-navigation" . }}
 {{ end }}
