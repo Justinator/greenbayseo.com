@@ -13,7 +13,7 @@ url:
 author:
 date: 2026-06-18T00:00:00Z
 categories:
-  - Safety
+  - Local SEO
 ---
 If you own a business in Green Bay, chances are you’ve invested money into marketing at some point.
 
