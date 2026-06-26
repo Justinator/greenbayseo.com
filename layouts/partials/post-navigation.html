@@ -1,10 +1,10 @@
 {{ if or .PrevInSection .NextInSection }}
     <div class="post-navigation | content-full flex flex-justify-center">
         {{ with .PrevInSection }}
-            <a href="{{ .Permalink }}" class="post-navigation__prev post-navigation__link | flex flex-align-center"><div class="icon-lg icon-fill-primary">{{ partialCached "svg-icons/chevron-left.svg" . }}</div>Previous Plan</a>
+            <a href="{{ .Permalink }}" class="post-navigation__prev post-navigation__link | flex flex-align-center"><div class="icon-lg icon-fill-primary">{{ partialCached "svg-icons/chevron-left.svg" . }}</div>Previous Post</a>
         {{ end }}
         {{ with .NextInSection }}
-            <a href="{{ .Permalink }}" class="post-navigation__next post-navigation__link | flex flex-align-center">Next Plan<div class="icon-lg icon-fill-primary">{{ partialCached "svg-icons/chevron-right.svg" . }}</div></a>
+            <a href="{{ .Permalink }}" class="post-navigation__next post-navigation__link | flex flex-align-center">Next Post<div class="icon-lg icon-fill-primary">{{ partialCached "svg-icons/chevron-right.svg" . }}</div></a>
         {{ end }}
     </div>
 {{ end }}

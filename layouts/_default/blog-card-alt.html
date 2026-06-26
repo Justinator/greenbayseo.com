@@ -2,8 +2,8 @@
     <div class="blog-card__image-wrap p-relative cover-image grid-4">
         {{ if .Params.seo.featured_image }}
         <img class="blog-card__img dim"
-            src="https://res.cloudinary.com/dpsfyelwp/image/upload/t_scale-500-auto{{ .Params.seo.featured_image }}"
-            alt="{{ .Params.seo.featured_image_alt }}" width="500" height="300" loading="lazy">
+            src="https://res.cloudinary.com/dpsfyelwp/image/upload/f_auto,q_85,w_350{{ .Params.seo.featured_image.image_url }}"
+            alt="{{ .Params.seo.featured_image.image_alt }}" width="500" height="300" loading="lazy">
         {{ end }}
     </div>
     <div class="blog-card__content bg-white flow grid-8">
