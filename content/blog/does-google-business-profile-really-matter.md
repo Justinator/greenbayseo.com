@@ -47,12 +47,11 @@ Inside that profile they can see:
 
 * Your reviews
 * Your photos
-* Your business hours
 * Your services
 * Your phone number
+* Your business hours
 * Your directions
 * Your website
-* Questions and answers
 
 Many customers make their decision before they ever visit your website.
 
@@ -61,10 +60,6 @@ If your profile is strong, it can do much of the selling for you.
 ## The Moment My Opinion Changed
 
 For years, we worked with an auto repair client and spent a lot of time publishing blog content.
-
-Looking back, I wouldn't even call it SEO.
-
-We were just blogging.
 
 The articles brought traffic, but we weren't really paying attention to leads, phone calls, local rankings, or how people were actually finding the business.
 
@@ -102,7 +97,7 @@ One lesson that stands out involved that same auto repair client.
 
 The company had invested heavily in its website. They had multiple locations, a strong brand, and a significant marketing investment.
 
-Yet they would regularly ask us why smaller local shops kept appearing above them in search results.
+Yet they would regularly ask us why smaller local shops kept appearing above them in search results, especially in the local map pack.
 
 These smaller competitors had fewer locations and much smaller operations, but they were consistently winning local visibility.
 
@@ -134,9 +129,7 @@ If everyone ranking at the top uses one category and your business uses somethin
 
 ### Ignoring Secondary Categories
 
-Google allows businesses to choose multiple secondary categories.
-
-Many businesses never set them.
+Google allows businesses to set up to 9 secondary categories. Many businesses never set them.
 
 These additional categories help Google understand the other services you offer and can improve visibility for related searches.
 
@@ -146,7 +139,7 @@ This is one of the easiest opportunities to improve a profile.
 
 Many businesses simply wait for reviews to happen naturally.
 
-The problem is that your happiest customers are often the busiest customers.
+The problem is that only a tiny percent of your customers will leave you a review on their own.
 
 You have to ask.
 
@@ -183,14 +176,14 @@ If I only had 30 days and a limited budget, I would start with the Google Busine
 
 My priorities would be:
 
-1. Analyze competitors and select the correct primary category.
+1. Analyze competitors and select the best primary category.
 2. Add as many relevant secondary categories as possible.
-3. Complete every service and service description.
+3. Add services and service descriptions.
 4. Use the products section to showcase services.
 5. Add photos aggressively.
 6. Build a review strategy.
 
-Many businesses don't realize that the products section can be used to feature services.
+**Pro tip:** many businesses don't realize that the products section can be used to feature services.
 
 You can add:
 
@@ -210,7 +203,7 @@ Finally, I would help the business build a review process so that every complete
 
 ## Your Google Business Profile Is Not Set It and Forget It
 
-One of the biggest mistakes businesses make is treating their profile as something they fill out once and never touch again.
+Another big mistake businesses make is treating their profile as something they fill out once and never touch again.
 
 An active profile sends signals that the business is active.
 
@@ -227,28 +220,14 @@ The businesses that pay attention often outperform businesses that simply create
 
 ## Does Google Business Profile Really Matter?
 
-Yes.
-
-Google Business Profile matters far more than most local businesses realize.
+Yes. Google Business Profile matters far more than most local businesses realize.
 
 If you're not paying attention to your profile, you're leaving leads on the table and allowing customers to choose your competitors instead.
 
 For many local businesses, the Google Business Profile receives more attention than the website.
 
-People call directly from it.
+People call directly from it. They request directions. They read reviews. They compare you to competitors. They decide whether to trust you.
 
-They request directions.
-
-They read reviews.
-
-They compare you to competitors.
-
-They decide whether to trust you.
-
-Ignoring your Google Business Profile today is like having a storefront with the lights turned off.
-
-The customers are walking by every day.
-
-The question is whether they're stopping at your business or someone else's.
+Ignoring your Google Business Profile today is like having a storefront with the lights turned off. The customers are walking by every day. The question is whether they're stopping at your business or someone else's.
 
 <a class="btn btn--primary" href="/contact/" aria-label="Get a Free Local SEO Audit">Get a Free Local SEO Audit</a>
