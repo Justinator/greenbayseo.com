@@ -120,10 +120,10 @@ content_blocks:
         body: >-
           Your Google Business Profile is one of the most important ranking factors for local SEO. If your profile is incomplete, poorly optimized or inactive, your competitors can outrank you even if your business provides better service.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /services/google-business-profile-optimization-green-bay-wi/
+          button_text: Learn More
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/local-on-page-seo.png

@@ -1,9 +1,9 @@
 <section class="intro | content-full block bg-{{ .background_color }}" aria-labelledby="{{ .heading | urlize }}">
     <div class="content-sm flow">
-        <img class="intro__logo" src="/uploads/wisconsin-homes-logomark-color.svg" width="164" height="141" alt="Wisconsin Homes logomark">
+        <img class="intro__logo" src="/uploads/gb-ranking-logomark.svg" width="164" height="141" alt="Wisconsin Homes logomark">
         <header>
             {{ if .preheading }}
-            <h2 class="text-style-slub">{{ .preheading | markdownify }}</h2>
+            <h2 class="text-style-slub font-color-accent">{{ .preheading | markdownify }}</h2>
             <h3 class="no-margin h2" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h3>
             {{ else }}
                 <h2 class="no-margin" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
