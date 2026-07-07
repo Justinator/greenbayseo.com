@@ -215,11 +215,11 @@ content_blocks:
       button_url:
       button_text:
       button_color: primary
-      open_in_new_tab: false
+      open_in_new_tab: false 
     image:
-      image_url: /downtown-green-bay-city-deck-along-the-fox-river_h0vdyz.jpg
-      image_alt: Aerial view of downtown Green Bay WI waterfront along the Fox River with boats, buildings and riverwalk.
-      image_credit: By Chris Rand - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34696968
+      image_url: /google-business-profile-category-finder-tool-auto-repair_kqfcip.jpg
+      image_alt: Category Finder tool displaying related Google Business Profile categories for an auto repair shop to improve local SEO.
+      image_credit: 
     featured_video:
       enabled: false
       vimeo_id: ''
@@ -265,9 +265,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /titletown-brewing-company-green-bay-wisconsin_a7hgym.jpg
-      image_alt: Titletown Brewing Company historic brick building in Green Bay WI with clock tower and winter landscape.
-      image_credit: By Tony Webster from Minneapolis, Minnesota - Titletown Brewing Company, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=54799023
+      image_url: /google-business-profile-auto-repair-services-menu_fpbc5z.jpg
+      image_alt: Google Business Profile services menu showing auto repair service categories for local SEO and business optimization.
+      image_credit:
     featured_video:
       enabled: false
       vimeo_id: ''
@@ -373,9 +373,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /lambeau-field-green-bay-wi_vlffzc.jpg
-      image_alt: Lambeau Field Atrium in Green Bay WI featuring Green Bay Packers branding and Miller Lite Gate entrance.
-      image_credit: “<a class="" href="https://www.flickr.com/photos/diversey/54572845621" title="Lambeau Field - Green Bay Packers">Lambeau Field - Green Bay Packers</a>” by <a class="" href="https://www.flickr.com/photos/diversey/">Tony Webster</a>, <a class="" href="https://creativecommons.org/licenses/by/2.0/deed.en" rel="license noopener noreferrer">CC BY 2.0</a>
+      image_url: /google-business-profile-posts-dashboard-auto-repair_jkf0oe.jpg
+      image_alt: Google Business Profile dashboard displaying published posts and promotions for an auto repair shop to boost local SEO.
+      image_credit:
     featured_video:
       enabled: false
       vimeo_id: ''
@@ -422,9 +422,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /lambeau-field-green-bay-wi_vlffzc.jpg
-      image_alt: Lambeau Field Atrium in Green Bay WI featuring Green Bay Packers branding and Miller Lite Gate entrance.
-      image_credit: “<a class="" href="https://www.flickr.com/photos/diversey/54572845621" title="Lambeau Field - Green Bay Packers">Lambeau Field - Green Bay Packers</a>” by <a class="" href="https://www.flickr.com/photos/diversey/">Tony Webster</a>, <a class="" href="https://creativecommons.org/licenses/by/2.0/deed.en" rel="license noopener noreferrer">CC BY 2.0</a>
+      image_url: /local-seo-specialist-working-on-digital-tablet-office_gv286w.jpg
+      image_alt: Local SEO specialist using a digital tablet at an office desk to create and optimize digital marketing content.
+      image_credit:
     featured_video:
       enabled: false
       vimeo_id: ''
@@ -533,9 +533,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /lambeau-field-green-bay-wi_vlffzc.jpg
-      image_alt: Lambeau Field Atrium in Green Bay WI featuring Green Bay Packers branding and Miller Lite Gate entrance.
-      image_credit: “<a class="" href="https://www.flickr.com/photos/diversey/54572845621" title="Lambeau Field - Green Bay Packers">Lambeau Field - Green Bay Packers</a>” by <a class="" href="https://www.flickr.com/photos/diversey/">Tony Webster</a>, <a class="" href="https://creativecommons.org/licenses/by/2.0/deed.en" rel="license noopener noreferrer">CC BY 2.0</a>
+      image_url: /google-business-profile-category-finder-tool-auto-repair_kqfcip.jpg
+      image_alt: Category Finder tool displaying related Google Business Profile categories for an auto repair shop to improve local SEO.
+      image_credit: 
     featured_video:
       enabled: false
       vimeo_id: ''
@@ -580,9 +580,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /lambeau-field-green-bay-wi_vlffzc.jpg
-      image_alt: Lambeau Field Atrium in Green Bay WI featuring Green Bay Packers branding and Miller Lite Gate entrance.
-      image_credit: “<a class="" href="https://www.flickr.com/photos/diversey/54572845621" title="Lambeau Field - Green Bay Packers">Lambeau Field - Green Bay Packers</a>” by <a class="" href="https://www.flickr.com/photos/diversey/">Tony Webster</a>, <a class="" href="https://creativecommons.org/licenses/by/2.0/deed.en" rel="license noopener noreferrer">CC BY 2.0</a>
+      image_url: /local-seo-specialist-working-on-digital-tablet-office_gv286w.jpg
+      image_alt: Local SEO specialist using a digital tablet at an office desk to create and optimize digital marketing content.
+      image_credit:
     featured_video:
       enabled: false
       vimeo_id: ''
