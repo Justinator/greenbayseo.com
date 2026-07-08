@@ -79,79 +79,44 @@ content_blocks:
         body: Clear reports, honest updates and strategies built for long-term growth.
     background_color: primary
     css_class: ''
-  - _bookshop_name: one-column
-    preheading: 
-    heading: Does Google Business Profile Really Matter?
-    body: >-
-      [Google Business Profile really matters](/blog/does-google-business-profile-really-matter/) because it improves local search visibility, increases customer trust and drives more calls, website visits and direction requests. A complete, accurate profile with reviews, photos, business hours and regular updates helps Google match your business to relevant local searches and can significantly improve local SEO performance.
-    button:
-      enabled: false
-      button_url: ''
-      button_text: ''
-      button_color: ''
-      open_in_new_tab: false
-    text_align: ''
-    background_color: gray
-    background_image:
-      image_url: ''
-      image_alt: ''
-    css_class: ''
-  - _bookshop_name: media-text
-    preheading: 
-    heading: Will Google Business Profile Help My Business?
-    body: >-
-      Google Business Profile helps your business by increasing local search visibility, attracting nearby customers and improving credibility through reviews, photos and accurate business information. An optimized profile can generate more phone calls, website visits and direction requests while improving your chances of appearing in Google Search and Google Maps for relevant local searches. 
-
-
-      Your Google Business Profile is not simply a directory listing. It is one of your most important marketing assets.
-    button:
-      enabled: false
-      button_url:
-      button_text:
-      button_color: primary
-      open_in_new_tab: false
-    image:
-      image_url: /local-business-pin-on-laptop_z1xjhp.jpg
-      image_alt: Local SEO services in Green Bay WI shown with business location pin, online reviews and laptop dashboard.
-      image_credit: ''
-    featured_video:
-      enabled: false
-      vimeo_id: ''
-      youtube_share_url:
-      video_title: ''
-      play_button_text:
-    background_color: white
-    background_image:
-      image_url:
-      image_alt: ''
-      image_credit: ''
-    background_logo:
-      enabled: false
-    text_column_position: left
-    related_links:
-    css_class: ''
-  - _bookshop_name: call-to-action
+  - _bookshop_name: two-columns
     preheading: ''
-    heading: Get A Free Local SEO Audit
-    body: Find out how your profile compares to other businesses in Green Bay. We'll review your categories, services, reviews, photos, competitors and opportunities for improvement.
-    button:
-      enabled: true
-      button_url: /contact/
-      button_text: Get a Free Local SEO Audit
-      button_color: primary
-      open_in_new_tab: false
-    background_image:
-      image_url: /blue-background-curves_tqw8w9.jpg
-      image_alt: ''
-      image_credit: ''
+    heading: ''
+    body: >-
+      
+    left_column:
+      preheading: ''
+      heading: Does Google Business Profile Really Matter?
+      body: >-
+        [Google Business Profile really matters](/blog/does-google-business-profile-really-matter/) because it improves local search visibility, increases customer trust and drives more calls, website visits and direction requests. A complete, accurate profile with reviews, photos, business hours and regular updates helps Google match your business to relevant local searches and can significantly improve local SEO performance.
+      button:
+        enabled: true
+        button_url: '' 
+        button_text: ''
+        button_color: ''
+        open_in_new_tab: false
+      text_align: ''
+    right_column:
+      preheading: ''
+      heading: Will Google Business Profile Help My Business?
+      body: >-
+        Google Business Profile helps your business by increasing local search visibility, attracting nearby customers and improving credibility through reviews, photos and accurate business information. An optimized profile can generate more phone calls, website visits and direction requests while improving your chances of appearing in Google Search and Google Maps for relevant local searches. 
+
+
+        Your Google Business Profile is not simply a directory listing. It is one of your most important marketing assets.
+      button:
+        enabled: true
+        button_url: '' 
+        button_text: ''
+        button_color: ''
+        open_in_new_tab: false
+      text_align: ''
     background_color: black
+    overlay_color: primary
+    background_image:
+      image_url: /local-business-pin-on-laptop_z1xjhp.jpg
+      image_alt: ''
     css_class: ''
-    button_2:
-      enabled: true
-      button_url: ''
-      button_text: ''
-      button_color: ''
-      open_in_new_tab: false
   - _bookshop_name: one-column
     preheading: 
     heading: What Do Customers Look for on Your Google Business Profile?
@@ -182,6 +147,28 @@ content_blocks:
       image_url: ''
       image_alt: ''
     css_class: ''
+  - _bookshop_name: call-to-action
+    preheading: ''
+    heading: Get A Free Local SEO Audit
+    body: Find out how your profile compares to other businesses in Green Bay. We'll review your categories, services, reviews, photos, competitors and opportunities for improvement.
+    button:
+      enabled: true
+      button_url: /contact/
+      button_text: Get a Free Local SEO Audit
+      button_color: primary
+      open_in_new_tab: false
+    background_image:
+      image_url: /blue-background-curves_tqw8w9.jpg
+      image_alt: ''
+      image_credit: ''
+    background_color: black
+    css_class: ''
+    button_2:
+      enabled: true
+      button_url: ''
+      button_text: ''
+      button_color: ''
+      open_in_new_tab: false
   - _bookshop_name: media-text
     preheading: Google Business Profile Audits and Competitor Research 
     heading: We Start by Looking at What Your Competitors Are Doing

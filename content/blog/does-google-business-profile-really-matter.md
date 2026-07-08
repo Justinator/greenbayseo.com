@@ -16,7 +16,7 @@ categories:
   - Local SEO
 ---
 
-If you own a local business, you've probably wondered whether your Google Business Profile really matters. Maybe you already have a website. Maybe you've spent thousands of dollars on that website. Maybe you've assumed your Google listing is just a place for your address and phone number.
+If you own a local business, you've probably wondered whether [Google Business Profile optimization](/services/google-business-profile-optimization-green-bay-wi/) really matters. Maybe you already have a website. Maybe you've spent thousands of dollars on that website. Maybe you've assumed your Google listing is just a place for your address and phone number.
 
 After years of working with local businesses, my answer is simple:
 

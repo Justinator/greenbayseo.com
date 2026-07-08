@@ -15,6 +15,7 @@ module.exports = {
         'mobile-dropdown-open',
         'is-active',
         'overlay-is-open',
+        'overlay--primary',
         'nav-open',
         'has-dropdown-open',
         'has-sub-menu-open',

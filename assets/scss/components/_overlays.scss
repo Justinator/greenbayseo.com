@@ -18,6 +18,10 @@
     background-color: rgba($white, .96);
 }
 
+.overlay--primary {
+    background-color: rgba($primary-color, .8);
+}
+
 .overlay--dark-black-gradient {
   background: linear-gradient(90deg,rgba(0, 0, 0, .85) 25%, rgba(0, 0, 0, 0) 100%);
 }
