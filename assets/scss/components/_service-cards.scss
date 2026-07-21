@@ -28,3 +28,7 @@
 .service-card__heading {
   font-size: clamp($ic-200, 3vw, $ic-300);
 }
+
+.service-card .btn {
+  font-size: $ic--100;
+}

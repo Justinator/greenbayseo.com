@@ -122,7 +122,7 @@ content_blocks:
         button:
           enabled: true
           button_url: /services/google-business-profile-optimization-green-bay-wi/
-          button_text: Learn More
+          button_text: Learn More About Google Business Profile Optimization
           button_color: primary
           open_in_new_tab: false
       - icon:
@@ -156,10 +156,10 @@ content_blocks:
         body: >-
           A lot of SEO campaigns focus heavily on increasing traffic numbers without improving the quality of the people visiting your website. More traffic does not always mean more calls, quote requests, or booked jobs. Our lead generation SEO services focus on helping local businesses attract people who are actively searching for services and ready to take action.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /services/lead-generation-seo-green-bay-wi/
+          button_text: Learn More About Lead Generation SEO
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/seo-audits.png

@@ -1,7 +1,7 @@
 .btn {
   // Box model
   display: flex;
-  inline-size: max-content;
+  inline-size: fit-content;
   padding: $ic--100 $ic-500;
   // Typography
   font-size: $ic-100;
