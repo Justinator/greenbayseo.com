@@ -120,10 +120,10 @@ content_blocks:
         body: >-
           Multi-location SEO becomes much more complicated as businesses expand into additional markets. Many companies run into problems with duplicate content, weak location pages, inconsistent Google Business Profiles, or locations competing against each other in search results. We help businesses in and around Green Bay build local SEO strategies designed specifically for companies with multiple offices, storefronts or service locations.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /services/multi-location-seo-green-bay-wi/
+          button_text: Learn More About Multi-Location SEO
+          button_color: primary
           open_in_new_tab: false
     background_color:
     css_class: ''
