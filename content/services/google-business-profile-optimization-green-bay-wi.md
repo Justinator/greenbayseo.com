@@ -48,7 +48,7 @@ content_blocks:
         label: "Keywords on 1st Page of Google"
     background_color: primary
   - _bookshop_name: intro
-    preheading: Google Business Profile Optimization Services in Green Bay, WI
+    preheading: Green Bay Google Business Profile Optimization Services
     heading: Wondering Why Competitors Keep Showing up Above You?
     body: >-
       Many business owners assume they need a new website or a bigger marketing budget. In reality, the problem is often much simpler. Their competitors have a stronger Google Business Profile.

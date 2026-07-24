@@ -1,1 +1,16 @@
 main_nav:
+  - text: Services
+    url: /services/
+    opens_in_new_tab: false
+    enable_dropdown: true
+    columns: one
+    dropdown:
+      - text: Google Business Profile Optimization
+        url: /services/google-business-profile-optimization-green-bay-wi/
+        opens_in_new_tab: false
+      - text: Lead Generation SEO
+        url: /services/lead-generation-seo-green-bay-wi/
+        opens_in_new_tab: false
+      - text: Cape Cod
+        url: /services/multi-location-seo-green-bay-wi/
+        opens_in_new_tab: false
