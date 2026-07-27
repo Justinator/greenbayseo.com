@@ -540,146 +540,35 @@ content_blocks:
     questions: 
       - question: How Long Does Local SEO Take?
         answer: >-
-          Most businesses begin seeing movement within the first few months, but stronger local SEO growth usually builds over time. The timeline depends on factors like:
-          
-          
-          * Competition in your industry
-          
-          * Current website strength
-          
-          * Google Business Profile optimization
-          
-          * Existing local authority
-          
-          * Content quality
-          
-          * Review signals
-          
-          * Geographic competition
-          
-
-          Some businesses in Green Bay may see early ranking improvements quickly, while highly competitive industries may take longer to build momentum.
+          Local SEO typically takes 3–6 months to produce measurable improvements and 6–12 months to achieve strong, sustainable rankings in competitive markets. Results depend on website authority, competition, Google Business Profile optimization, review quality, citation consistency, content quality, and backlink strength. Businesses in low-competition areas often see faster results than those in highly competitive locations.
 
       - question: What Is Google Business Profile Optimization?
         answer: >-
-          Google Business Profile optimization helps improve your visibility in Google Maps and local search results. Optimization may include:
-          
-          
-          * Updating categories and services
-          
-          * Improving business descriptions
-          
-          * Adding photos and updates
-          
-          * Improving review signals
-          
-          * Optimizing local keywords
-          
-          * Strengthening map relevance
-          
-          
-          A properly optimized GBP can help increase calls, clicks and map visibility from nearby customers.
+          Google Business Profile optimization improves your Google Business Profile to increase visibility in local search results and Google Maps. Optimize your profile by completing every business detail, selecting accurate categories, adding high-quality photos, publishing regular updates, earning customer reviews, responding to reviews, and maintaining consistent business information across the web. Businesses with optimized profiles attract more local traffic, calls, and customers.
 
       - question: How Much Does Local SEO Cost in Green Bay?
         answer: >-
-          Local SEO pricing varies depending on:
-          
-          
-          * Your industry
-          
-          * Number of locations
-          
-          * Competitive difficulty
-          
-          * Website condition
-          
-          * Campaign aggressiveness
-          
-          * Scope of work needed
-          
+          Local SEO in Green Bay typically costs $500–$2,500 per month for ongoing services. Small businesses may pay $300–$1,000 monthly, while competitive industries may spend $1,500–$5,000 monthly. Pricing depends on your budget, competition, service area, website condition, content needs, citation management, link building, and Google Business Profile optimization.
 
-          Some businesses only need local optimization improvements, while others require ongoing content development, local landing pages, reporting and authority building.
-          
-
-          We build strategies around your goals, competition and growth opportunities instead of using one-size-fits-all SEO packages.
+      - question: Why Are Local Links Important?
+        answer: >-
+          Local links improve local SEO by increasing your website's authority and local relevance. Earn links from local businesses, organizations, chambers of commerce, news websites, and community events to help search engines recognize your business as a trusted local resource. Strong local backlinks can improve local search rankings, increase referral traffic, and attract more qualified customers.
 
       - question: Why Are Local Citations Important?
         answer: >-
-          Local citations are online mentions of your business name, address and phone number across directories and local listings. Consistent citations help:
-          
-          
-          * Verify business legitimacy
-          
-          * Strengthen local trust signals
-          
-          * Improve local relevance
-          
-          * Support Google Maps visibility
-          
-          * Reduce conflicting business information online
-          
-
-          Inconsistent citations can weaken local SEO performance and create confusion for both search engines and customers.
+          Local citations improve local SEO by confirming your business name, address, and phone number across trusted online directories. Consistent citations help search engines verify business information, strengthen local search relevance, and improve Google Business Profile visibility. Accurate citations also increase customer trust and help potential customers find your business more easily.
 
       - question: How Do Online Reviews Impact Local Rankings?
         answer: >-
-          Reviews help search engines understand that your business is active, trusted and relevant locally. Strong review signals can improve:
-          
-          
-          * Google Maps visibility
-          
-          * Click-through rates
-          
-          * Customer trust
-          
-          * Local engagement
-          
-          * Conversion rates
-          
-          
-          Reviews also influence whether potential customers choose your business over competitors after finding you in local search.
+          Online reviews improve local rankings by increasing trust, relevance, and prominence in Google's local search algorithm. Businesses with more high-quality reviews, higher average ratings, and consistent customer feedback often rank higher in Google Business Profile results. Responding to reviews and earning new reviews regularly also strengthens local SEO and increases customer confidence.
 
       - question: Why Does My Business Rank Poorly in Google Maps?
         answer: >-
-          Businesses may struggle in Google Maps because of:
-          
-          
-          * Weak Google Business Profile optimization
-          
-          * Poor local relevance
-          
-          * Limited reviews
-          
-          * Weak service pages
-          
-          * Inconsistent citations
-          
-          * Stronger local competitors
-          
-          * Limited geographic targeting
-          
-          * Poor website authority
-          
-          
-          Local SEO works best when your website, GBP and local trust signals all support each other together.
+          Your business may rank poorly in Google Maps because of an incomplete Google Business Profile, inconsistent business information, weak local citations, limited customer reviews, poor website optimization, or strong local competition. Improve Google Maps rankings by optimizing your Google Business Profile, earning high-quality reviews, building accurate citations, creating local content, and earning relevant local backlinks.
 
       - question: Do You Focus More on Blog Content or Service Pages?
         answer: >-
-          Many agencies focus heavily on informational blog traffic. While blogs can support SEO, local service businesses often generate better leads through stronger service pages and commercial-intent local searches. Our strategies focus heavily on:
-          
-          
-          * Local service pages
-          
-          * Service + city targeting
-          
-          * Google Maps visibility
-          
-          * Commercial-intent rankings
-          
-          * Lead generation SEO
-          
-          
-          This helps businesses compete for searches tied more closely to actual buying behavior.
+          Service pages deserve the highest priority because they target high-intent keywords and convert visitors into customers. Blog content supports service pages by targeting informational searches, answering common questions, and building topical authority. A strong local SEO strategy combines optimized service pages with consistent blog content to improve rankings, traffic, and conversions.
 
     background_color: ""
     css_class: ""

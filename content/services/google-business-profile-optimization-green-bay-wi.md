@@ -1,11 +1,11 @@
 ---
 _schema: default
-title: Home
+title: Google Business Profile Optimization
 draft: false
 seo:
   page_title: Google Business Profile Optimization in Green Bay, WI | Get More Calls and Leads
   meta_description: >-
-    Get more calls, leads and customers with Google Business Profile Optimization in Green Bay, WI. Improve your Google Maps visibility with a free local SEO audit.
+    Get more calls, leads and customers with Google Business Profile Optimization in Green Bay, WI. Improve your Google Maps visibility with a free local SEO audit. Get your free local SEO audit today!
   featured_image:
     image_url: /wisconsin-homes-social-preview_gx9hzo.jpg
     image_alt:
@@ -333,26 +333,7 @@ content_blocks:
     preheading: Photos, Videos and Profile Activity
     heading: How Often Should You Update Your Google Profile?
     body: >-
-      Update your Google Business Profile at least once every 7–14 days and immediately after any business change, such as new hours, services, products or contact information. Regularly adding photos, posts, offers and responding to customer reviews keeps your profile accurate, increases customer engagement and supports stronger local search visibility.
-      
-      
-      Many profiles contain only a few old photos. For visual businesses, this can be a missed opportunity. We encourage businesses to add:
-
-      
-      * Completed projects
-      
-      * Team photos
-      
-      * Vehicles and equipment
-      
-      * Before and after photos
-      
-      * Short videos
-      
-      * Office and facility photos
-
-
-      Your profile may be your only chance to show customers the quality of your work before they contact you. The businesses that actively update their profiles often create more trust before the conversation even begins.
+      Update your Google Business Profile at least once per week to maintain accuracy and improve local SEO. Publish weekly posts, upload new photos every 1–2 weeks, respond to customer reviews as soon as possible, and immediately update business hours, services, contact information, or holiday schedules. Regular updates signal an active business and help improve Google Maps visibility.
     button:
       enabled: false
       button_url:
@@ -377,55 +358,6 @@ content_blocks:
     background_logo:
       enabled: false
     text_column_position: right
-    related_links:
-    css_class: ''
-  - _bookshop_name: media-text
-    preheading: Our Own Google Business Profile Results
-    heading: Sometimes the Fastest Wins Come From Fixing the Basics
-    body: >-
-      One of the most noticeable Google Business Profile improvements we have seen came from our own business.
-
-
-      Like many small businesses, we had very few reviews and no real strategy for asking customers to leave feedback. We created a simple review process, reached out to previous clients and asked for reviews after successful projects.
-
-
-      We increased our review count from only a handful of reviews to roughly 20 to 25 reviews. That one change produced noticeable results. Soon after improving our reviews, we began appearing much more prominently in Google Maps for important searches such as:
-
-      
-      * Marketing agency in Green Bay
-      
-      * Advertising agency in Green Bay
-      
-      * Local marketing services
-      
-      * Agency-related searches in the area
-
-
-      We also saw an increase in calls, leads and website inquiries. The lesson was simple. Sometimes the highest-impact improvements are the ones that businesses overlook.
-    button:
-      enabled: false
-      button_url:
-      button_text:
-      button_color: primary
-      open_in_new_tab: false
-    image:
-      image_url: /local-seo-specialist-working-on-digital-tablet-office_gv286w.jpg
-      image_alt: Local SEO specialist using a digital tablet at an office desk to create and optimize digital marketing content.
-      image_credit:
-    featured_video:
-      enabled: false
-      vimeo_id: ''
-      youtube_share_url:
-      video_title: ''
-      play_button_text:
-    background_color: gray
-    background_image:
-      image_url:
-      image_alt: ''
-      image_credit: ''
-    background_logo:
-      enabled: false
-    text_column_position: left
     related_links:
     css_class: ''
   - _bookshop_name: call-to-action

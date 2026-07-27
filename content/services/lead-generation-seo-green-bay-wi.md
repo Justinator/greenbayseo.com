@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Home
+title: Lead Generation SEO
 draft: false
 seo:
   page_title: Lead Generation SEO in Green Bay, WI | Generate More Local Leads Through Google Business Profile Optimization, Technical SEO and High-Intent Local Search Strategies

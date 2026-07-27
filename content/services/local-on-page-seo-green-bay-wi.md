@@ -1,24 +1,27 @@
 ---
 _schema: default
-title: Multi-Location SEO
+title: Local On-Page SEO in Green Bay, WI
 draft: false
 seo:
-  page_title: Multi-Location SEO in Green Bay, WI | How Multi-Location SEO Turns Separate Business Locations Into Local Search Competitors | Generate More Leads for Every Location with Local Landing Pages, Map Pack Optimization, Consistent Business Citations, and Franchise SEO Services
+  page_title: Local On-Page SEO in Green Bay, WI | Improve Google Rankings with website Content Optimization, Meta Title and Description Updates, Internal Linking, Keyword Research, and Local Search Improvements for Green Bay Businesses
   meta_description: >-
-    Grow visibility, traffic, and leads across every business location with multi-location SEO in Green Bay, WI. Get your free local SEO audit today!
+    Improve local rankings, turn more website visitors into leads, and build stronger service pages with local on-page SEO in Green Bay, WI. Get your free local SEO audit today!
   featured_image:
     image_url: /wisconsin-homes-social-preview_gx9hzo.jpg
     image_alt:
 content_blocks:
   - _bookshop_name: hero-split
-    preheading: Multi-Location SEO in Green Bay, WI
-    heading: Help Every Location Compete for More Local Leads
+    preheading: Local On-Page SEO in Green Bay, WI
+    heading: Turn More Local Searches Into Calls, Leads, and Customers
     subheading: 
     body: >-
-      Managing SEO for multiple locations takes more than adding a list of addresses to your website. Each location needs a clear local strategy that helps it appear for the services people are searching for in that market.
+      Ranking higher is only part of the job. Your website also needs to make it clear that you offer the right service, in the right location, and that your business is the right one to call.
 
 
-      Green Bay Ranking Co. provides multi-location SEO in Green Bay, WI for service-based businesses that want to grow visibility across several markets. We build location pages, service-plus-city pages, Google Business Profile connections, and internal linking strategies that help each location compete on its own.
+      Our local on-page SEO services improve the pages you already have, identify missing service and location pages, and make your website more useful to both search engines and potential customers.
+
+
+      We start with conversion rate optimization because sending more traffic to a weak page will not fix the real problem. From there, we improve your keyword targeting, page structure, local signals, content, internal links, and other on-page elements that can help your business gain visibility and generate more leads.
     image:
       image_url: /justin-parsons-green-bay-seo-4_g1co6h.jpg
       image_alt: 
@@ -48,16 +51,30 @@ content_blocks:
         label: "Keywords on 1st Page of Google"
     background_color: primary
   - _bookshop_name: intro
-    preheading: Green Bay Local SEO for Multiple Locations
-    heading: Multi-Location SEO Should Help Each Location Stand on Its Own
+    preheading: Green Bay Local On-Page SEO
+    heading: Local SEO Should Improve More Than Rankings
     body: >-
-      A business with several locations should not rely on one homepage to rank everywhere.
+      A page can rank higher and still fail to generate leads.
+
+      That is why our local on-page SEO process starts with conversion rate optimization. Before we work to send more people to a page, we first look at whether that page gives visitors a clear reason to stay, trust the business, and take the next step.
+
+      We review the page from the customer’s point of view:
+
+      
+      * Is it immediately clear what service you provide?
+      
+      * Does the page clearly state where you provide it?
+      
+      * Does the opening section match what the visitor searched for?
+      
+      * Are the calls to action easy to find and understand?
+      
+      * Does the page answer the questions that may keep someone from contacting you?
+      
+      * Does the content show real experience, or does it sound like every other website?
 
 
-      Each office, shop, or branch serves a different market. The competition changes from city to city. Search demand changes. The services people look for may also vary by location. Without a clear page and keyword strategy for each market, some locations may get steady leads while others remain difficult to find.
-
-
-      Our multi-location SEO work starts by deciding where the biggest opportunity is. In many cases, that means beginning with the primary location, then expanding into secondary offices. We also look at population, local search demand, competition, and the locations the client most wants to grow.
+      If those pieces are missing, increasing traffic is not going to solve the problem. Once the page has a stronger conversion foundation, we move into the on-page SEO work. This includes keyword targeting, title tags, meta descriptions, headings, content depth, local signals, image optimization, internal links, and supporting content. The goal is not simply to bring in more website traffic. The goal is to help the right local customers find the right page and feel confident contacting your business.
     button:
       enabled: false
       button_url: ''
@@ -86,9 +103,9 @@ content_blocks:
       
     left_column:
       preheading: ''
-      heading: What Is Multi-Location SEO?
+      heading: What Is Local On-Page SEO?
       body: >-
-        Multi-location SEO improves search visibility for a business with two or more physical locations. Multi-location SEO optimizes each location with a unique landing page, accurate business information, location-specific keywords, and local citations. Effective multi-location SEO increases local rankings, drives nearby traffic, and helps customers find the nearest business location.
+        Local on-page SEO improves a webpage for location-based searches by optimizing page titles, headings, content, URLs, images, and structured data with relevant local keywords. Local on-page SEO also strengthens local relevance by including business name, address, phone number, service areas, and location-specific content that helps search engines match the page to nearby searches.
       button:
         enabled: true
         button_url: '' 
@@ -98,9 +115,9 @@ content_blocks:
       text_align: ''
     right_column:
       preheading: ''
-      heading: How Does Multi-Location SEO Differ From Traditional Local SEO?
+      heading: What Parts of a Page Are Optimized During Local On-Page SEO?
       body: >-
-        Multi-location SEO differs from traditional local SEO by optimizing search visibility for businesses with multiple physical locations instead of a single location. Multi-location SEO requires unique location pages, separate Google Business Profiles, location-specific keywords, and consistent business information for each branch. Traditional local SEO focuses on improving rankings for one business location within a single geographic area.
+        The parts of a page optimized during local on-page SEO include the title tag, meta description, headings, URL, body content, images, internal links, structured data, and business information such as the business name, address, phone number, and service areas. Optimizing these elements helps search engines understand the page's local relevance and improves visibility in location-based search results.
       button:
         enabled: true
         button_url: '' 
@@ -138,15 +155,25 @@ content_blocks:
       open_in_new_tab: false
   - _bookshop_name: one-column
     preheading:
-    heading: Multi-Location SEO Mistakes That Cost You Local Visibility
+    heading: Why Most Local Service Pages Fail to Rank
     body: >-
-      One of the most common problems we see is that a business has several locations but no dedicated page for each one. That is a major missed opportunity. A strong location page should target one of the business’s most important local search terms. 
+      One of the biggest on-page SEO problems we see is a website that tries to cover every service on one broad page. A business may have a main “Services” page with a short introduction followed by a bulleted list of everything it offers. This gives search engines very little information about each individual service. Each service deserves its own page with focused content, relevant questions, proof of experience, and clear next steps.
 
 
-      Another common mistake is sending every Google Business Profile to the same homepage. We usually recommend linking each profile to its matching location page instead. That creates a much closer connection between the profile and the website. The page title, meta description, H1, address, phone number, and service content can all match the location and primary Google Business Profile category.
+      We also see service pages that never mention where the company works. A page may explain the service but leave out the city, service area, nearby communities, or local details that help search engines connect the business with local searches.
 
 
-      For example, if a company’s main category is “Health Insurance Agency,” the Green Bay location page can target “Health Insurance Agency in Green Bay” in the page title, H1, opening copy, and other key areas.
+      Strong local service pages should make three things clear:
+
+
+      * What service you provide
+      
+      * Where you provide it
+      
+      * Why a customer should trust you to do the work
+
+
+      When one of those pieces is missing, the page is usually too broad, too generic, or too weak to compete for valuable local searches.
     button:
       enabled: false
       button_url: ''
@@ -161,26 +188,12 @@ content_blocks:
     css_class: ''
   - _bookshop_name: media-text
     preheading: 
-    heading: Is Multi-Location SEO the Right Fit for Your Business?
+    heading: Does My Business Need a Separate Page for Every Service?
     body: >-
-      Multi-location SEO is a strong fit for service-based businesses with several physical locations that each need to generate leads in their own market. It works especially well when the company has:
-
-
-      * Multiple offices, shops, clinics, or branches
-
-      * Separate Google Business Profiles for each location
-
-      * Several important services offered across multiple cities
-
-      * Enough competition that one general homepage is not enough
-
-      * A need to track leads by market, service, or location
-
-
-      We can start with dedicated location pages, connect each Google Business Profile to the right page, improve internal linking, and focus on the markets that matter most. From there, we can add deeper service-plus-city content where the competition and opportunity justify it.
-
-
-      The right strategy should match the size of the business, the strength of each location, and the budget available to support the work.
+      A business should create a separate page for every core service it wants to rank for in search results. Each service page should target one primary service, include unique content, explain the service in detail, and optimize for relevant local keywords. Separate service pages help search engines understand topical relevance and increase the opportunity to rank for multiple service-related searches. 
+      
+      
+      We do not recommend relying on one broad services page to carry your entire SEO strategy. Instead, we start by building a complete list of the services your business wants to be found for. From there, we'll help you build a priority list of which pages are most important based on your business needs.
     button:
       enabled: false
       button_url:
