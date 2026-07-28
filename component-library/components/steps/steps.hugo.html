@@ -24,6 +24,13 @@
             <h2 class="margin-inline-auto" id="{{ .heading | urlize }}">{{ .heading | markdownify }}</h2>
             {{ end }}
         </header>
+        {{ if .body }}
+            {{ if in .body "\n" }}
+                {{ .body | markdownify }}
+            {{ else }}
+                <p class="margin-inline-auto text-align-center mt-3">{{ .body | markdownify }}</p>
+            {{ end }}
+        {{ end }}
         <ul class="steps | grid-columns-2 max-width-none gap-lg no-padding mt-6">
             {{ range .steps }}
             <li class="step content-card | bg-white flow border-radius-sm">

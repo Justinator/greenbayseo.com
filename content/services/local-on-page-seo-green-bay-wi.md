@@ -243,8 +243,116 @@ content_blocks:
       button_text: ''
       button_color: ''
       open_in_new_tab: false
+  - _bookshop_name: steps
+    preheading: ''
+    heading: Our Local On-Page SEO Process
+    body: >-
+      Local on-page SEO is more than adding a city name to a few headings. We look at the full page, how it is structured, what it is targeting, and whether it gives both search engines and potential customers enough information to understand its purpose.
+    steps: 
+      - number: 1
+        heading: Keyword Research and Page Targeting
+        body: >-
+          We start by identifying the main keyword the page should target. In most cases, this is a service-and-location phrase that matches how local customers actually search. We also look for related services, secondary keywords, customer questions, and supporting topics that can help the page cover the subject more fully.
+      - number: 2
+        heading: Title Tags, Meta Descriptions, and Headings
+        body: >-
+          We focus first on the on-page elements that tend to have the greatest impact. The primary keyword should usually appear naturally in the title tag, the meta description, the H1 heading and the opening paragraph. This helps search engines understand the page and reassures visitors that they have landed in the right place.
+      - number: 3
+        heading: Deeper, More Useful Page Content
+        body: >-
+          Thin pages often struggle because they do not answer enough questions or show enough real experience. We expand pages with content based on what customers actually need to know. That may include:
+
+
+          * Common problems the service solves
+          
+          * Who the service is right for
+          
+          * What the process looks like
+          
+          * Questions customers ask before hiring
+          
+          * Common mistakes or misconceptions
+          
+          * Real project experience
+          
+          * Service options and related solutions
+          
+          * Reasons to choose the business
+
+
+          The goal is not to make a page longer for the sake of word count. The content should help someone make a more informed buying decision.
+      - number: 4
+        heading: Image and Alt Text Optimization
+        body: >-
+          Images are another place where local relevance can be added naturally.
+
+
+          When possible, we recommend using real photos from the business, its team, completed projects, service vehicles, or local job sites.
+
+
+          We may also update:
+
+
+          
+          * Image file names
+          
+          * Alternative text
+          
+          * Image placement
+          
+          * Compression and sizing
+          
+          * Location references where they accurately describe the image
+
+
+          Real local images also help build trust with visitors because they show that the business works in the area it claims to serve.
+      - number: 5
+        heading: Local Signals and Location-Specific Content
+        body: >-
+          We make each page as relevant to the target area as possible. That may include references to the city, nearby communities, service areas, local landmarks and geographic references found on Google Maps, driving directions, or details about how the business serves customers in that market.
+      - number: 6
+        heading: Internal Linking and Supporting Content
+        body: >-
+          For more competitive services, one page may not be enough. We may recommend creating supporting articles that answer related questions or cover smaller topics connected to the main service. This creates a clear content silo around the service and helps build more trust and authority on the topic.
+    background_color: white
+    background_image:
+      image_url: ''
+      image_alt: ''
+    overlay_color: black
+    css_class: ''
+  - _bookshop_name: media-text
+    preheading: 
+    heading: How Quickly Can Local On-Page SEO Work?
+    body: >-
+      Timelines depend on the market, the service, the current website, and the strength of the competitors. In lower-competition local markets, we have seen rankings improve within about a week after updating a page. This can happen when competitors have done very little on-page SEO and the existing page only needs the basic pieces put in place. More competitive searches usually take longer.
+    button:
+      enabled: false
+      button_url:
+      button_text:
+      button_color: primary
+      open_in_new_tab: false
+    image:
+      image_url: /downtown-green-bay-city-deck-along-the-fox-river_h0vdyz.jpg
+      image_alt: Aerial view of downtown Green Bay WI waterfront along the Fox River with boats, buildings, and riverwalk.
+      image_credit: By Chris Rand - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34696968
+    featured_video:
+      enabled: false
+      vimeo_id: ''
+      youtube_share_url:
+      video_title: ''
+      play_button_text:
+    background_color: gray
+    background_image:
+      image_url:
+      image_alt: ''
+      image_credit: ''
+    background_logo:
+      enabled: false
+    text_column_position: left
+    related_links:
+    css_class: ''
   - _bookshop_name: faq
-    preheading: Multi-Location SEO FAQs
+    preheading: Local On-Page SEO FAQs
     heading: Frequently Asked Questions
     body: >-
       
@@ -255,33 +363,44 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     questions: 
-      - question: Does Every Business Location Need Its Own Page?
+      - question: Do I Need Separate Pages for Every City I Serve?
         answer: >-
-          Every business location should have its own dedicated page when it serves a unique address, phone number, service area, or customer experience. A separate location page improves local SEO, helps search engines match each location to local searches, and gives customers accurate business information, directions, hours, and location-specific services.
+          You do not need a separate page for every city you serve. Create a city page only when you can provide unique, valuable content about that location, such as completed projects, customer testimonials, local services, pricing, or office details. Thin or duplicate city pages can reduce SEO performance, while high-quality location pages can improve local search visibility.
 
-      - question: Should Each Google Business Profile Link to the Homepage?
+      - question: Can You Improve the Pages Already on My Website?
         answer: >-
-          Each Google Business Profile should link to its corresponding location page instead of the homepage when the business has multiple locations. Linking each profile to a dedicated location page improves local SEO, reinforces location relevance, and provides customers with location-specific hours, services, directions, and contact information. A homepage is appropriate only for businesses with a single location.
+          Yes, we can improve the pages already on your website instead of creating new ones. We often begin by reviewing existing pages and looking for terms that are already ranking between positions 2 and 20. These pages may have enough relevance to improve without being rebuilt from scratch.
 
-      - question: Do You Need a Separate Service Page for Every City?
-        answer: >-
-          Create a separate service page for a city only when you can provide unique, valuable content for that location. Businesses that serve many cities should prioritize dedicated location pages for physical offices and create city-specific service pages only for important markets with customized content, local proof, and relevant customer information. Avoid creating duplicate pages that change only the city name.
+          Depending on what we find, we may adjust the targeting, rewrite parts of the content, improve the conversion path, add local details, strengthen headings, or build internal links to the page.
 
-      - question: How Do You Keep Location Pages From Becoming Repetitive?
+      - question: Will You Rewrite All of My Website Content?
         answer: >-
-          Keep location pages from becoming repetitive by creating unique content for each location. Include location-specific services, customer reviews, staff information, local landmarks, driving directions, photos, FAQs, and community involvement. Write original copy that reflects each location instead of duplicating text and replacing only the city name. Unique location pages improve local SEO and provide more value to customers.
+          Not always. Some pages may only need focused updates, while others may need a full rewrite or a new page built from the ground up. We base that decision on the page’s current performance, content quality, keyword targeting, conversion value, and how well it compares with competing pages.
 
-      - question: Which Business Location Should You Focus On First?
+      - question: How Do You Choose Which Pages to Optimize First?
         answer: >-
-          Focus on the business location with the highest revenue potential, strongest local demand, or greatest opportunity for improvement. Optimize that location page and Google Business Profile first, measure rankings, traffic, leads, and conversions for 3–6 months, then apply the successful strategy to the remaining locations.
+          We look at both SEO data and business priorities.
 
-      - question: How Long Does Multi-Location SEO Take?
-        answer: >-
-          Multi-location SEO typically takes 3–6 months to produce measurable improvements in local rankings, traffic, and leads. Competitive markets, website authority, content quality, Google Business Profile optimization, local citations, and backlink strength all influence results. Businesses that consistently optimize every location and monitor performance often achieve stronger long-term growth within 6–12 months.
 
-      - question: Is Multi-Location SEO Only for Large Companies?
-        answer: >-
-          Multi-location SEO is not only for large companies. Any business with two or more physical locations can benefit from multi-location SEO by optimizing each location page and Google Business Profile. Small businesses, franchises, healthcare practices, law firms, retailers, and service providers use multi-location SEO to improve local rankings, increase visibility, and generate more location-specific leads.
+          Good early opportunities often include:
+
+          
+          * Pages already ranking between positions 2 and 20
+          
+          * High-revenue services
+          
+          * Services with strong local search demand
+          
+          * Seasonal services that need more visibility
+          
+          * Underbooked departments or crews
+          
+          * Pages receiving impressions but few clicks
+          
+          * Services that do not yet have a dedicated page
+
+
+          This helps us focus the work where it has the best chance of improving visibility and generating leads.
 
     background_color: ""
     css_class: ""
