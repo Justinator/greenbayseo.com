@@ -132,10 +132,10 @@ content_blocks:
         body: >-
           Many local businesses have websites that are built around broad company messaging instead of the search terms customers actually use. We build and optimize local service pages designed around real buying intent. That means creating stronger pages for services, cities and high-conversion search terms that help generate calls and form submissions.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /services/local-on-page-seo-green-bay-wi/
+          button_text: Learn More About Local On-Page SEO
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/citation-management.png
