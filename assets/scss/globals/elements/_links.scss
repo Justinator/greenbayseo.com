@@ -3,7 +3,7 @@ a {
   text-decoration: none;
 }
 
-a:not([class], .hero a:not(.btn), .toc a, .bg-primary a:not(.btn), .card__link, .media-text-block__card-link) {
+a:not([class], .hero a:not(.btn), .split-hero-block a:not(.btn), .toc a, .bg-primary a:not(.btn), .card__link, .media-text-block__card-link) {
   color: $primary-color;
   text-decoration: none;
   background-image: linear-gradient($primary-color, $primary-color),linear-gradient(270deg,$gray 0%,$gray 100%);

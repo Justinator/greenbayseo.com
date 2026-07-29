@@ -15,7 +15,7 @@ content_blocks:
     heading: Turn More Local Searches Into Calls, Leads and Customers
     subheading: 
     body: >-
-      Ranking higher is only part of the job. Your website also needs to make it clear that you offer the right service, in the right location and that your business is the right one to call. Our local on-page SEO services improve the pages you already have, identify missing service and location pages and make your website more useful to both search engines and potential customers.
+      Ranking higher is only part of the job. Your website also needs to make it clear that you offer the right service, in the right location and that your business is the right one to call. [Green Bay Ranking](/) offers local on-page SEO services that improve the pages you already have. Green Bay Ranking will identify missing service and location pages and make your website more useful to both search engines and potential customers.
     image:
       image_url: /justin-parsons-green-bay-seo-4_g1co6h.jpg
       image_alt: 
