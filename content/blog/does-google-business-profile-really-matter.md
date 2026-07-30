@@ -230,4 +230,4 @@ People call directly from it. They request directions. They read reviews. They c
 
 Ignoring your Google Business Profile today is like having a storefront with the lights turned off. The customers are walking by every day. The question is whether they're stopping at your business or someone else's.
 
-<a class="btn btn--primary" href="/contact/" aria-label="Get a Free Local SEO Audit">Get a Free Local SEO Audit</a>
+<a class="btn btn--primary" href="/contact/" aria-label="Get Your Free Local SEO Audit">Get Your Free Local SEO Audit</a>

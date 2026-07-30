@@ -26,7 +26,7 @@ content_blocks:
     button:
       enabled: true
       button_url: /contact/
-      button_text: Get a Free Local SEO Audit
+      button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
     background_image: 
@@ -40,12 +40,12 @@ content_blocks:
     css_class: ''
   - _bookshop_name: stats-bar
     stats:
-      - number: "100+"
-        label: "Websites Launched"
-      - number: "10+"
-        label: "Years Helping Local Businesses Grow"
-      - number: "1000+"
-        label: "Keywords on 1st Page of Google"
+      - number: "369%"
+        label: "Increase in Top 10 Keywords"
+      - number: "590%"
+        label: "Increase in Monthly Website Users"
+      - number: "350%"
+        label: "Increase in Total Ranking Keywords"
     background_color: primary
   - _bookshop_name: intro
     preheading: Green Bay Google Business Profile Optimization Services
@@ -149,12 +149,12 @@ content_blocks:
     css_class: ''
   - _bookshop_name: call-to-action
     preheading: ''
-    heading: Get A Free Local SEO Audit
+    heading: Get Your Free Local SEO Audit
     body: Find out how your profile compares to other businesses in Green Bay. We'll review your categories, services, reviews, photos, competitors and opportunities for improvement.
     button:
       enabled: true
       button_url: /contact/
-      button_text: Get a Free Local SEO Audit
+      button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
     background_image:
@@ -273,12 +273,12 @@ content_blocks:
     css_class: ''
   - _bookshop_name: call-to-action
     preheading: ''
-    heading: Get A Free Local SEO Audit
+    heading: Get Your Free Local SEO Audit
     body: Your competitors may already be doing some of these things. We'll show you where you stand and what opportunities exist for your business.
     button:
       enabled: true
       button_url: /contact/
-      button_text: Get A Free Local SEO Audit
+      button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
     background_image:
@@ -362,13 +362,13 @@ content_blocks:
     css_class: ''
   - _bookshop_name: call-to-action
     preheading: ''
-    heading: Get A Free Local SEO Audit
+    heading: Get Your Free Local SEO Audit
     body: >-
       We'll review your profile, your website, and your local competition to identify opportunities for improvement. You'll receive practical recommendations that you can use whether you hire us or not.
     button:
       enabled: true
       button_url: /contact/
-      button_text: Get A Free Local SEO Audit
+      button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
     background_image:
@@ -555,7 +555,7 @@ content_blocks:
     button:
       enabled: true
       button_url: /contact/
-      button_text: Get a Free Local SEO Audit
+      button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
     background_image:

@@ -41,3 +41,36 @@
     opacity: .9;
   }
 }
+
+.btn--fixed {
+  // Positioning
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 8;
+  // Box model
+  display: block;
+  width: 100%;
+  max-width: none;
+  // Typography
+  text-align: center;
+  // Visual
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  transform: translateY(10px);
+  border-radius: 0;
+
+  @include breakpoint(sm) {
+    bottom: $ic-600;
+    left: unset;
+    right: $ic-100;
+    width: max-content;
+  }
+}
+
+.btn--fixed.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}

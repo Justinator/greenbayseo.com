@@ -45,7 +45,7 @@
               {{ if in .body "\n" }}
                 {{ .body | markdownify }}
               {{ else }}
-                <p>{{ .body | markdownify }}</p>
+                <p class="font-size-xs">{{ .body | markdownify }}</p>
               {{ end }}
             {{ end }}
 

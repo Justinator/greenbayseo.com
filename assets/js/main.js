@@ -279,3 +279,29 @@ document.addEventListener('keydown', (e) => {
     closePopup();
   }
 });
+
+const SCROLL_THRESHOLD = 500;
+let scrollTicking = false;
+
+function toggleFixedCta() {
+  const btn = document.querySelector('.btn--fixed');
+  if (!btn) return;
+
+  const shouldShow = window.scrollY > SCROLL_THRESHOLD;
+  btn.classList.toggle('is-visible', shouldShow);
+  scrollTicking = false;
+}
+
+function handleScroll() {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(toggleFixedCta);
+    scrollTicking = true;
+  }
+}
+
+function initFixedCta() {
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  toggleFixedCta();
+}
+
+initFixedCta();

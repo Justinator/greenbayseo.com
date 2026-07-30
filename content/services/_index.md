@@ -23,7 +23,7 @@ content_blocks:
     button:
       enabled: true
       button_url: /contact/
-      button_text: Get a Free Local SEO Audit
+      button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
     background_image: 
@@ -37,12 +37,12 @@ content_blocks:
     css_class: ''
   - _bookshop_name: stats-bar
     stats:
-      - number: "100+"
-        label: "Websites Launched"
-      - number: "10+"
-        label: "Years Helping Local Businesses Grow"
-      - number: "1000+"
-        label: "Keywords on 1st Page of Google"
+      - number: "369%"
+        label: "Increase in Top 10 Keywords"
+      - number: "590%"
+        label: "Increase in Monthly Website Users"
+      - number: "350%"
+        label: "Increase in Total Ranking Keywords"
     background_color: primary
   - _bookshop_name: service-cards
     preheading: Our Local SEO Services
@@ -62,7 +62,7 @@ content_blocks:
         button:
           enabled: true
           button_url: /services/google-business-profile-optimization-green-bay-wi/
-          button_text: Learn More About Google Business Profile Optimization
+          button_text: Learn About GBP Optimization
           button_color: primary
           open_in_new_tab: false
       - icon:
@@ -70,11 +70,11 @@ content_blocks:
           image_alt: ''
         heading: Local On-Page SEO
         body: >-
-          Many local businesses have websites that are built around broad company messaging instead of the search terms customers actually use. We build and optimize local service pages designed around real buying intent. That means creating stronger pages for services, cities and high-conversion search terms that help generate calls and form submissions.
+          Many local businesses have websites that are built around broad company messaging instead of the search terms customers actually use. Green Bay Ranking Co. builds stronger pages for services, cities and high-conversion search terms.
         button:
           enabled: true
           button_url: /services/local-on-page-seo-green-bay-wi/
-          button_text: Learn More About Local On-Page SEO
+          button_text: Learn About Local On-Page SEO
           button_color: primary
           open_in_new_tab: false
       - icon:
@@ -82,7 +82,7 @@ content_blocks:
           image_alt: ''
         heading: Citation Management
         body: >-
-          Local citations help search engines verify that your business is legitimate and trustworthy. If your business name, address or phone number is inconsistent across the web, it can weaken your local authority and confuse search engines. We help improve citation consistency across major local directories and business listings to strengthen local trust signals.
+          Local citations help search engines verify that your business is legitimate and trustworthy. If your business name, address or phone number is inconsistent across the web, it can weaken your local authority and confuse search engines.
         button:
           enabled: false
           button_url: ''
@@ -94,11 +94,11 @@ content_blocks:
           image_alt: ''
         heading: Lead Generation SEO
         body: >-
-          A lot of SEO campaigns focus heavily on increasing traffic numbers without improving the quality of the people visiting your website. More traffic does not always mean more calls, quote requests, or booked jobs. Our lead generation SEO services focus on helping local businesses attract people who are actively searching for services and ready to take action.
+          A lot of SEO campaigns focus heavily on increasing traffic numbers without improving the quality of the people visiting your website. Green Bay Ranking offers lead generation SEO services focused on helping local businesses attract people who are actively searching for services and ready to take action.
         button:
           enabled: true
           button_url: /services/lead-generation-seo-green-bay-wi/
-          button_text: Learn More About Lead Generation SEO
+          button_text: Learn About Lead Generation SEO
           button_color: primary
           open_in_new_tab: false
       - icon:
@@ -106,7 +106,7 @@ content_blocks:
           image_alt: ''
         heading: SEO Audits
         body: >-
-          Many businesses know they should be ranking better in Google search and Google Maps, but they are not sure what is actually causing the problem. It is usually a combination of weak local optimization, poor website structure, or limited service pages. Our local SEO audits help businesses in Green Bay identify what may be limiting visibility, traffic and lead generation from local search.
+          Many businesses know they should be ranking better in Google search and Google Maps, but they are not sure what is actually causing the problem. Green Bay Ranking provides local SEO audits that help businesses in Green Bay identify what may be limiting visibility, traffic and lead generation from local search.
         button:
           enabled: false
           button_url: ''
@@ -118,11 +118,11 @@ content_blocks:
           image_alt: ''
         heading: Multi-Location SEO
         body: >-
-          Multi-location SEO becomes much more complicated as businesses expand into additional markets. Many companies run into problems with duplicate content, weak location pages, inconsistent Google Business Profiles, or locations competing against each other in search results. We help businesses in and around Green Bay build local SEO strategies designed specifically for companies with multiple offices, storefronts or service locations.
+          Multi-location SEO becomes much more complicated as businesses expand into additional markets. Green Bay Ranking helps businesses in and around Green Bay build local SEO strategies designed specifically for companies with multiple offices, storefronts or service locations.
         button:
           enabled: true
           button_url: /services/multi-location-seo-green-bay-wi/
-          button_text: Learn More About Multi-Location SEO
+          button_text: Learn About Multi-Location SEO
           button_color: primary
           open_in_new_tab: false
     background_color:
@@ -138,7 +138,7 @@ content_blocks:
     button:
       enabled: true
       button_url: /contact/
-      button_text: Request Your Free SEO Strategy
+      button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
     background_image:

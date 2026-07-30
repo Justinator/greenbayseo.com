@@ -14,6 +14,7 @@ module.exports = {
       safelist: [
         'mobile-dropdown-open',
         'is-active',
+        'is-visible',
         'overlay-is-open',
         'overlay--primary',
         'nav-open',
