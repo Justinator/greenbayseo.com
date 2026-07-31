@@ -15,10 +15,7 @@ content_blocks:
     heading: Get More Visibility, Calls and Leads From Google Maps
     subheading: 
     body: >-
-      If your business is not showing up in Google Maps, you may be losing customers before they ever visit your website. Our Google Business Profile Optimization services in Green Bay, WI, help local businesses improve their visibility, earn more reviews and generate more calls and leads from local search.
-
-
-      Most local customers start their search on Google. They compare reviews, photos, services and businesses before they ever make a call. Your Google Business Profile is often your first impression, and for many businesses, it is one of the most important marketing assets they own.
+      Most local customers start their search on Google. They compare reviews, photos, services and businesses before they ever make a call. If your business is not showing up in Google Maps, you may be losing customers before they ever visit your website. Our Google Business Profile Optimization services in Green Bay, WI, help local businesses improve their visibility, earn more reviews and generate more calls and leads from local search.
     image:
       image_url: /justin-parsons-green-bay-seo-4_g1co6h.jpg
       image_alt: 
@@ -100,10 +97,7 @@ content_blocks:
       preheading: ''
       heading: Will Google Business Profile Help My Business?
       body: >-
-        Google Business Profile helps your business by increasing local search visibility, attracting nearby customers and improving credibility through reviews, photos and accurate business information. An optimized profile can generate more phone calls, website visits and direction requests while improving your chances of appearing in Google Search and Google Maps for relevant local searches. 
-
-
-        Your Google Business Profile is not simply a directory listing. It is one of your most important marketing assets.
+        Google Business Profile helps your business by increasing local search visibility, attracting nearby customers and improving credibility through reviews, photos and accurate business information. An optimized profile can generate more phone calls, website visits and direction requests while improving your chances of appearing in Google Search and Google Maps for relevant local searches.
       button:
         enabled: true
         button_url: '' 
