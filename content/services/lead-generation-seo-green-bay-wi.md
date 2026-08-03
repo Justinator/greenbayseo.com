@@ -15,13 +15,7 @@ content_blocks:
     heading: Turn Local Searches Into Calls, Quote Requests, and New Customers
     subheading: 
     body: >-
-      Your website does not need traffic from everywhere. It needs visits from people in Green Bay who are actively looking for the services you provide.
-
-
-      Green Bay Ranking Co. builds local SEO strategies around high-intent searches such as plumber near me, furnace repair in Green Bay, local roof repair company, sewer line repair near me, Green Bay family lawyer and emergency HVAC service.
-
-
-      Our lead generation SEO services focus on building and improving bottom-of-the-funnel service pages. These pages are designed to do one job: turn qualified local searches into leads.
+      Your website needs visits from people in Green Bay who are actively looking for the services you provide. Green Bay Ranking Co. builds local SEO strategies around high-intent searches such as plumber near me, furnace repair in Green Bay, local roof repair company, sewer line repair near me, Green Bay family lawyer and emergency HVAC service. Our lead generation SEO services focus on building and improving bottom-of-the-funnel service pages. These pages are designed to do one job: turn qualified local searches into leads.
     image:
       image_url: /justin-parsons-green-bay-seo-4_g1co6h.jpg
       image_alt: 
