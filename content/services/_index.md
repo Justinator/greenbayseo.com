@@ -108,10 +108,10 @@ content_blocks:
         body: >-
           Many businesses know they should be ranking better in Google search and Google Maps, but they are not sure what is actually causing the problem. Green Bay Ranking provides local SEO audits that help businesses in Green Bay identify what may be limiting visibility, traffic and lead generation from local search.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /services/seo-audits-green-bay-wi/
+          button_text: Learn About SEO Audits
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/multi-location-seo.png
