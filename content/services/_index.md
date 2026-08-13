@@ -84,10 +84,10 @@ content_blocks:
         body: >-
           Local citations help search engines verify that your business is legitimate and trustworthy. If your business name, address or phone number is inconsistent across the web, it can weaken your local authority and confuse search engines.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /services/citation-management-green-bay-wi/
+          button_text: Learn About Citation Management
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/lead-generation-seo.png

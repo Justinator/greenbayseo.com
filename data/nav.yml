@@ -5,6 +5,9 @@ main_nav:
     enable_dropdown: true
     columns: one
     dropdown:
+      - text: Citation Management Services
+        url: /services/citation-management-green-bay-wi/
+        opens_in_new_tab: false
       - text: Google Business Profile Optimization
         url: /services/google-business-profile-optimization-green-bay-wi/
         opens_in_new_tab: false
