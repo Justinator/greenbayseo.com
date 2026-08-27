@@ -141,10 +141,88 @@ content_blocks:
       image_url: ''
       image_alt: ''
     css_class: ''
+  - _bookshop_name: service-cards
+    preheading:
+    heading: What's Included in Our Google Business Profile Optimization Services
+    body: >-
+      Google Business Profile optimization involves much more than adding a description and uploading a few photos. Our approach looks at the profile itself as well as the surrounding signals that can support your visibility and help more prospects choose your business.
+    services:
+      - icon:
+          image_url: 
+          image_alt: ''
+        heading: Google Business Profile Audit and Competitor Analysis
+        body: >-
+          We begin by reviewing your existing profile, local rankings, competitors, business categories, services, reviews, website, citations, and overall local search presence. The goal is to understand where your business stands today and where the strongest opportunities exist.
+        button:
+          enabled: false
+          button_url: 
+          button_text: 
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: 
+          image_alt: ''
+        heading: Primary and Secondary Category Optimization
+        body: >-
+          Google Business Profile categories help Google understand what your company does. We review your category selections and make sure they accurately reflect your primary services without adding irrelevant categories simply for the sake of adding more keywords.
+        button:
+          enabled: false
+          button_url: 
+          button_text: 
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: 
+          image_alt: ''
+        heading: Service and Business Information Optimization
+        body: >-
+          We review important profile information including your services, service areas, business description, hours, contact information, website links, attributes, and other available fields. Potential customers should be able to quickly understand what you do, where you work, and how to contact you.
+        button:
+          enabled: false
+          button_url: 
+          button_text: 
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: 
+          image_alt: ''
+        heading: Photo and Profile Content Optimization
+        body: >-
+          An active, accurate profile can help customers feel more confident about contacting your business. We help you develop a practical approach to photos, updates, services, and other profile content without turning Google Business Profile management into another full-time job.
+        button:
+          enabled: false
+          button_url: 
+          button_text: 
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: 
+          image_alt: ''
+        heading: Customer Review Strategy
+        body: >-
+          Reviews can influence both visibility and the customer's decision after they find you. We help you build a repeatable process for requesting legitimate customer reviews, monitoring feedback, and responding professionally. The goal is not simply to collect more stars. It is to create a stronger reputation that helps prospects trust your business.
+        button:
+          enabled: false
+          button_url: 
+          button_text: 
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: 
+          image_alt: ''
+        heading: Website and Google Business Profile Alignment
+        body: >-
+          Your website and Google Business Profile should reinforce each other. We review whether your site clearly supports the services and geographic areas you want to be found for and identify opportunities to strengthen that connection.
+        button:
+          enabled: false
+          button_url: 
+          button_text: 
+          button_color: primary
+          open_in_new_tab: false
   - _bookshop_name: call-to-action
     preheading: ''
-    heading: Get Your Free Local SEO Audit
-    body: Find out how your profile compares to other businesses in Green Bay. We'll review your categories, services, reviews, photos, competitors and opportunities for improvement.
+    heading: Want to Know What's Holding Your Google Rankings Back?
+    body: You do not need another generic SEO checklist. You need to know where your local search presence is strong, where competitors have an advantage, and what should be improved first. We'll review your current Google Business Profile and identify opportunities to strengthen your visibility in Green Bay and the surrounding market.
     button:
       enabled: true
       button_url: /contact/
@@ -531,6 +609,18 @@ content_blocks:
       - question: Can You Boost Your Google Business Profile Visibility?
         answer: >-
           Boost your Google Business Profile visibility by completing every profile section, selecting accurate business categories, adding new photos weekly, publishing posts every 7–14 days, earning customer reviews, responding to every review and keeping your business information accurate. These actions improve local relevance, customer trust and your chances of appearing in Google Search and Google Maps.
+
+      - question: What Factors Influence Google Business Profile Rankings?
+        answer: >-
+          Google Business Profile rankings are primarily influenced by relevance, distance, and prominence. Relevance measures how closely a business matches a search. Distance measures proximity to the searched location. Prominence reflects how well-known a business is, using signals such as reviews, links, and overall web presence.
+
+      - question: Do Google Reviews Help Local Rankings?
+        answer: >-
+          Google reviews help local rankings by contributing to a business’s prominence. Review count and positive ratings can support stronger local visibility, while relevant review content can provide additional context about a business. Reviews are one signal among several, alongside relevance, distance, links, and overall web presence.
+
+      - question: Can You Optimize a Google Business Profile for a Service-Area Business?
+        answer: >-
+          Optimize a Google Business Profile for a service-area business by defining accurate service areas, selecting relevant categories, completing services, adding photos, earning customer reviews, and keeping business information current. Hide the street address when customers are not served at the business location and follow Google’s service-area guidelines.
 
       - question: What Photos Should You Upload To Your Google Business Profile?
         answer: >-

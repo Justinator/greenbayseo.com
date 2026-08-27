@@ -12,7 +12,7 @@ seo:
 content_blocks:
   - _bookshop_name: hero-split
     preheading: SEO Audits in Green Bay, WI
-    heading: Find Out What Is Keeping Your Business From Showing Up in Local Search
+    heading: Find Out What's Keeping Your Business From Showing Up in Local Search
     subheading: 
     body: >-
       Your website may look professional, but that doesn't mean Google understands what you offer. Our Green Bay SEO audits examine the parts of your online presence that can directly affect local visibility and lead generation. We review your website and Google Business Profile to find missed opportunities and ranking barriers that may be losing you money. You'll receive a clear video walkthrough explaining what we found and why it matters.

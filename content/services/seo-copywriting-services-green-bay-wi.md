@@ -3,7 +3,7 @@ _schema: default
 title: SEO Copywriting
 draft: false
 seo:
-  page_title: Best SEO Copywriting Services in Green Bay, WI – Professional SEO Content Writing, Website Copywriting, Local Landing Pages, Search Engine Content Marketing, and Local Search Content to Help Green Bay Businesses Rank Higher and Attract More Customers
+  page_title: Best SEO Copywriting Services in Green Bay, WI | Professional SEO Content Writing, Website Copywriting, Local Landing Pages, Search Engine Content Marketing, and Local Search Content to Help Green Bay Businesses Rank Higher and Attract More Customers
   meta_description: >-
     Grow visibility, traffic and leads across every business location with multi-location SEO in Green Bay, WI. Get your free local SEO audit today!
   featured_image:
