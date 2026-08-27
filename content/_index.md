@@ -3,7 +3,7 @@ _schema: default
 title: Home
 draft: false
 seo:
-  page_title: Local SEO Agency in Green Bay, WI | Build a Smarter Local SEO Strategy
+  page_title: Local SEO Company in Green Bay, WI | Build a Smarter Local SEO Strategy
   meta_description: >-
     Bottom-of-the-funnel local SEO for service businesses that want leads, not vanity traffic. Build a smarter SEO strategy today!
   featured_image:
@@ -11,7 +11,7 @@ seo:
     image_alt:
 content_blocks:
   - _bookshop_name: hero-split
-    preheading: Local SEO Agency in Green Bay, WI
+    preheading: Local SEO Company in Green Bay, WI
     heading: Get More Local Customers With SEO Built Around Calls, Quotes and Sales
     subheading: 
     body: >-
@@ -45,7 +45,7 @@ content_blocks:
         label: "Increase in Total Ranking Keywords"
     background_color: primary
   - _bookshop_name: media-text
-    preheading: Green Bay SEO Agency
+    preheading: Green Bay SEO Company
     heading: Frustrated That Competitors Keep Showing Up Above You in Google?
     body: >-
       Our local SEO services focus on improving visibility where people actually search for local businesses:
@@ -389,7 +389,7 @@ content_blocks:
       Every local industry competes differently in Google search and Google Maps. A roofing company is not competing the same way as a dental office or law firm. That is why we build local SEO strategies around the services, search behavior and customer intent specific to your industry.
 
 
-      Our local SEO agency in Green Bay works with service businesses that rely on local visibility, inbound leads and strong Google rankings to grow.
+      Our Local SEO Company in Green Bay works with service businesses that rely on local visibility, inbound leads and strong Google rankings to grow.
     services:
       - icon:
           image_url: /uploads/hvac-seo.jpg
@@ -572,7 +572,7 @@ content_blocks:
       If your business is struggling to rank in Google Maps, losing visibility to competitors or relying too heavily on referrals alone, now is the time to build a stronger local SEO strategy.
       
       
-      Our local SEO agency in Green Bay helps service businesses improve local rankings, increase visibility and generate more qualified leads from customers already searching for their services.
+      Our Local SEO Company in Green Bay helps service businesses improve local rankings, increase visibility and generate more qualified leads from customers already searching for their services.
     button:
       enabled: true
       button_url: /contact/
