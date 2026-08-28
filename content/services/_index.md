@@ -54,30 +54,6 @@ content_blocks:
       Our campaigns are built around practical local SEO work that helps businesses compete better in their local markets without wasting time on traffic that rarely converts.
     services:
       - icon:
-          image_url: /uploads/gbp-optimization.png
-          image_alt: ''
-        heading: Google Business Profile Optimization
-        body: >-
-          Your Google Business Profile is one of the most important ranking factors for local SEO. If your profile is incomplete, poorly optimized or inactive, your competitors can outrank you even if your business provides better service.
-        button:
-          enabled: true
-          button_url: /services/google-business-profile-optimization-green-bay-wi/
-          button_text: Learn About GBP Optimization
-          button_color: primary
-          open_in_new_tab: false
-      - icon:
-          image_url: /uploads/local-on-page-seo.png
-          image_alt: ''
-        heading: Local On-Page SEO
-        body: >-
-          Many local businesses have websites that are built around broad company messaging instead of the search terms customers actually use. Green Bay Ranking Co. builds stronger pages for services, cities and high-conversion search terms.
-        button:
-          enabled: true
-          button_url: /services/local-on-page-seo-green-bay-wi/
-          button_text: Learn About Local On-Page SEO
-          button_color: primary
-          open_in_new_tab: false
-      - icon:
           image_url: /uploads/citation-management.png
           image_alt: ''
         heading: Citation Management
@@ -87,6 +63,30 @@ content_blocks:
           enabled: true
           button_url: /services/citation-management-green-bay-wi/
           button_text: Learn About Citation Management
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/conversion-rate-optimization.jpg
+          image_alt: ''
+        heading: Conversion Rate Optimization
+        body: >-
+          Getting more traffic only helps if your website turns visitors into leads. Conversion rate optimization improves page layouts, calls to action, forms and user experience so more of the people already visiting your site take the next step.
+        button:
+          enabled: true
+          button_url: /services/conversion-rate-optimization-green-bay-wi/
+          button_text: Learn About Conversion Rate Optimization
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/gbp-optimization.png
+          image_alt: ''
+        heading: Google Business Profile Optimization
+        body: >-
+          Your Google Business Profile is one of the most important ranking factors for local SEO. If your profile is incomplete, poorly optimized or inactive, your competitors can outrank you even if your business provides better service.
+        button:
+          enabled: true
+          button_url: /services/google-business-profile-optimization-green-bay-wi/
+          button_text: Learn About GBP Optimization
           button_color: primary
           open_in_new_tab: false
       - icon:
@@ -102,15 +102,15 @@ content_blocks:
           button_color: primary
           open_in_new_tab: false
       - icon:
-          image_url: /uploads/seo-audits.png
+          image_url: /uploads/local-on-page-seo.png
           image_alt: ''
-        heading: SEO Audits
+        heading: Local On-Page SEO
         body: >-
-          Many businesses know they should be ranking better in Google search and Google Maps, but they are not sure what is actually causing the problem. Green Bay Ranking provides local SEO audits that help businesses in Green Bay identify what may be limiting visibility, traffic and lead generation from local search.
+          Many local businesses have websites that are built around broad company messaging instead of the search terms customers actually use. Green Bay Ranking Co. builds stronger pages for services, cities and high-conversion search terms.
         button:
           enabled: true
-          button_url: /services/seo-audits-green-bay-wi/
-          button_text: Learn About SEO Audits
+          button_url: /services/local-on-page-seo-green-bay-wi/
+          button_text: Learn About Local On-Page SEO
           button_color: primary
           open_in_new_tab: false
       - icon:
@@ -123,6 +123,30 @@ content_blocks:
           enabled: true
           button_url: /services/multi-location-seo-green-bay-wi/
           button_text: Learn About Multi-Location SEO
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/seo-audits.png
+          image_alt: ''
+        heading: SEO Audits
+        body: >-
+          Many businesses know they should be ranking better in Google search and Google Maps, but they are not sure what is actually causing the problem. Green Bay Ranking provides local SEO audits that help businesses in Green Bay identify what may be limiting visibility, traffic and lead generation from local search.
+        button:
+          enabled: true
+          button_url: /services/seo-audits-green-bay-wi/
+          button_text: Learn About SEO Audits
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/seo-copywriting-services.jpg
+          image_alt: ''
+        heading: SEO Copywriting Services
+        body: >-
+          Strong SEO copy helps your website rank for the searches that matter and gives visitors a reason to take action. We write service pages, location pages, and other website content around real search intent so your site can attract more qualified traffic and turn more of it into leads.
+        button:
+          enabled: true
+          button_url: /services/seo-copywriting-services-green-bay-wi/
+          button_text: Learn About SEO Copywriting
           button_color: primary
           open_in_new_tab: false
     background_color:
