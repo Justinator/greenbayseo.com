@@ -3,9 +3,9 @@ _schema: default
 title: Reputation Management
 draft: false
 seo:
-  page_title: Reputation Management in Green Bay, WI | Improve Online Reviews, Manage Negative Feedback, Monitor Your Brand, and Strengthen Local Business Reputation with Professional Green Bay Reputation Services
+  page_title: Reputation Management in Green Bay, WI | Improve Online Reviews, Manage Negative Feedback, Monitor Your Brand and Strengthen Local Business Reputation with Professional Green Bay Reputation Services
   meta_description: >-
-    Boost your brand with Reputation Management in Green Bay, WI. Improve online reviews, build customer trust, and protect your image. Strengthen your reputation today.
+    Boost your brand with Reputation Management in Green Bay, WI. Improve online reviews, build customer trust and protect your image. Strengthen your reputation today.
   featured_image:
     image_url: /wisconsin-homes-social-preview_gx9hzo.jpg
     image_alt:
@@ -48,7 +48,7 @@ content_blocks:
     preheading: Reputation Management Services for Green Bay Businesses
     heading: You Probably Don’t Need Another Reputation Tool. You Need a System That Actually Gets Used
     body: >-
-      We help you build a repeatable process for earning more reviews, managing the feedback you receive, and staying consistent over time. That can include creating review-request templates, setting up direct review links, recommending the right timing for outreach, planning follow-up messages, monitoring new reviews, and responding on your behalf.
+      We help you build a repeatable process for earning more reviews, managing the feedback you receive and staying consistent over time. That can include creating review-request templates, setting up direct review links, recommending the right timing for outreach, planning follow-up messages, monitoring new reviews and responding on your behalf.
       
       
       Instead of relying on customers to remember to leave a review, you have a process for:
@@ -98,7 +98,7 @@ content_blocks:
       preheading: ''
       heading: Can Reputation Management Help My Green Bay Business Grow?
       body: >-
-        Reputation management can help your Green Bay business grow by improving customer trust, strengthening local visibility, and increasing conversions. Managing reviews, responding to customer feedback, and maintaining accurate business profiles can influence how potential customers view your company and whether they choose your business over local competitors.
+        Reputation management can help your Green Bay business grow by improving customer trust, strengthening local visibility and increasing conversions. Managing reviews, responding to customer feedback and maintaining accurate business profiles can influence how potential customers view your company and whether they choose your business over local competitors.
       button:
         enabled: true
         button_url: '' 
@@ -110,7 +110,7 @@ content_blocks:
       preheading: ''
       heading: How Often Should You Monitor Your Online Reputation?
       body: >-
-        Monitor your online reputation at least weekly and check high-impact review platforms and social media daily when possible. Regular monitoring helps businesses identify new reviews, customer complaints, inaccurate information, and brand mentions quickly. Increase monitoring during product launches, marketing campaigns, crises, or periods of increased customer activity. 
+        Monitor your online reputation at least weekly and check high-impact review platforms and social media daily when possible. Regular monitoring helps businesses identify new reviews, customer complaints, inaccurate information and brand mentions quickly. Increase monitoring during product launches, marketing campaigns, crises or periods of increased customer activity. 
       button:
         enabled: true
         button_url: '' 
@@ -128,16 +128,16 @@ content_blocks:
     preheading: ''
     heading: Our Green Bay Reputation Management Process
     body: >-
-      Reputation management works best when it follows a clear process. We don’t start by telling you to “get more reviews.” We start by looking at where your business stands today, how that compares with your local competition, and what needs to happen to close the gap. From there, we build a practical system your business can actually use.
+      Reputation management works best when it follows a clear process. We don’t start by telling you to “get more reviews.” We start by looking at where your business stands today, how that compares with your local competition and what needs to happen to close the gap. From there, we build a practical system your business can actually use.
     steps: 
       - number: 1
         heading: Audit Your Current Reputation
         body: >-
-          We review your existing Google reviews, rating, review activity, response habits, and other relevant third-party platforms.
+          We review your existing Google reviews, rating, review activity, response habits and other relevant third-party platforms.
       - number: 2
         heading: Benchmark Against Local Competitors
         body: >-
-          We compare your review profile with other businesses competing for the same customers in Green Bay. This helps us identify whether you’re behind in review volume, recency, rating, or overall activity.
+          We compare your review profile with other businesses competing for the same customers in Green Bay. This helps us identify whether you’re behind in review volume, recency, rating or overall activity.
       - number: 3
         heading: Set a Realistic Review Goal
         body: >-
@@ -145,7 +145,7 @@ content_blocks:
       - number: 4
         heading: Build Your Review Outreach System
         body: >-
-          We create direct review links, outreach templates, timing recommendations, and follow-up sequences designed to make asking for reviews more consistent and easier for your team.
+          We create direct review links, outreach templates, timing recommendations and follow-up sequences designed to make asking for reviews more consistent and easier for your team.
       - number: 5
         heading: Manage and Respond to Reviews
         body: >-
@@ -200,7 +200,7 @@ content_blocks:
   - _bookshop_name: call-to-action
     preheading: ''
     heading: Find Out Where Your Reputation Stands
-    body: We can review your current profile, compare it with local competitors, and identify the biggest opportunities to improve your review strategy.
+    body: We can review your current profile, compare it with local competitors and identify the biggest opportunities to improve your review strategy.
     button:
       enabled: true
       button_url: /contact/
@@ -256,13 +256,13 @@ content_blocks:
     preheading:  
     heading: Review Generation Strategy for Green Bay Businesses
     body: >-
-      One of the biggest mistakes we see businesses make is assuming happy customers will leave reviews on their own. Most won’t. Even when someone has a great experience, writing a review usually isn’t at the top of their to-do list. They get busy, forget about the request, or plan to come back to it later and never do. That’s why we recommend a consistent review outreach strategy instead of a one-time ask.
+      One of the biggest mistakes we see businesses make is assuming happy customers will leave reviews on their own. Most won’t. Even when someone has a great experience, writing a review usually isn’t at the top of their to-do list. They get busy, forget about the request or plan to come back to it later and never do. That’s why we recommend a consistent review outreach strategy instead of a one-time ask.
       
       
       For many businesses, that means sending the initial request at the right moment, then following up two or three times if the customer doesn’t respond. In some cases, additional follow-up may make sense. 
       
       
-      The key is consistency. We help you create a process for identifying the right customers to ask, choosing the right timing, and following up without making the outreach feel random or forgotten. Good opportunities to ask for a review often include:
+      The key is consistency. We help you create a process for identifying the right customers to ask, choosing the right timing and following up without making the outreach feel random or forgotten. Good opportunities to ask for a review often include:
       
       
       * Right after a job or service has been completed
@@ -304,7 +304,7 @@ content_blocks:
   - _bookshop_name: call-to-action
     preheading: ''
     heading: Not Sure Which Review Sites Matter Most for Your Business?
-    body: We can review your current reputation, compare it with local competitors, and identify where your efforts are most likely to have an impact.
+    body: We can review your current reputation, compare it with local competitors and identify where your efforts are most likely to have an impact.
     button:
       enabled: true
       button_url: /contact/
@@ -330,7 +330,7 @@ content_blocks:
       Reviews do more than influence whether someone trusts your business. They also create additional context around the services your customers associate with you.
       
       
-      When customers naturally mention the work you performed, the type of problem you solved, or the service they received, those details can help reinforce the relevance of your business for local searches related to those services.
+      When customers naturally mention the work you performed, the type of problem you solved or the service they received, those details can help reinforce the relevance of your business for local searches related to those services.
       
       
       That’s one reason we put more thought into review outreach than simply sending a link. We want customers to leave honest feedback in their own words, but we also want to make it easy for them to include the kind of specific detail that is genuinely useful. For example, a detailed review may mention:
@@ -353,7 +353,7 @@ content_blocks:
       As local search continues to evolve, Google increasingly surfaces review content throughout Maps and other discovery experiences. That makes detailed, service-specific reviews more valuable than generic one-line feedback.
       
       
-      We don’t treat reviews as a shortcut or a ranking trick. We treat them as part of a broader local SEO strategy: earn more genuine feedback, make that feedback useful, and build a stronger picture of what your business actually does.
+      We don’t treat reviews as a shortcut or a ranking trick. We treat them as part of a broader local SEO strategy: earn more genuine feedback, make that feedback useful and build a stronger picture of what your business actually does.
     button:
       enabled: false
       button_url: ''
@@ -380,11 +380,11 @@ content_blocks:
     questions: 
       - question: How Many Google Reviews Does My Business Need?
         answer: >-
-          Your business needs enough Google reviews to compete with highly ranked local businesses in your market. There is no universal target because review counts vary by industry, location, and competition. Compare your review count with the top 3–5 local competitors and consistently earn new, authentic customer reviews.
+          Your business needs enough Google reviews to compete with highly ranked local businesses in your market. There is no universal target because review counts vary by industry, location and competition. Compare your review count with the top 3–5 local competitors and consistently earn new, authentic customer reviews.
 
       - question: How Often Should We Ask Customers for Reviews?
         answer: >-
-          Ask customers for reviews after each completed purchase, service, or positive customer interaction. Send the request while the experience is still fresh, typically within 24–48 hours. Consistent review requests help generate a steady flow of recent feedback, but avoid repeatedly asking the same customer about the same transaction.
+          Ask customers for reviews after each completed purchase, service or positive customer interaction. Send the request while the experience is still fresh, typically within 24–48 hours. Consistent review requests help generate a steady flow of recent feedback, but avoid repeatedly asking the same customer about the same transaction.
           
       - question: How Many Times Should We Follow Up on a Review Request?
         answer: >-
@@ -392,37 +392,37 @@ content_blocks:
 
       - question: Should We Respond to Every Google Review?
         answer: >-
-          Respond to every Google review when possible, including both positive and negative feedback. Consistent responses show customers that your business values their experiences and actively manages its reputation. Thank positive reviewers, address negative feedback professionally, and avoid sharing private customer information when responding publicly.
+          Respond to every Google review when possible, including both positive and negative feedback. Consistent responses show customers that your business values their experiences and actively manages its reputation. Thank positive reviewers, address negative feedback professionally and avoid sharing private customer information when responding publicly.
           
       - question: What Should We Say When Responding to a Negative Review?
         answer: >-
-          Respond to a negative review by acknowledging the customer’s concern, apologizing when appropriate, and offering a clear path toward resolution. Keep the response professional, brief, and specific. Avoid arguments, blame, or sharing private information. Invite the customer to continue detailed discussions privately by phone, email, or another direct channel.
+          Respond to a negative review by acknowledging the customer’s concern, apologizing when appropriate and offering a clear path toward resolution. Keep the response professional, brief and specific. Avoid arguments, blame or sharing private information. Invite the customer to continue detailed discussions privately by phone, email or another direct channel.
 
       - question: Should We Focus Only on Google Reviews?
         answer: >-
-          Do not focus only on Google reviews. Google is important for local visibility, but customers may also evaluate businesses on industry-specific review sites, social media, and other relevant platforms. Build reviews where your customers actively research your business, while keeping Google a primary focus for local search. 
+          Do not focus only on Google reviews. Google is important for local visibility, but customers may also evaluate businesses on industry-specific review sites, social media and other relevant platforms. Build reviews where your customers actively research your business, while keeping Google a primary focus for local search. 
 
       - question: Can Reputation Management Help Local SEO?
         answer: >-
-          Reputation management can help local SEO by strengthening review signals, customer trust, and online credibility. Consistently earning authentic reviews and responding to customer feedback supports a strong local presence. Google considers review quantity, quality, and recency among the factors that can influence local search prominence.
+          Reputation management can help local SEO by strengthening review signals, customer trust and online credibility. Consistently earning authentic reviews and responding to customer feedback supports a strong local presence. Google considers review quantity, quality and recency among the factors that can influence local search prominence.
 
       - question: Do You Write the Review-Request Messages for Us?
         answer: >-
-          Yes, we write review-request messages for your business. We can create outreach templates based on your business, customer type, and the services you provide. We also help with direct review links, messaging recommendations, and follow-up sequences so your team has a repeatable process instead of having to write a new request every time.
+          Yes, we write review-request messages for your business. We can create outreach templates based on your business, customer type and the services you provide. We also help with direct review links, messaging recommendations and follow-up sequences so your team has a repeatable process instead of having to write a new request every time.
 
       - question: Can You Handle Review Responses for Us?
         answer: >-
-          Yes, we can handle review responses for your business. Review management can include monitoring new reviews, writing professional responses, addressing positive and negative feedback, and maintaining a consistent brand voice. Responses should acknowledge customer experiences, protect private information, and move sensitive disputes to a private communication channel. 
+          Yes, we can handle review responses for your business. Review management can include monitoring new reviews, writing professional responses, addressing positive and negative feedback and maintaining a consistent brand voice. Responses should acknowledge customer experiences, protect private information and move sensitive disputes to a private communication channel. 
 
       - question: How Long Does Reputation Management Take to Work?
         answer: >-
-          Reputation management typically takes 3–6 months to produce measurable improvements, although results vary by business. Timing depends on your existing reputation, review volume, customer response rates, and the severity of negative content. Consistent review generation, monitoring, and professional responses can strengthen your reputation over time. 
+          Reputation management typically takes 3–6 months to produce measurable improvements, although results vary by business. Timing depends on your existing reputation, review volume, customer response rates and the severity of negative content. Consistent review generation, monitoring and professional responses can strengthen your reputation over time. 
 
   - _bookshop_name: call-to-action
     preheading: 
     heading: Build a Reputation That Reflects the Work You’re Already Doing
     body: >-
-      If your business is doing good work but your online reputation isn’t keeping pace, we can help you identify where the gap is and what to do next. We’ll look at your current Google reviews, compare your reputation with local competitors, and help you determine whether you’re behind in review volume, recency, or response activity. From there, we can build a practical review strategy around your business, including outreach templates, direct review links, follow-up recommendations, platform priorities, and ongoing response management.
+      If your business is doing good work but your online reputation isn’t keeping pace, we can help you identify where the gap is and what to do next. We’ll look at your current Google reviews, compare your reputation with local competitors and help you determine whether you’re behind in review volume, recency or response activity. From there, we can build a practical review strategy around your business, including outreach templates, direct review links, follow-up recommendations, platform priorities and ongoing response management.
     button:
       enabled: true
       button_url: /contact/
