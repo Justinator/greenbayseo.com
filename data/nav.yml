@@ -32,3 +32,12 @@ main_nav:
       - text: SEO Copywriting
         url: /services/seo-copywriting-services-green-bay-wi/
         opens_in_new_tab: false
+  - text: Industries
+    url: /industries/
+    opens_in_new_tab: false
+    enable_dropdown: true
+    columns: one
+    dropdown:
+      - text: Auto Repair Shop SEO
+        url: /industries/local-seo-for-auto-repair-shops-green-bay-wi/
+        opens_in_new_tab: false
