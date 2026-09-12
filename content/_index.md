@@ -475,10 +475,10 @@ content_blocks:
         body: >-
           Auto repair shops compete heavily in local search, especially for high-frequency services like oil changes, brake repair, tires, alignments and diagnostics. If your business is not showing up near the top of Google Maps or local search results, nearby drivers are often calling competing shops first.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /industries/local-seo-for-auto-repair-shops-green-bay-wi/
+          button_text: Learn About Auto Repair SEO
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/custom-home-builder-seo.jpg
