@@ -15,7 +15,7 @@ content_blocks:
     heading: Your Website Should Be Bringing Local Drivers to Your Shop
     subheading: 
     body: >-
-      If your auto repair shop has a website but isn’t getting enough calls or local leads from Google, there’s usually more going on than a lack of content. Your Google Business Profile may be under-optimized. Important services may not have their own pages on your website. Or your website may not clearly tell Google that you serve customers in Green Bay.
+      If your auto repair shop has a website but isn’t getting enough calls or local leads from Google, there’s usually several reasons why. Your Google Business Profile may be under-optimized. Important services may not have their own pages on your website. Or your website may not clearly tell Google that you serve customers in Green Bay.
 
 
       Our local SEO for auto repair shops in Green Bay, WI focuses on fixing those gaps so your shop can show up for the high-intent searches that matter most. These are the searches people make when they actually need brakes, tires, diagnostics, alignments, suspension work, engine repair and other services you provide.
@@ -48,10 +48,10 @@ content_blocks:
         label: "Increase in Total Ranking Keywords"
     background_color: primary
   - _bookshop_name: intro
-    preheading: Local SEO for Green Bay Auto Repair Shops That Need More Than Website Traffic
+    preheading: Green Bay Auto Repair Shop SEO
     heading: If People Can’t Find Your Shop When They Need a Repair, Traffic Numbers Don’t Mean Much
     body: >-
-      Many SEO campaigns focus on increasing traffic first and figuring out lead quality later. That approach can make sense for national brands or ecommerce companies, but it is usually the wrong starting point for a local auto repair shop.
+      Many SEO campaigns focus on increasing traffic first and figuring out local SEO lead quality later. That approach can make sense for national brands or ecommerce companies, but it's the wrong starting point for a local auto repair shop.
 
 
       Your customers are local. They’re searching for specific services, often with an immediate need. They may be looking for brake repair, tire service, an alignment, engine diagnostics or help with a check engine light. If your shop does not appear when those searches happen, a higher website traffic number by itself does not solve the problem.
@@ -118,10 +118,10 @@ content_blocks:
     preheading: 
     heading: Our Local SEO Strategy Starts With the Searches Most Likely to Become Repair Jobs
     body: >-
-      When we begin a local SEO campaign for an auto repair shop, we first look for the opportunities closest to the customer. That means auditing your Google Business Profile, website, reviews and citations before building a content calendar. We want to understand where your shop is already showing up, where competitors have stronger visibility and which changes could help you compete for high-intent local searches.
+      When Green Bay Ranking Co. begins a local SEO campaign for an auto repair shop, we first look for the opportunities closest to the customer. That means auditing your Google Business Profile, website, reviews and citations before building a content calendar. We want to understand where your shop is already showing up, where competitors have stronger visibility and which changes could help you compete for high-intent local searches.
 
 
-      From there, we optimize existing service pages because those pages may already have history, rankings, backlinks and local visibility. Improving an established page can often create a better opportunity than immediately publishing something brand new.
+      From there, we optimize existing service pages because those pages already have history, rankings, backlinks and local visibility. Improving an established page results in quicker wins than publishing something brand new.
 
 
       Next, we identify important services that don’t have dedicated pages. Services such as brake repair, wheel alignments, engine diagnostics, suspension repair, tire service or other high-value services should all have dedicated pages. This will build a local search presence that gives Green Bay drivers more ways to find your shop when they’re ready to schedule service.
@@ -183,7 +183,7 @@ content_blocks:
       * Other missed optimization opportunities
 
 
-      Keeping the profile active matters too. Many auto repair shops set up their profile once and rarely touch it again. We place an emphasis on adding fresh photos, publishing updates and keeping information current so the profile continues to reflect an active, well-managed local business.
+      Keeping the profile active matters too. Many auto repair shops set up their profile once and rarely touch it again. Green Bay Ranking Co. places an emphasis on adding fresh photos, publishing updates and keeping information current so the profile continues to reflect an active, well-managed local business.
     button:
       enabled: false
       button_url: ''
@@ -264,8 +264,8 @@ content_blocks:
       image_alt: ''
     css_class: ''
   - _bookshop_name: media-text
-    preheading: Citation Building and Local Business Listings
-    heading: Your Business Information Should Tell the Same Story Everywhere Google Looks
+    preheading: Citation Building for Auto Repair Shops
+    heading: Your Business Should Tell the Same Story Everywhere Google Looks
     body: >-
       Your website and Google Business Profile are only part of your local search presence. Google also looks at information about your business across other websites, directories and local listings. If your shop name, address, phone number or business details are inconsistent, you may be weakening the local signals that support your visibility.
 
@@ -316,7 +316,7 @@ content_blocks:
   - _bookshop_name: call-to-action
     preheading: ''
     heading: Your Shop Doesn’t Need More Random SEO Activity. It Needs a Prioritized Local Search Strategy.
-    body: We focus first on the opportunities most likely to improve your visibility with Green Bay drivers, then build from there.
+    body: Green Bay Ranking Co. focuses first on the opportunities most likely to improve your visibility with Green Bay drivers, then build from there.
     button:
       enabled: true
       button_url: /contact/
