@@ -423,10 +423,10 @@ content_blocks:
         body: >-
           HVAC companies compete heavily in local search, especially for emergency repair and seasonal services. Green Bay Ranking helps heating and cooling businesses improve visibility for high-intent searches tied to repairs, installations and maintenance services.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /industries/local-seo-for-hvac-green-bay-wi/
+          button_text: Learn About HVAC SEO
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/roofing-seo.jpg
