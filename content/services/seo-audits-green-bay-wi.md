@@ -97,7 +97,7 @@ content_blocks:
       body: >-
         A local SEO audit evaluates how well a business ranks in local search results and identifies issues that reduce visibility. A local SEO audit reviews Google Business Profile optimization, NAP (name, address, phone number) consistency, local citations, website technical SEO, local keyword targeting, reviews and location-specific content to improve local search performance and map rankings.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -109,7 +109,7 @@ content_blocks:
       body: >-
         A complete local SEO audit evaluates every factor that affects local search rankings and map visibility. A complete local SEO audit includes Google Business Profile optimization, NAP (name, address, phone number) consistency, local citations, local keyword targeting, on-page SEO, location pages, online reviews, local backlinks, technical SEO, Core Web Vitals, mobile usability, competitor analysis and prioritized recommendations to improve local search performance.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

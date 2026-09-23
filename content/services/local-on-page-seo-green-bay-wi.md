@@ -101,7 +101,7 @@ content_blocks:
       body: >-
         Local on-page SEO improves a webpage for location-based searches by optimizing page titles, headings, content, URLs, images and structured data with relevant local keywords. Local on-page SEO also strengthens local relevance by including business name, address, phone number, service areas and location-specific content that helps search engines match the page to nearby searches.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -113,7 +113,7 @@ content_blocks:
       body: >-
         The parts of a page optimized during local on-page SEO include the title tag, meta description, headings, URL, body content, images, internal links, structured data and business information such as the business name, address, phone number and service areas. Optimizing these elements helps search engines understand the page's local relevance and improves visibility in location-based search results.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

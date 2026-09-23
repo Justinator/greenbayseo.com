@@ -93,7 +93,7 @@ content_blocks:
 
         That matters because most people looking for HVAC help are not browsing casually. They have a problem and want to find a local company they can call. Stronger visibility in Google Maps and local search gives your business more opportunities to earn website visits, phone calls, service requests and qualified leads.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -108,7 +108,7 @@ content_blocks:
 
         Common problems include an incomplete or poorly optimized Google Business Profile, inconsistent business information, weak reviews, thin service or location content, limited local links or stronger competitors in your service area. If those companies consistently appear above you, they have more opportunities to win the calls and service requests you want.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

@@ -90,7 +90,7 @@ content_blocks:
       body: >-
         SEO is worth it for small auto repair shops because it helps local customers find their services when searching online. Local SEO can increase visibility for searches such as “auto repair near me,” attract qualified website traffic and generate calls and appointments. Results depend on local competition, website quality, reviews and SEO execution.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -102,7 +102,7 @@ content_blocks:
       body: >-
         Auto repair shops get more customers by improving local SEO, collecting customer reviews, offering referral programs and providing reliable service. Shops can attract local drivers through Google Business Profile optimization, targeted advertising, social media and community partnerships. Consistent follow-up and transparent pricing can also increase repeat business and customer referrals.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

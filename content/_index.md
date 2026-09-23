@@ -436,10 +436,10 @@ content_blocks:
         body: >-
           Roofing searches are highly competitive in local markets. Strong local SEO can help smaller and mid-sized contractors compete more effectively for high-intent searches tied to inspections, repairs, storm damage and roof replacement.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /industries/local-seo-for-roofers-green-bay-wi/
+          button_text: Learn About Roofing SEO
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/dental-seo.jpg

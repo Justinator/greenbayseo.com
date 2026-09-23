@@ -90,7 +90,7 @@ content_blocks:
       body: >-
         Multi-location SEO improves search visibility for a business with two or more physical locations. Multi-location SEO optimizes each location with a unique landing page, accurate business information, location-specific keywords, and local citations. Effective multi-location SEO increases local rankings, drives nearby traffic, and helps customers find the nearest business location.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -102,7 +102,7 @@ content_blocks:
       body: >-
         Multi-location SEO differs from traditional local SEO by optimizing search visibility for businesses with multiple physical locations instead of a single location. Multi-location SEO requires unique location pages, separate Google Business Profiles, location-specific keywords, and consistent business information for each branch. Traditional local SEO focuses on improving rankings for one business location within a single geographic area.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

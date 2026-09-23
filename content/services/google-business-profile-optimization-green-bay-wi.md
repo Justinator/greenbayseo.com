@@ -87,7 +87,7 @@ content_blocks:
       body: >-
         [Google Business Profile really matters](/blog/does-google-business-profile-really-matter/) because it improves local search visibility, increases customer trust and drives more calls, website visits and direction requests. A complete, accurate profile with reviews, photos, business hours and regular updates helps Google match your business to relevant local searches and can significantly improve local SEO performance.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -99,7 +99,7 @@ content_blocks:
       body: >-
         Google Business Profile helps your business by increasing local search visibility, attracting nearby customers and improving credibility through reviews, photos and accurate business information. An optimized profile can generate more phone calls, website visits and direction requests while improving your chances of appearing in Google Search and Google Maps for relevant local searches.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

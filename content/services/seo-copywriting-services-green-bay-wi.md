@@ -84,7 +84,7 @@ content_blocks:
       body: >-
         The main difference between SEO copywriting and regular copywriting is that SEO copywriting targets both search engines and readers, while regular copywriting primarily targets readers. SEO copywriting uses relevant keywords, search intent and optimized structure to improve organic visibility. Regular copywriting focuses primarily on persuasion, engagement and conversions.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -96,7 +96,7 @@ content_blocks:
       body: >-
         Copywriting is more important than SEO keywords because useful, persuasive content satisfies readers and drives action. Keywords help search engines understand a page and connect it with relevant searches, but keywords alone cannot create value. Effective SEO copywriting combines natural keyword use with clear information, strong messaging and search intent.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

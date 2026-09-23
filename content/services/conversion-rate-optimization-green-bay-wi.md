@@ -84,7 +84,7 @@ content_blocks:
       body: >-
         Yes, website design affects your conversion rate by shaping usability, trust, speed and purchase decisions. Clear navigation, fast page loads, mobile-friendly layouts, readable content and prominent calls to action help visitors complete desired actions. Poor design creates friction, increases abandonment and can reduce conversions.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -96,7 +96,7 @@ content_blocks:
       body: >-
         Conversion rate optimization work in Green Bay typically shows initial results within 2-12 weeks. The timeframe depends on website traffic, existing conversion rates, test volume and the changes tested. High-traffic websites can gather useful data faster, while lower-traffic Green Bay businesses may need longer to measure reliable conversion improvements.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

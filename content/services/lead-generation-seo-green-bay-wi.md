@@ -98,7 +98,7 @@ content_blocks:
       body: >-
         Local SEO can generate leads for your business by increasing your website's visibility in search results and attracting people actively looking for your products or services. Most businesses begin seeing measurable SEO results within 3–6 months, while competitive industries may require 6–12 months. Lead quality depends on targeting the right keywords, publishing helpful content, optimizing technical SEO, and building website authority through quality backlinks.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -110,7 +110,7 @@ content_blocks:
       body: >-
         Measure lead generation success from SEO by tracking organic conversions, qualified leads, conversion rate, cost per lead, and revenue from organic search. Most businesses evaluate SEO performance over 3–6 months because rankings and traffic improve gradually. Use tools such as Google Analytics 4, Google Search Console, and your CRM to connect organic traffic with leads and closed sales.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -175,7 +175,7 @@ content_blocks:
         
         Each page was built around a specific service, a specific city, and the needs of a customer searching in that area.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -196,7 +196,7 @@ content_blocks:
 
         That does not mean every business needs a separate page for every possible city. It does show that a strong, relevant service-and-city page can perform far better than asking one generic page to rank across several competitive local markets.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

@@ -100,7 +100,7 @@ content_blocks:
       body: >-
         A local SEO citation is an online mention of a business’s name, address, and phone number (NAP). Citations appear on business directories, local websites, social platforms, and mapping services. Consistent and accurate citations help search engines verify business information and can support local search visibility.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -112,7 +112,7 @@ content_blocks:
       body: >-
         Local citation errors hurt your business by giving customers and search engines inconsistent information about your name, address, or phone number. Incorrect citations can send customers to the wrong location, cause missed calls, reduce trust, and make it harder for search engines to verify your business information.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''

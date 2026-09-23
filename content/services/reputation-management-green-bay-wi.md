@@ -100,7 +100,7 @@ content_blocks:
       body: >-
         Reputation management can help your Green Bay business grow by improving customer trust, strengthening local visibility and increasing conversions. Managing reviews, responding to customer feedback and maintaining accurate business profiles can influence how potential customers view your company and whether they choose your business over local competitors.
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
@@ -112,7 +112,7 @@ content_blocks:
       body: >-
         Monitor your online reputation at least weekly and check high-impact review platforms and social media daily when possible. Regular monitoring helps businesses identify new reviews, customer complaints, inaccurate information and brand mentions quickly. Increase monitoring during product launches, marketing campaigns, crises or periods of increased customer activity. 
       button:
-        enabled: true
+        enabled: false
         button_url: '' 
         button_text: ''
         button_color: ''
