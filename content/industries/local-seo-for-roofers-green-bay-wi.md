@@ -86,7 +86,7 @@ content_blocks:
       
     left_column:
       preheading: ''
-      heading: What Is Local SEO and Why Does My HVAC Business Need It?
+      heading: What Is Local SEO and Why Does My Roofing Business Need It?
       body: >-
         Local SEO helps your roofing company show up when nearby homeowners search for services like roof repair, roof replacement, or storm damage help. It focuses on improving your visibility in Google Maps and local search so more of the people finding you are actually in your service area and ready to call.
       button:
@@ -98,7 +98,7 @@ content_blocks:
       text_align: ''
     right_column:
       preheading: ''
-      heading: Why Isn't My HVAC Company Showing Up on Google?
+      heading: Why Isn't My Roofing Company Showing Up on Google?
       body: >-
         Your roofing company may not be showing up because Google does not have enough strong signals that your business is relevant, trusted, and connected to the services and areas you want to rank for. Your Google Business Profile, reviews, service pages, citations, website content, and local competition can all affect where you appear in Google Maps and organic search.
       button:
