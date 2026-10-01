@@ -100,10 +100,10 @@ content_blocks:
         body: >-
           Plumbing companies compete heavily in local search, especially for emergency service calls and high-intent repair searches. If your business is not showing up near the top of Google Maps or local search results, nearby homeowners are often calling competitors instead.
         button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
+          enabled: true
+          button_url: /industries/local-seo-for-plumbers-green-bay-wi/
+          button_text: Learn About Plumbing SEO
+          button_color: primary
           open_in_new_tab: false
       - icon:
           image_url: /uploads/auto-repair-seo.jpg
