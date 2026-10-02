@@ -228,9 +228,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /als-hamburger-restaurant-green-bay-wi_womezn.jpg
-      image_alt: Al’s Hamburger restaurant storefront in downtown Green Bay WI with brick buildings and street view.
-      image_credit: By Michael Steeber from USA - Al's Hamburger- Green Bay, WI, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=75810187
+      image_url: /auto-mechanic-engine-repair-green-bay-wi-local-seo_fwjnp3.jpg
+      image_alt: Auto mechanic repairing engine components under the hood at an auto repair shop in Green Bay, Wisconsin.
+      image_credit: 
     featured_video:
       enabled: false
       vimeo_id: ''
@@ -298,9 +298,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /als-hamburger-restaurant-green-bay-wi_womezn.jpg
-      image_alt: Al’s Hamburger restaurant storefront in downtown Green Bay WI with brick buildings and street view.
-      image_credit: By Michael Steeber from USA - Al's Hamburger- Green Bay, WI, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=75810187
+      image_url: /local-seo-for-auto-repair-shops-green-bay-wi_kmnyux.jpg
+      image_alt: Auto repair technician servicing a vehicle engine at a local auto repair shop in Green Bay, Wisconsin.
+      image_credit: 
     featured_video:
       enabled: false
       vimeo_id: ''

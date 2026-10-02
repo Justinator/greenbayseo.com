@@ -207,9 +207,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /als-hamburger-restaurant-green-bay-wi_womezn.jpg
-      image_alt: Al’s Hamburger restaurant storefront in downtown Green Bay WI with brick buildings and street view.
-      image_credit: By Michael Steeber from USA - Al's Hamburger- Green Bay, WI, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=75810187
+      image_url: /local-seo-for-hvac-contractors-green-bay-wi_pumfqm.jpg
+      image_alt: HVAC technician checking refrigerant pressure gauges on outdoor air conditioning units in Green Bay, Wisconsin.
+      image_credit: 
     featured_video:
       enabled: false
       vimeo_id: ''
@@ -297,9 +297,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /als-hamburger-restaurant-green-bay-wi_womezn.jpg
-      image_alt: Al’s Hamburger restaurant storefront in downtown Green Bay WI with brick buildings and street view.
-      image_credit: By Michael Steeber from USA - Al's Hamburger- Green Bay, WI, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=75810187
+      image_url: /hvac-system-service-green-bay-wi-local-seo_ryywfd.jpg
+      image_alt: HVAC technician servicing internal components of an outdoor heating and cooling unit in Green Bay, Wisconsin.
+      image_credit:
     featured_video:
       enabled: false
       vimeo_id: ''

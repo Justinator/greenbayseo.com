@@ -208,9 +208,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /als-hamburger-restaurant-green-bay-wi_womezn.jpg
-      image_alt: Al’s Hamburger restaurant storefront in downtown Green Bay WI with brick buildings and street view.
-      image_credit: By Michael Steeber from USA - Al's Hamburger- Green Bay, WI, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=75810187
+      image_url: /local-seo-for-roofers-green-bay-wi_is5cg2.jpg
+      image_alt: Roofer installing metal roofing on a residential home for a local roofing business in Green Bay, Wisconsin.
+      image_credit: 
     featured_video:
       enabled: false
       vimeo_id: ''
@@ -265,9 +265,9 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /als-hamburger-restaurant-green-bay-wi_womezn.jpg
-      image_alt: Al’s Hamburger restaurant storefront in downtown Green Bay WI with brick buildings and street view.
-      image_credit: By Michael Steeber from USA - Al's Hamburger- Green Bay, WI, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=75810187
+      image_url: /roofer-shingle-installation-green-bay-wi-local-seo_alepyi.jpg
+      image_alt: Roofer wearing safety gear while installing asphalt shingles for a roofing company in Green Bay, Wisconsin.
+      image_credit: 
     featured_video:
       enabled: false
       vimeo_id: ''

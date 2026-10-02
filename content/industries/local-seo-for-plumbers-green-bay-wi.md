@@ -147,7 +147,7 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /plumber-sink-repair-green-bay-wi-local-seo_faznol.jpg
+      image_url: /plumber-sink-repair-green-bay-wi-local-seo-2_eeqk4e.jpg
       image_alt: Plumber repairing drain pipes beneath a sink for a Green Bay, WI plumbing services business.
       image_credit: 
     featured_video:
@@ -228,7 +228,7 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /green-bay-wi-plumber-local-seo-services_wzmmoz.jpg
+      image_url: /green-bay-wi-plumber-local-seo-services-2_xtpbw4.jpg
       image_alt: Plumber tightening sink drain pipes for a local plumbing business in Green Bay, Wisconsin.
       image_credit: 
     featured_video:
@@ -263,7 +263,7 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /local-seo-for-plumbers-green-bay-wi_ogmnss.jpg
+      image_url: /local-seo-for-plumbers-green-bay-wi-2_ep2ckp.jpg
       image_alt: Plumber repairing pipes under a kitchen sink for a Green Bay, WI local plumbing services business.
       image_credit: 
     featured_video:
