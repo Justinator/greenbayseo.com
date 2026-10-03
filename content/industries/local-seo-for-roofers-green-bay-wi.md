@@ -245,7 +245,7 @@ content_blocks:
       button_color: ''
       open_in_new_tab: false
     text_align: ''
-    background_color: gray
+    background_color: white
     background_image:
       image_url: ''
       image_alt: ''
@@ -274,7 +274,7 @@ content_blocks:
       youtube_share_url:
       video_title: ''
       play_button_text:
-    background_color: white
+    background_color: gray
     background_image:
       image_url:
       image_alt: ''
