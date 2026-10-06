@@ -51,7 +51,7 @@ content_blocks:
     preheading: Why Traditional SEO Can Miss the Mark for Electricians
     heading: More Website Traffic Does Not Always Mean More Electrical Leads
     body: >-
-      You don’t need thousands of visitors from across the country. You need homeowners and businesses in Green Bay finding you when they need an electrical repair, panel upgrade, EV charger installation or another service you actually provide.
+      You don’t need thousands of visitors from across the country. You need homeowners and businesses in Green Bay finding you when they need an electrical repair or another service you provide.
 
 
       Some SEO strategies put too much weight on blog traffic and broad keywords while giving too little attention to the searches that can produce calls and estimates. We take a local-first approach by improving your Google Business Profile, building high-intent service pages and making sure your website supports the services you want to show up for in Google Maps and organic search.
@@ -138,7 +138,7 @@ content_blocks:
       We start by reviewing your Google Business Profile from the ground up, including your primary and secondary categories, services and service descriptions. The goal is to make sure your profile clearly reflects the electrical work you want local customers to find you for.
 
 
-      From there, we keep it active with fresh photos, regular posts, service updates and support for your review strategy. We typically aim to add around five new photos per week and post at least weekly when content is available, so your profile stays current instead of becoming another listing that was set up once and forgotten.
+      From there, we keep it active with fresh photos, regular posts, service updates and support for your review strategy. We typically aim to add around five new photos per week and post at least weekly, so your profile stays current instead of becoming another listing that was set up once and forgotten.
     button:
       enabled: false
       button_url:
@@ -192,7 +192,7 @@ content_blocks:
       button_color: ''
       open_in_new_tab: false
   - _bookshop_name: one-column
-    preheading: Bottom-of-the-Funnel SEO for Electricians
+    preheading: Bottom-of-the-Funnel On-Page SEO for Electricians
     heading: Build Pages Around the Electrical Services People Are Ready to Hire You For
     body: >-
       We focus heavily on service pages because they target the searches most likely to turn into real jobs. Someone searching for an electrical panel upgrade, EV charger installation, generator installation or electrical repair in Green Bay is much closer to hiring than someone reading a general blog post.
@@ -376,7 +376,7 @@ content_blocks:
 
   - _bookshop_name: call-to-action
     preheading: 
-    heading: Turn More Local Searches Into Calls, Quote Requests and Electrical Jobs
+    heading: Turn Local Organic Search Into Calls, Quote Requests and Electrical Jobs
     body: >-
       You already have a website and you probably already have a Google Business Profile. The question is whether they are doing enough to help local customers find and contact your business.
       
