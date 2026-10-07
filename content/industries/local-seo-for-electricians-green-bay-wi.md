@@ -216,7 +216,7 @@ content_blocks:
     heading: Give Google a Clear, Consistent Picture of What Your Electrical Company Does
 
     body: >-
-      Your website and Google Business Profile should not tell two different stories. If your profile says you offer panel upgrades, EV charger installation, generators, lighting and commercial electrical work, your website should support those same services with strong, relevant pages.
+      Your website and Google Business Profile should not tell two different stories. If your profile says you offer panel upgrades, EV charger installation, generators, lighting and commercial electrical work, your website should support those same services with strong, relevant pages. 
 
 
       We align the services on your Google Business Profile with the service pages on your website as closely as possible. That on-page SEO work gives search engines a clearer picture of what you offer and can strengthen your visibility in organic search. It also gives potential customers a more relevant page to land on when they are ready to hire an electrician.
