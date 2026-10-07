@@ -198,7 +198,7 @@ content_blocks:
       We focus heavily on service pages because they target the searches most likely to turn into real jobs. Someone searching for an electrical panel upgrade, EV charger installation, generator installation or electrical repair in Green Bay is much closer to hiring than someone reading a general blog post.
 
 
-      Instead of relying on one broad electrical services page, we build dedicated pages around the services you actually want more leads for. That gives Google clearer context about what you offer and gives potential customers a more relevant place to land when they are actively looking for that exact service.
+      Instead of relying on one broad electrical services page, we build dedicated pages around the services you actually want more leads for. Our on-page SEO work helps each page better match the search intent behind those services and gives potential customers a more relevant place to land.
     button:
       enabled: false
       button_url: ''
@@ -219,7 +219,7 @@ content_blocks:
       Your website and Google Business Profile should not tell two different stories. If your profile says you offer panel upgrades, EV charger installation, generators, lighting and commercial electrical work, your website should support those same services with strong, relevant pages.
 
 
-      We align the services on your Google Business Profile with the service pages on your website as closely as possible. That gives Google a clearer picture of what you offer and gives potential customers a more relevant page to land on when they are ready to hire an electrician.
+      We align the services on your Google Business Profile with the service pages on your website as closely as possible. That on-page SEO work gives search engines a clearer picture of what you offer and can strengthen your visibility in organic search. It also gives potential customers a more relevant page to land on when they are ready to hire an electrician.
     button:
       enabled: false
       button_url:
@@ -250,10 +250,10 @@ content_blocks:
     preheading: Local Keyword Research and Service Mapping for Electricians
     heading: Target the Searches Most Likely to Turn Into Real Jobs
     body: >-
-      Not every keyword is worth chasing. We focus on the electrical services people in Green Bay are actively searching for when they are getting close to hiring.
+      Not every keyword is worth chasing. Our keyword research focuses on the electrical services people are actively searching for when they are getting close to hiring.
 
 
-      That means mapping important services to dedicated pages and building each page around the local searches people use for that work. Depending on the business, that could include electrical repair, panel upgrades, EV charger installation, generator installation, commercial electrical work, lighting, rewiring and other services you want more leads for.
+      That means mapping important services to dedicated pages and building each page around the search intent behind those searches. We look at the keywords people use, what already appears in the search results and which services are worth building into dedicated pages.
     button:
       enabled: false
       button_url: ''
