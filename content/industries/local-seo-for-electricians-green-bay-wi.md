@@ -108,7 +108,7 @@ content_blocks:
     background_color: black
     overlay_color: primary
     background_image:
-      image_url: /local-business-pin-on-laptop_z1xjhp.jpg
+      image_url: /green-bay-wi-commercial-electrician-electrical-wiring-installation_ttu3nw.jpg
       image_alt: ''
     css_class: ''
   - _bookshop_name: one-column
@@ -146,8 +146,8 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /local-seo-for-roofers-green-bay-wi_is5cg2.jpg
-      image_alt: Roofer installing metal roofing on a residential home for a local roofing business in Green Bay, Wisconsin.
+      image_url: /green-bay-wi-electrician-kitchen-lighting-installation_xd4ucq.jpg
+      image_alt: Electrician installing modern kitchen ceiling lighting in a residential home in Green Bay, WI.
       image_credit: 
     featured_video:
       enabled: false
@@ -227,8 +227,8 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /local-seo-for-roofers-green-bay-wi_is5cg2.jpg
-      image_alt: Roofer installing metal roofing on a residential home for a local roofing business in Green Bay, Wisconsin.
+      image_url: /green-bay-wi-electrician-ceiling-fan-installation_bgbegn.jpg
+      image_alt: Electrician installing a ceiling fan in a modern home with pendant lighting in Green Bay, WI.
       image_credit: 
     featured_video:
       enabled: false
@@ -293,8 +293,8 @@ content_blocks:
       button_color: primary
       open_in_new_tab: false
     image:
-      image_url: /roofer-shingle-installation-green-bay-wi-local-seo_alepyi.jpg
-      image_alt: Roofer wearing safety gear while installing asphalt shingles for a roofing company in Green Bay, Wisconsin.
+      image_url: /green-bay-wi-electrician-ceiling-light-fixture-installation_kh5moe.jpg
+      image_alt: Electrician installing a modern LED ceiling light fixture in a residential home in Green Bay, WI.
       image_credit: 
     featured_video:
       enabled: false
