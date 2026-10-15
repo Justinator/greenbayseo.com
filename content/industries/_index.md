@@ -54,6 +54,71 @@ content_blocks:
       Our Local SEO Company in Green Bay works with service businesses that rely on local visibility, inbound leads and strong Google rankings to grow.
     services:
       - icon:
+          image_url: /uploads/auto-repair-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Auto Repair Shop SEO
+        body: >-
+          Auto repair shops compete heavily in local search, especially for high-frequency services like oil changes, brake repair, tires, alignments and diagnostics. If your business is not showing up near the top of Google Maps or local search results, nearby drivers are often calling competing shops first.
+        button:
+          enabled: true
+          button_url: /industries/local-seo-for-auto-repair-shops-green-bay-wi/
+          button_text: Learn About Auto Repair SEO
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/concrete-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Concrete Contractor SEO
+        body: >-
+          If your business is not showing up when homeowners or commercial clients search for concrete services nearby, those leads are likely going to competitors first. Green Bay Ranking provides concrete contractor SEO services helping improve rankings for local searches tied to concrete installation, repair and specialty concrete work.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/custom-home-builder-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Custom Home Builder SEO
+        body: >-
+          Custom home builders compete in a very different type of search environment than most service businesses. Buyers spend more time researching, comparing builders, reviewing floor plans and evaluating trust before ever reaching out. That means your website needs to do more than just rank it needs to build confidence.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/dental-seo.jpg
+          image_alt: ''
+          image_credit: ''
+        heading: Dental SEO
+        body: >-
+          Dental practices rely heavily on local trust and visibility in Google Maps. Green Bay Ranking helps dental offices improve rankings for treatment-based and location-based searches so more patients can find and contact your practice.
+        button:
+          enabled: false
+          button_url: ''
+          button_text: ''
+          button_color: ''
+          open_in_new_tab: false
+      - icon:
+          image_url: /uploads/electrician-seo.png
+          image_alt: ''
+          image_credit: ''
+        heading: Electrician SEO
+        body: >-
+          Electricians depend on local visibility for service calls, repairs, panel upgrades, and installation work. Green Bay Ranking helps electrical contractors improve rankings for high-intent searches so more local customers can find and contact their business.
+        button:
+          enabled: true
+          button_url: /industries/local-seo-for-electricians-green-bay-wi/
+          button_text: Learn About Electrician SEO
+          button_color: primary
+          open_in_new_tab: false
+      - icon:
           image_url: /uploads/hvac-seo.jpg
           image_alt: ''
           image_credit: ''
@@ -67,25 +132,12 @@ content_blocks:
           button_color: primary
           open_in_new_tab: false
       - icon:
-          image_url: /uploads/roofing-seo.jpg
+          image_url: /uploads/law-firm-seo.jpg
           image_alt: ''
           image_credit: ''
-        heading: Roofing SEO
+        heading: Law Firm SEO
         body: >-
-          Roofing searches are highly competitive in local markets. Strong local SEO can help smaller and mid-sized contractors compete more effectively for high-intent searches tied to inspections, repairs, storm damage and roof replacement.
-        button:
-          enabled: true
-          button_url: /industries/local-seo-for-roofers-green-bay-wi/
-          button_text: Learn About Roofing SEO
-          button_color: primary
-          open_in_new_tab: false
-      - icon:
-          image_url: /uploads/dental-seo.jpg
-          image_alt: ''
-          image_credit: ''
-        heading: Dental SEO
-        body: >-
-          Dental practices rely heavily on local trust and visibility in Google Maps. Green Bay Ranking helps dental offices improve rankings for treatment-based and location-based searches so more patients can find and contact your practice.
+          Legal searches are highly competitive and often tied directly to major buying decisions. Green Bay Ranking helps law firms improve local visibility for practice area searches while building stronger authority and trust signals online.
         button:
           enabled: false
           button_url: ''
@@ -106,56 +158,17 @@ content_blocks:
           button_color: primary
           open_in_new_tab: false
       - icon:
-          image_url: /uploads/auto-repair-seo.jpg
+          image_url: /uploads/roofing-seo.jpg
           image_alt: ''
           image_credit: ''
-        heading: Auto Repair Shop SEO
+        heading: Roofing SEO
         body: >-
-          Auto repair shops compete heavily in local search, especially for high-frequency services like oil changes, brake repair, tires, alignments and diagnostics. If your business is not showing up near the top of Google Maps or local search results, nearby drivers are often calling competing shops first.
+          Roofing searches are highly competitive in local markets. Strong local SEO can help smaller and mid-sized contractors compete more effectively for high-intent searches tied to inspections, repairs, storm damage and roof replacement.
         button:
           enabled: true
-          button_url: /industries/local-seo-for-auto-repair-shops-green-bay-wi/
-          button_text: Learn About Auto Repair SEO
+          button_url: /industries/local-seo-for-roofers-green-bay-wi/
+          button_text: Learn About Roofing SEO
           button_color: primary
-          open_in_new_tab: false
-      - icon:
-          image_url: /uploads/custom-home-builder-seo.jpg
-          image_alt: ''
-          image_credit: ''
-        heading: Custom Home Builder SEO
-        body: >-
-          Custom home builders compete in a very different type of search environment than most service businesses. Buyers spend more time researching, comparing builders, reviewing floor plans and evaluating trust before ever reaching out. That means your website needs to do more than just rank it needs to build confidence.
-        button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
-          open_in_new_tab: false
-      - icon:
-          image_url: /uploads/concrete-seo.jpg
-          image_alt: ''
-          image_credit: ''
-        heading: Concrete Contractor SEO
-        body: >-
-          If your business is not showing up when homeowners or commercial clients search for concrete services nearby, those leads are likely going to competitors first. Green Bay Ranking provides concrete contractor SEO services helping improve rankings for local searches tied to concrete installation, repair and specialty concrete work.
-        button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
-          open_in_new_tab: false
-      - icon:
-          image_url: /uploads/law-firm-seo.jpg
-          image_alt: ''
-          image_credit: ''
-        heading: Law Firm SEO
-        body: >-
-          Legal searches are highly competitive and often tied directly to major buying decisions. Green Bay Ranking helps law firms improve local visibility for practice area searches while building stronger authority and trust signals online.
-        button:
-          enabled: false
-          button_url: ''
-          button_text: ''
-          button_color: ''
           open_in_new_tab: false
     background_color:
     css_class: ''
