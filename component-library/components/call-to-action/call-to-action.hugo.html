@@ -64,13 +64,21 @@
         <p>{{ .body | markdownify }}</p>
         {{ end }}
         {{ end }}
-        {{ if .button.enabled }}
-        {{ with .button }}
-        <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{ end
-            }}>
-            {{ .button_text }}
-        </a>
-        {{ end }}
-        {{ end }}
+        <div class="flex flex-column flex-row-md gap-sm">
+            {{ if .button.enabled }}
+                {{ with .button }}
+                <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{ end }}>
+                    {{ .button_text }}
+                </a>
+                {{ end }}
+            {{ end }}
+            {{ if .button_2.enabled }}
+                {{ with .button_2 }}
+                <a class="btn btn--{{ .button_color }}" href="{{ .button_url | safeURL }}" {{ if .open_in_new_tab }}target="_blank" {{ end }}>
+                    {{ .button_text }}
+                </a>
+                {{ end }}
+            {{ end }}
+        </div>
     </div>
 </section>

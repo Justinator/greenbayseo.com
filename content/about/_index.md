@@ -139,6 +139,12 @@ content_blocks:
       button_text: Connect with a Local Builder
       button_color: primary
       open_in_new_tab: false
+    button_2:
+      enabled: true
+      button_url: sms:+19204152481?body=Hi%20there,%20I'm%20interested%20in%20your%20local%20seo%20services.
+      button_text: "Text Us: (920) 415-2481"
+      button_color: primary
+      open_in_new_tab: false
     background_image:
       image_url: /wisconsin-homes-design-team-reviewing-floor-plans_walqvh.jpg
       image_alt: ""

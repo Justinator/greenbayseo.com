@@ -11,10 +11,6 @@
   // border-radius: $radius;
   // Misc
   transition: $transition;
-
-  @include breakpoint(md) {
-    font-size: 1.2rem;
-  }
 }
 
 .btn--primary {

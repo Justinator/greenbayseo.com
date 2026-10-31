@@ -26,6 +26,12 @@ content_blocks:
       button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
+    button_2:
+      enabled: true
+      button_url: sms:+19204152481?body=Hi%20there,%20I'm%20interested%20in%20your%20local%20seo%20services.
+      button_text: "Text Us: (920) 415-2481"
+      button_color: primary
+      open_in_new_tab: false
     background_image: 
       image_url: /black-marble-background_mrigsw.jpg
       image_alt: ''
@@ -135,18 +141,18 @@ content_blocks:
       button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
+    button_2:
+      enabled: true
+      button_url: sms:+19204152481?body=Hi%20there,%20I'm%20interested%20in%20your%20local%20seo%20services.
+      button_text: "Text Us: (920) 415-2481"
+      button_color: primary
+      open_in_new_tab: false
     background_image:
       image_url: /blue-background-curves_tqw8w9.jpg
       image_alt: ''
       image_credit: ''
     background_color: black
     css_class: ''
-    button_2:
-      enabled: true
-      button_url: ''
-      button_text: ''
-      button_color: ''
-      open_in_new_tab: false
   - _bookshop_name: one-column
     preheading:
     heading: Why Most Local Service Pages Fail to Rank
@@ -225,18 +231,18 @@ content_blocks:
       button_text: Request Your Free SEO Audit
       button_color: primary
       open_in_new_tab: false
+    button_2:
+      enabled: true
+      button_url: sms:+19204152481?body=Hi%20there,%20I'm%20interested%20in%20your%20local%20seo%20services.
+      button_text: "Text Us: (920) 415-2481"
+      button_color: primary
+      open_in_new_tab: false
     background_image:
       image_url: /blue-background-curves_tqw8w9.jpg
       image_alt: ''
       image_credit: ''
     background_color: black
     css_class: ''
-    button_2:
-      enabled: true
-      button_url: ''
-      button_text: ''
-      button_color: ''
-      open_in_new_tab: false
   - _bookshop_name: steps
     preheading: ''
     heading: Our Local On-Page SEO Process
@@ -412,16 +418,16 @@ content_blocks:
       button_text: Get Your Free Local SEO Audit
       button_color: primary
       open_in_new_tab: false
+    button_2:
+      enabled: true
+      button_url: sms:+19204152481?body=Hi%20there,%20I'm%20interested%20in%20your%20local%20seo%20services.
+      button_text: "Text Us: (920) 415-2481"
+      button_color: primary
+      open_in_new_tab: false
     background_image:
       image_url: /blue-background-curves_tqw8w9.jpg
       image_alt: ''
       image_credit: ''
     background_color: black
     css_class: ''
-    button_2:
-      enabled: true
-      button_url: ''
-      button_text: ''
-      button_color: ''
-      open_in_new_tab: false
 ---
